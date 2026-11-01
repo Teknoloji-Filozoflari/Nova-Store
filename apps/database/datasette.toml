@@ -1,0 +1,20 @@
+id = "datasette"
+name = "datasette"
+description = "SQLite’ı web/API olarak yayınla."
+category = "database"
+source = "https://datasette.io/"
+license = "Apache-2.0"
+executable = "datasette"
+install_method = "pipx"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["pipx", "install", "datasette"]
+install_notes = """
+pipx: pipx install datasette
+uv: uv tool install datasette
+Resmî: https://datasette.io/
+"""

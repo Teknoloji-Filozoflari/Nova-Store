@@ -1,0 +1,16 @@
+id = "terminal-parrot"
+name = "terminal-parrot"
+description = "Dans eden papağan animasyonu."
+category = "screensavers"
+source = "https://github.com/jmhobbs/terminal-parrot"
+license = "MIT"
+executable = "terminal-parrot"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "terminal-parrot"]
+install_notes = """
+pacman: sudo pacman -S terminal-parrot / AUR
+go: go install github.com/jmhobbs/terminal-parrot@latest
+"""

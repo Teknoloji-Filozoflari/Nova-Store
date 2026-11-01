@@ -1,0 +1,15 @@
+id = "unimatrix"
+name = "unimatrix"
+description = "Unicode Matrix yağmuru."
+category = "screensavers"
+source = "https://github.com/will8211/unimatrix"
+license = "GPL-3.0"
+executable = "unimatrix"
+install_method = "manual"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "none"
+trust_class = "D"
+install_notes = """
+pip: pip install unimatrix (veya betiği PATH'e kopyalayın)
+Resmî: https://github.com/will8211/unimatrix
+"""

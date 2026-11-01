@@ -1,0 +1,17 @@
+id = "docker"
+name = "docker"
+description = "Docker Engine CLI istemcisi."
+category = "containers"
+source = "https://www.docker.com/"
+license = "Apache-2.0"
+executable = "docker"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "docker"]
+install_notes = """
+pacman: sudo pacman -S docker
+apt: sudo apt install docker.io
+Resmî: https://docs.docker.com/engine/install/
+"""

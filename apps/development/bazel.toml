@@ -1,0 +1,17 @@
+id = "bazel"
+name = "bazel"
+description = "Google Bazel derleme aracı."
+category = "development"
+source = "https://bazel.build/"
+license = "Apache-2.0"
+executable = "bazel"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "bazel"]
+install_notes = """
+pacman: sudo pacman -S bazel
+brew: brew install bazel
+Resmî: https://bazel.build/
+"""

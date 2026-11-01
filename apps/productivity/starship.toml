@@ -1,0 +1,17 @@
+id = "starship"
+name = "Starship"
+description = "Hızlı, özelleştirilebilir kabuk istemi."
+category = "productivity"
+source = "https://starship.rs/"
+license = "ISC"
+executable = "starship"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "starship"]
+install_notes = """
+curl: curl -sS https://starship.rs/install.sh | sh
+brew: brew install starship
+Resmî: https://starship.rs/guide/#%F0%9F%9A%80-installation
+"""

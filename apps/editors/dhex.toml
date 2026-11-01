@@ -1,0 +1,17 @@
+id = "dhex"
+name = "dhex"
+description = "Ncurses hex editörü."
+category = "editors"
+source = "https://www.dettus.net/dhex/"
+license = "GPL-2.0"
+executable = "dhex"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "dhex"]
+install_notes = """
+pacman: sudo pacman -S dhex
+apt: sudo apt install dhex
+Resmî: https://www.dettus.net/dhex/
+"""

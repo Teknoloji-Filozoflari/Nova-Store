@@ -1,0 +1,18 @@
+id = "oha"
+name = "oha"
+description = "HTTP yük üreteci (rakyll/hey esinli, TUI)."
+category = "networking"
+source = "https://github.com/hatoo/oha"
+license = "MIT"
+executable = "oha"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "oha"]
+install_notes = """
+pacman: sudo pacman -S oha
+cargo: cargo install oha
+brew: brew install oha
+Resmî: https://github.com/hatoo/oha
+"""

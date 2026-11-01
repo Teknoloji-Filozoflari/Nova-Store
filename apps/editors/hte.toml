@@ -1,0 +1,16 @@
+id = "hte"
+name = "HTE"
+description = "Hex / metin editörü (hte)."
+category = "editors"
+source = "https://hte.sourceforge.net/"
+license = "GPL-2.0"
+executable = "hte"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "hte"]
+install_notes = """
+pacman: sudo pacman -S hte
+Resmî: https://hte.sourceforge.net/
+"""

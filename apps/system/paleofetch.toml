@@ -1,0 +1,15 @@
+id = "paleofetch"
+name = "paleofetch"
+description = "C ile yazılmış hızlı neofetch."
+category = "system"
+source = "https://github.com/ssleert/paleofetch"
+license = "MIT"
+executable = "paleofetch"
+install_method = "manual"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "none"
+trust_class = "D"
+install_notes = """
+Resmî: https://github.com/ssleert/paleofetch
+make && sudo make install
+"""

@@ -1,0 +1,18 @@
+id = "ncdu"
+name = "ncdu"
+description = "ncurses disk kullanım analizcisi."
+category = "files"
+source = "https://dev.yorhel.nl/ncdu"
+license = "MIT"
+executable = "ncdu"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "ncdu"]
+install_notes = """
+apt: sudo apt install ncdu
+brew: brew install ncdu
+pacman: sudo pacman -S ncdu
+Resmî: https://dev.yorhel.nl/ncdu/
+"""

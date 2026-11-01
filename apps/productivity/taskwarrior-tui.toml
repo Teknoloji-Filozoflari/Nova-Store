@@ -1,0 +1,20 @@
+id = "taskwarrior-tui"
+name = "taskwarrior-tui"
+description = "Taskwarrior için terminal panosu."
+category = "productivity"
+source = "https://github.com/kdheepak/taskwarrior-tui"
+license = "MIT"
+executable = "taskwarrior-tui"
+install_method = "cargo"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["cargo", "install", "taskwarrior-tui"]
+install_notes = """
+cargo: cargo install taskwarrior-tui
+brew: brew install taskwarrior-tui
+Resmî: https://kdheepak.com/taskwarrior-tui/
+"""

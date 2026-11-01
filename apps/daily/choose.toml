@@ -1,0 +1,20 @@
+id = "choose"
+name = "choose"
+description = "İnsan dostu cut/awk alternatifi."
+category = "daily"
+source = "https://github.com/theryangeary/choose"
+license = "GPL-3.0"
+executable = "choose"
+install_method = "cargo"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["cargo", "install", "choose"]
+install_notes = """
+cargo: cargo install choose
+brew: brew install choose-rust
+Resmî: https://github.com/theryangeary/choose
+"""

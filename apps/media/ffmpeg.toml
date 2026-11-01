@@ -1,0 +1,18 @@
+id = "ffmpeg"
+name = "ffmpeg"
+description = "Ses/video dönüştürme ve işleme araç seti."
+category = "media"
+source = "https://ffmpeg.org/"
+license = "LGPL-2.1-or-later OR GPL-2.0-or-later"
+executable = "ffmpeg"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "ffmpeg"]
+install_notes = """
+apt: sudo apt install ffmpeg
+brew: brew install ffmpeg
+pacman: sudo pacman -S ffmpeg
+Resmî: https://ffmpeg.org/download.html
+"""

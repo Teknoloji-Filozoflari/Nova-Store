@@ -1,0 +1,18 @@
+id = "task"
+name = "taskwarrior"
+description = "Güçlü görev yöneticisi (task)."
+category = "daily"
+source = "https://taskwarrior.org/"
+license = "MIT"
+executable = "task"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "task"]
+install_notes = """
+pacman: sudo pacman -S task
+apt: sudo apt install taskwarrior
+brew: brew install task
+Resmî: https://taskwarrior.org/
+"""

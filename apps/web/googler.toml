@@ -1,0 +1,16 @@
+id = "googler"
+name = "googler"
+description = "Google arama CLI (bakımda)."
+category = "web"
+source = "https://github.com/jarun/googler"
+license = "GPL-3.0"
+executable = "googler"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "googler"]
+install_notes = """
+pacman: sudo pacman -S googler
+Resmî: https://github.com/jarun/googler
+"""

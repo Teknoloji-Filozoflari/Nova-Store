@@ -1,0 +1,20 @@
+id = "watson"
+name = "watson"
+description = "Zarif zaman takip CLI."
+category = "daily"
+source = "https://github.com/TailorDev/Watson"
+license = "MIT"
+executable = "watson"
+install_method = "pipx"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["pipx", "install", "watson-time-tracker"]
+install_notes = """
+pipx: pipx install watson-time-tracker
+pacman: AUR watson
+Resmî: https://github.com/TailorDev/Watson
+"""

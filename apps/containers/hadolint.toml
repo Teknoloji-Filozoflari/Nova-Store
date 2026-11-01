@@ -1,0 +1,17 @@
+id = "hadolint"
+name = "hadolint"
+description = "Dockerfile linter."
+category = "containers"
+source = "https://github.com/hadolint/hadolint"
+license = "GPL-3.0"
+executable = "hadolint"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "hadolint"]
+install_notes = """
+pacman: sudo pacman -S hadolint
+brew: brew install hadolint
+Resmî: https://github.com/hadolint/hadolint
+"""

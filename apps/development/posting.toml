@@ -1,0 +1,20 @@
+id = "posting"
+name = "posting"
+description = "Terminalde yaşayan güçlü HTTP istemcisi."
+category = "development"
+source = "https://github.com/darrenburns/posting"
+license = "MIT"
+executable = "posting"
+install_method = "pipx"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["pipx", "install", "posting"]
+install_notes = """
+pipx: pipx install posting
+uv: uv tool install posting
+Resmî: https://github.com/darrenburns/posting
+"""

@@ -1,0 +1,17 @@
+id = "ledger"
+name = "ledger"
+description = "Çift taraflı muhasebe CLI."
+category = "daily"
+source = "https://www.ledger-cli.org/"
+license = "BSD-3-Clause"
+executable = "ledger"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "ledger"]
+install_notes = """
+pacman: sudo pacman -S ledger
+apt: sudo apt install ledger
+brew: brew install ledger
+"""

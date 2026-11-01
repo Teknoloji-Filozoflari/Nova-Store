@@ -1,0 +1,17 @@
+id = "redis"
+name = "redis-cli"
+description = "Redis CLI."
+category = "database"
+source = "https://redis.io/"
+license = "BSD-3-Clause"
+executable = "redis-cli"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "redis"]
+install_notes = """
+pacman: sudo pacman -S redis
+apt: sudo apt install redis-tools
+brew: brew install redis
+"""

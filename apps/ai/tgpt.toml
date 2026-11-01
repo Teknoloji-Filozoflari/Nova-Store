@@ -1,0 +1,17 @@
+id = "tgpt"
+name = "tgpt"
+description = "ChatGPT benzeri terminal AI istemcisi."
+category = "ai"
+source = "https://github.com/aandrew-me/tgpt"
+license = "GPL-3.0"
+executable = "tgpt"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "tgpt"]
+install_notes = """
+pacman: sudo pacman -S tgpt
+brew: brew install tgpt
+Resmî: https://github.com/aandrew-me/tgpt
+"""

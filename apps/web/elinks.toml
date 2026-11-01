@@ -1,0 +1,16 @@
+id = "elinks"
+name = "elinks"
+description = "Gelişmiş metin web tarayıcı."
+category = "web"
+source = "https://github.com/rkd77/elinks"
+license = "GPL-2.0"
+executable = "elinks"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "elinks"]
+install_notes = """
+pacman: sudo pacman -S elinks
+apt: sudo apt install elinks
+"""

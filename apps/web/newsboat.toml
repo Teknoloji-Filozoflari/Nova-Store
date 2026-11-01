@@ -1,0 +1,18 @@
+id = "newsboat"
+name = "newsboat"
+description = "RSS/Atom besleme okuyucusu."
+category = "web"
+source = "https://newsboat.org/"
+license = "MIT"
+executable = "newsboat"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "newsboat"]
+install_notes = """
+apt: sudo apt install newsboat
+brew: brew install newsboat
+pacman: sudo pacman -S newsboat
+Resmî: https://newsboat.org/
+"""

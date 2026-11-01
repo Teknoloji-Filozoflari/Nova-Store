@@ -1,0 +1,15 @@
+id = "ktop"
+name = "ktop"
+description = "Kubernetes için top benzeri izleyici."
+category = "containers"
+source = "https://github.com/vladimirvivien/ktop"
+license = "Apache-2.0"
+executable = "ktop"
+install_method = "manual"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "none"
+trust_class = "D"
+install_notes = """
+go: go install github.com/vladimirvivien/ktop@latest
+Resmî: https://github.com/vladimirvivien/ktop
+"""

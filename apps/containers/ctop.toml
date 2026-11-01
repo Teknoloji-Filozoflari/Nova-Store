@@ -1,0 +1,16 @@
+id = "ctop"
+name = "ctop"
+description = "Konteynerler için top benzeri metrik arayüzü."
+category = "containers"
+source = "https://github.com/bcicen/ctop"
+license = "MIT"
+executable = "ctop"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "ctop"]
+install_notes = """
+brew: brew install ctop
+Resmî: https://github.com/bcicen/ctop#installation
+"""

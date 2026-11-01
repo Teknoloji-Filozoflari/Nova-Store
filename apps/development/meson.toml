@@ -1,0 +1,17 @@
+id = "meson"
+name = "meson"
+description = "Hızlı ve kullanıcı dostu derleme sistemi."
+category = "development"
+source = "https://mesonbuild.com/"
+license = "Apache-2.0"
+executable = "meson"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "meson"]
+install_notes = """
+pacman: sudo pacman -S meson
+apt: sudo apt install meson
+brew: brew install meson
+"""

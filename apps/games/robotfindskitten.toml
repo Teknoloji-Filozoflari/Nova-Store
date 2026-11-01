@@ -1,0 +1,16 @@
+id = "robotfindskitten"
+name = "robotfindskitten"
+description = "robotfindskitten zen oyunu."
+category = "games"
+source = "https://robotfindskitten.org/"
+license = "GPL-2.0"
+executable = "robotfindskitten"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "robotfindskitten"]
+install_notes = """
+pacman: sudo pacman -S robotfindskitten
+apt: sudo apt install robotfindskitten
+"""

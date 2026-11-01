@@ -1,0 +1,17 @@
+id = "ncmpcpp"
+name = "ncmpcpp"
+description = "MPD için özellikli müzik istemcisi."
+category = "media"
+source = "https://github.com/ncmpcpp/ncmpcpp"
+license = "GPL-2.0"
+executable = "ncmpcpp"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "ncmpcpp"]
+install_notes = """
+pacman: sudo pacman -S ncmpcpp
+apt: sudo apt install ncmpcpp
+brew: brew install ncmpcpp
+"""

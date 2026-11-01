@@ -1,0 +1,17 @@
+id = "psql"
+name = "psql"
+description = "PostgreSQL etkileşimli terminal."
+category = "database"
+source = "https://www.postgresql.org/"
+license = "PostgreSQL"
+executable = "psql"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "postgresql"]
+install_notes = """
+pacman: sudo pacman -S postgresql
+apt: sudo apt install postgresql-client
+brew: brew install libpq
+"""

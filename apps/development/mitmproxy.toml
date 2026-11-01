@@ -1,0 +1,19 @@
+id = "mitmproxy"
+name = "mitmproxy"
+description = "Etkileşimli HTTPS ara sunucusu ve trafik inceleme aracı."
+category = "development"
+source = "https://www.mitmproxy.org"
+license = "MIT"
+executable = "mitmproxy"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "mitmproxy"]
+install_notes = """
+pipx: pipx install mitmproxy
+brew: brew install mitmproxy
+apt: sudo apt install mitmproxy
+pacman: sudo pacman -S mitmproxy
+Resmî: https://docs.mitmproxy.org/stable/overview-installation/
+"""

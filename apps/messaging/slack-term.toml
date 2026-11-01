@@ -1,0 +1,15 @@
+id = "slack-term"
+name = "slack-term"
+description = "Slack terminal istemcisi."
+category = "messaging"
+source = "https://github.com/erroneousboat/slack-term"
+license = "MIT"
+executable = "slack-term"
+install_method = "manual"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "none"
+trust_class = "D"
+install_notes = """
+go: go install github.com/erroneousboat/slack-term@latest
+Resmî: https://github.com/erroneousboat/slack-term
+"""

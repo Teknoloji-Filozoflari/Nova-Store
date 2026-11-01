@@ -1,0 +1,17 @@
+id = "git-cliff"
+name = "git-cliff"
+description = "Changelog üretici."
+category = "git"
+source = "https://github.com/orhun/git-cliff"
+license = "Apache-2.0 OR MIT"
+executable = "git-cliff"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "git-cliff"]
+install_notes = """
+pacman: sudo pacman -S git-cliff
+cargo: cargo install git-cliff
+brew: brew install git-cliff
+"""

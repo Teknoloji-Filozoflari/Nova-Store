@@ -1,0 +1,18 @@
+id = "mpv"
+name = "mpv"
+description = "Özgür, açık kaynaklı medya oynatıcı (CLI/TUI dostu)."
+category = "media"
+source = "https://mpv.io/"
+license = "GPL-2.0"
+executable = "mpv"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "mpv"]
+install_notes = """
+apt: sudo apt install mpv
+brew: brew install mpv
+pacman: sudo pacman -S mpv
+Resmî: https://mpv.io/installation/
+"""

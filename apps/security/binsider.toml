@@ -1,0 +1,19 @@
+id = "binsider"
+name = "binsider"
+description = "Linux ikili dosyalarını analiz eden TUI."
+category = "security"
+source = "https://github.com/orhun/binsider"
+license = "MIT OR Apache-2.0"
+executable = "binsider"
+install_method = "cargo"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["cargo", "install", "binsider"]
+install_notes = """
+cargo: cargo install binsider
+Resmî: https://binsider.dev/
+"""

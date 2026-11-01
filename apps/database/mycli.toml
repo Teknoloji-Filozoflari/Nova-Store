@@ -1,0 +1,20 @@
+id = "mycli"
+name = "mycli"
+description = "Otomatik tamamlama özellikli MySQL/MariaDB istemcisi."
+category = "database"
+source = "https://github.com/dbcli/mycli"
+license = "BSD-3-Clause"
+executable = "mycli"
+install_method = "pipx"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["pipx", "install", "mycli"]
+install_notes = """
+pipx: pipx install mycli
+brew: brew install mycli
+Resmî: https://www.mycli.net/
+"""

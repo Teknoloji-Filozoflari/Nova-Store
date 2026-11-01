@@ -1,0 +1,16 @@
+id = "heaptrack"
+name = "heaptrack"
+description = "Yığın bellek profilleyicisi."
+category = "development"
+source = "https://github.com/KDE/heaptrack"
+license = "LGPL-2.1"
+executable = "heaptrack"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "heaptrack"]
+install_notes = """
+pacman: sudo pacman -S heaptrack
+Resmî: https://github.com/KDE/heaptrack
+"""

@@ -1,0 +1,21 @@
+id = "delta"
+name = "delta"
+description = """
+Git diff'lerini renkli ve okunaklı gösterir; genellikle git yapılandırmasına bağlanır.
+"""
+category = "git"
+source = "https://github.com/dandavison/delta"
+license = "MIT"
+executable = "delta"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "git-delta"]
+install_notes = """
+brew: brew install git-delta
+cargo: cargo install git-delta
+apt: sudo apt install git-delta
+pacman: sudo pacman -S git-delta
+Resmî: https://github.com/dandavison/delta#installation
+"""

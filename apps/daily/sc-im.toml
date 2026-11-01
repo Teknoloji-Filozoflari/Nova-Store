@@ -1,0 +1,16 @@
+id = "sc-im"
+name = "sc-im"
+description = "Terminal elektronik tablo (sc iyileştirmesi)."
+category = "daily"
+source = "https://github.com/andmarti1424/sc-im"
+license = "BSD-3-Clause"
+executable = "sc-im"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "sc-im"]
+install_notes = """
+pacman: sudo pacman -S sc-im
+Resmî: https://github.com/andmarti1424/sc-im
+"""

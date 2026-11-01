@@ -1,0 +1,16 @@
+id = "wordgrinder"
+name = "wordgrinder"
+description = "Terminal kelime işlemci."
+category = "daily"
+source = "https://cowlark.com/wordgrinder/"
+license = "MIT"
+executable = "wordgrinder"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "wordgrinder"]
+install_notes = """
+pacman: sudo pacman -S wordgrinder
+apt: sudo apt install wordgrinder
+"""

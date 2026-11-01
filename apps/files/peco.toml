@@ -1,0 +1,17 @@
+id = "peco"
+name = "peco"
+description = "Etkileşimli süzgeç aracı."
+category = "files"
+source = "https://github.com/peco/peco"
+license = "MIT"
+executable = "peco"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "peco"]
+install_notes = """
+pacman: sudo pacman -S peco
+brew: brew install peco
+Resmî: https://github.com/peco/peco
+"""

@@ -1,0 +1,17 @@
+id = "kubectx"
+name = "kubectx"
+description = "Kubernetes context/namespace değiştirici."
+category = "containers"
+source = "https://github.com/ahmetb/kubectx"
+license = "Apache-2.0"
+executable = "kubectx"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "kubectx"]
+install_notes = """
+pacman: sudo pacman -S kubectx
+brew: brew install kubectx
+Resmî: https://github.com/ahmetb/kubectx
+"""

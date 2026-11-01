@@ -1,0 +1,16 @@
+id = "chawan"
+name = "chawan"
+description = "Modern terminal web tarayıcı."
+category = "web"
+source = "https://git.sr.ht/~bptato/chawan"
+license = "Unlicense"
+executable = "cha"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "chawan"]
+install_notes = """
+pacman: sudo pacman -S chawan
+Resmî: https://git.sr.ht/~bptato/chawan
+"""

@@ -1,0 +1,17 @@
+id = "imagemagick"
+name = "ImageMagick"
+description = "Görüntü dönüştürme (magick/convert)."
+category = "daily"
+source = "https://imagemagick.org/"
+license = "ImageMagick"
+executable = "magick"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "imagemagick"]
+install_notes = """
+pacman: sudo pacman -S imagemagick
+apt: sudo apt install imagemagick
+brew: brew install imagemagick
+"""

@@ -1,0 +1,17 @@
+id = "skopeo"
+name = "skopeo"
+description = "Konteyner imajı inceleme/taşıma."
+category = "containers"
+source = "https://github.com/containers/skopeo"
+license = "Apache-2.0"
+executable = "skopeo"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "skopeo"]
+install_notes = """
+pacman: sudo pacman -S skopeo
+apt: sudo apt install skopeo
+Resmî: https://github.com/containers/skopeo
+"""

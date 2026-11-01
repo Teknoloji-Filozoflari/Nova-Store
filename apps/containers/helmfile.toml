@@ -1,0 +1,17 @@
+id = "helmfile"
+name = "helmfile"
+description = "Helm release bildirimsel dağıtım."
+category = "containers"
+source = "https://github.com/helmfile/helmfile"
+license = "MIT"
+executable = "helmfile"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "helmfile"]
+install_notes = """
+pacman: sudo pacman -S helmfile
+brew: brew install helmfile
+Resmî: https://github.com/helmfile/helmfile
+"""

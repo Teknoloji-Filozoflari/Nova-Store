@@ -1,0 +1,17 @@
+id = "cointop"
+name = "cointop"
+description = "Kripto para takip TUI."
+category = "panels"
+source = "https://github.com/cointop-sh/cointop"
+license = "Apache-2.0"
+executable = "cointop"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "cointop"]
+install_notes = """
+pacman: sudo pacman -S cointop
+brew: brew install cointop
+Resmî: https://github.com/cointop-sh/cointop
+"""

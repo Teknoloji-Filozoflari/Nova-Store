@@ -1,0 +1,17 @@
+id = "nethogs"
+name = "nethogs"
+description = "Süreç bazlı ağ kullanımı."
+category = "panels"
+source = "https://github.com/raboof/nethogs"
+license = "GPL-2.0"
+executable = "nethogs"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "nethogs"]
+install_notes = """
+pacman: sudo pacman -S nethogs
+apt: sudo apt install nethogs
+Resmî: https://github.com/raboof/nethogs
+"""

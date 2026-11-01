@@ -1,0 +1,17 @@
+id = "cowsay"
+name = "cowsay"
+description = "Konuşan inek ASCII sanatı."
+category = "games"
+source = "https://github.com/tnalpgge/rank-amateur-cowsay"
+license = "GPL-3.0"
+executable = "cowsay"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "cowsay"]
+install_notes = """
+pacman: sudo pacman -S cowsay
+apt: sudo apt install cowsay
+brew: brew install cowsay
+"""

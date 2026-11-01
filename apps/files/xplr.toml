@@ -1,0 +1,17 @@
+id = "xplr"
+name = "xplr"
+description = "Hacklenebilir, minimal dosya gezgini."
+category = "files"
+source = "https://github.com/sayanarijit/xplr"
+license = "MIT"
+executable = "xplr"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "xplr"]
+install_notes = """
+pacman: sudo pacman -S xplr
+cargo: cargo install xplr
+Resmî: https://xplr.dev/
+"""

@@ -1,0 +1,16 @@
+id = "pacman4console"
+name = "pacman4console"
+description = "Konsol Pac-Man."
+category = "games"
+source = "https://github.com/ebuchman/pacman-console"
+license = "GPL-2.0"
+executable = "pacman4console"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "pacman4console"]
+install_notes = """
+pacman: sudo pacman -S pacman4console
+apt: sudo apt install pacman4console
+"""

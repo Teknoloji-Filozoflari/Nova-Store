@@ -1,0 +1,17 @@
+id = "entr"
+name = "entr"
+description = "Dosya değişince komut çalıştır."
+category = "daily"
+source = "https://eradman.com/entrproject/"
+license = "ISC"
+executable = "entr"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "entr"]
+install_notes = """
+pacman: sudo pacman -S entr
+apt: sudo apt install entr
+brew: brew install entr
+"""

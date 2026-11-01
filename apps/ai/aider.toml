@@ -1,0 +1,20 @@
+id = "aider"
+name = "Aider"
+description = "Terminalde LLM ile çift programlama; Claude ve GPT ile kod düzenler."
+category = "ai"
+source = "https://aider.chat"
+license = "Apache-2.0"
+executable = "aider"
+install_method = "pipx"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["pipx", "install", "aider-chat"]
+install_notes = """
+pipx: pipx install aider-chat
+pip: python3 -m pip install aider-chat
+Resmî: https://aider.chat/
+"""

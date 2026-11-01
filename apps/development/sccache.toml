@@ -1,0 +1,17 @@
+id = "sccache"
+name = "sccache"
+description = "Paylaşımlı derleme önbelleği (Rust/C++)."
+category = "development"
+source = "https://github.com/mozilla/sccache"
+license = "Apache-2.0"
+executable = "sccache"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "sccache"]
+install_notes = """
+pacman: sudo pacman -S sccache
+cargo: cargo install sccache
+brew: brew install sccache
+"""

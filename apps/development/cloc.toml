@@ -1,0 +1,17 @@
+id = "cloc"
+name = "cloc"
+description = "Kod satırı sayacı."
+category = "development"
+source = "https://github.com/AlDanial/cloc"
+license = "GPL-2.0"
+executable = "cloc"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "cloc"]
+install_notes = """
+pacman: sudo pacman -S cloc
+apt: sudo apt install cloc
+brew: brew install cloc
+"""

@@ -1,0 +1,17 @@
+id = "buku"
+name = "buku"
+description = "Terminal yer imi yöneticisi."
+category = "web"
+source = "https://github.com/jarun/buku"
+license = "GPL-3.0"
+executable = "buku"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "buku"]
+install_notes = """
+pacman: sudo pacman -S buku
+pipx: pipx install buku
+Resmî: https://github.com/jarun/buku
+"""

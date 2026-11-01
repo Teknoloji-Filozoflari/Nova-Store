@@ -1,0 +1,16 @@
+id = "flamegraph"
+name = "flamegraph"
+description = "Flame graph betikleri."
+category = "development"
+source = "https://github.com/brendangregg/FlameGraph"
+license = "CDDL-1.0"
+executable = "flamegraph"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "flamegraph"]
+install_notes = """
+pacman: sudo pacman -S flamegraph
+Resmî: https://github.com/brendangregg/FlameGraph
+"""

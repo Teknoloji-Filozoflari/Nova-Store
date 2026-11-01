@@ -1,0 +1,18 @@
+id = "wget"
+name = "wget"
+description = "Dosya indirme aracı."
+category = "networking"
+source = "https://www.gnu.org/software/wget/"
+license = "GPL-3.0"
+executable = "wget"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "wget"]
+install_notes = """
+apt: sudo apt install wget
+brew: brew install wget
+pacman: sudo pacman -S wget
+Resmî: https://www.gnu.org/software/wget/
+"""

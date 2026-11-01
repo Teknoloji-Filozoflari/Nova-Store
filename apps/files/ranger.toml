@@ -1,0 +1,19 @@
+id = "ranger"
+name = "ranger"
+description = "Vim tuşlarıyla çalışan Python dosya yöneticisi."
+category = "files"
+source = "https://github.com/ranger/ranger"
+license = "GPL-3.0"
+executable = "ranger"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "ranger"]
+install_notes = """
+pipx: pipx install ranger-fm
+apt: sudo apt install ranger
+brew: brew install ranger
+pacman: sudo pacman -S ranger
+Resmî: https://ranger.github.io/
+"""

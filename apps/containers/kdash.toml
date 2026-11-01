@@ -1,0 +1,20 @@
+id = "kdash"
+name = "kdash"
+description = "Kubernetes için basit ve hızlı pano."
+category = "containers"
+source = "https://github.com/kdash-rs/kdash"
+license = "MIT"
+executable = "kdash"
+install_method = "cargo"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["cargo", "install", "kdash"]
+install_notes = """
+cargo: cargo install kdash
+brew: brew install kdash
+Resmî: https://github.com/kdash-rs/kdash
+"""

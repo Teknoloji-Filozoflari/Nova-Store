@@ -1,0 +1,19 @@
+id = "hyperfine"
+name = "hyperfine"
+description = "Komut satırı kıyaslama aracı."
+category = "development"
+source = "https://github.com/sharkdp/hyperfine"
+license = "MIT OR Apache-2.0"
+executable = "hyperfine"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "hyperfine"]
+install_notes = """
+cargo: cargo install hyperfine
+brew: brew install hyperfine
+apt: sudo apt install hyperfine
+pacman: sudo pacman -S hyperfine
+Resmî: https://github.com/sharkdp/hyperfine#installation
+"""

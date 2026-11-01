@@ -1,0 +1,20 @@
+id = "gping"
+name = "gping"
+description = "Grafikli ping; birden fazla hostu görsel izler."
+category = "networking"
+source = "https://github.com/orf/gping"
+license = "MIT"
+executable = "gping"
+install_method = "cargo"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["cargo", "install", "gping"]
+install_notes = """
+brew: brew install gping
+cargo: cargo install gping
+Resmî: https://github.com/orf/gping#installation
+"""

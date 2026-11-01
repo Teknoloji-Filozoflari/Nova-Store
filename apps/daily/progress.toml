@@ -1,0 +1,17 @@
+id = "progress"
+name = "progress"
+description = "cp/mv/dd ilerleme durumu (eski ad: cv)."
+category = "daily"
+source = "https://github.com/Xfennec/progress"
+license = "GPL-3.0"
+executable = "progress"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "progress"]
+install_notes = """
+pacman: sudo pacman -S progress
+apt: sudo apt install progress
+brew: brew install progress
+"""

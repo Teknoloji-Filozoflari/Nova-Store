@@ -1,0 +1,17 @@
+id = "goaccess"
+name = "GoAccess"
+description = "Gerçek zamanlı web günlük analizcisi."
+category = "panels"
+source = "https://goaccess.io/"
+license = "MIT"
+executable = "goaccess"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "goaccess"]
+install_notes = """
+pacman: sudo pacman -S goaccess
+apt: sudo apt install goaccess
+Resmî: https://goaccess.io/
+"""

@@ -1,0 +1,17 @@
+id = "multitail"
+name = "multitail"
+description = "Çoklu günlük kuyruğu."
+category = "daily"
+source = "https://www.vanheusden.com/multitail/"
+license = "GPL-2.0"
+executable = "multitail"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "multitail"]
+install_notes = """
+pacman: sudo pacman -S multitail
+apt: sudo apt install multitail
+brew: brew install multitail
+"""

@@ -1,0 +1,17 @@
+id = "typescript"
+name = "tsc"
+description = "TypeScript derleyicisi."
+category = "development"
+source = "https://www.typescriptlang.org/"
+license = "Apache-2.0"
+executable = "tsc"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "typescript"]
+install_notes = """
+pacman: sudo pacman -S typescript
+npm: npm install -g typescript
+Resmî: https://www.typescriptlang.org/
+"""

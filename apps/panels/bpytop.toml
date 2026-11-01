@@ -1,0 +1,17 @@
+id = "bpytop"
+name = "bpytop"
+description = "Python kaynak izleyici."
+category = "panels"
+source = "https://github.com/aristocratos/bpytop"
+license = "Apache-2.0"
+executable = "bpytop"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "bpytop"]
+install_notes = """
+pacman: sudo pacman -S bpytop
+pipx: pipx install bpytop
+Resmî: https://github.com/aristocratos/bpytop
+"""

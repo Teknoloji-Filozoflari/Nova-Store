@@ -1,0 +1,18 @@
+id = "cmus"
+name = "cmus"
+description = "Hafif ncurses müzik çalar."
+category = "media"
+source = "https://cmus.github.io/"
+license = "GPL-2.0"
+executable = "cmus"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "cmus"]
+install_notes = """
+apt: sudo apt install cmus
+brew: brew install cmus
+pacman: sudo pacman -S cmus
+Resmî: https://github.com/cmus/cmus
+"""

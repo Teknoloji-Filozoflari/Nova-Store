@@ -1,0 +1,17 @@
+id = "croc"
+name = "croc"
+description = "Bilgisayarlar arası kolay ve güvenli dosya transferi."
+category = "networking"
+source = "https://github.com/schollz/croc"
+license = "MIT"
+executable = "croc"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "croc"]
+install_notes = """
+pacman: sudo pacman -S croc
+brew: brew install croc
+Resmî: https://github.com/schollz/croc
+"""

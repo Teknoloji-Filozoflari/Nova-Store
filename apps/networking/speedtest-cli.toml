@@ -1,0 +1,17 @@
+id = "speedtest-cli"
+name = "speedtest-cli"
+description = "Ookla hız testi CLI."
+category = "networking"
+source = "https://github.com/sivel/speedtest-cli"
+license = "Apache-2.0"
+executable = "speedtest-cli"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "speedtest-cli"]
+install_notes = """
+pacman: sudo pacman -S speedtest-cli
+pipx: pipx install speedtest-cli
+apt: sudo apt install speedtest-cli
+"""

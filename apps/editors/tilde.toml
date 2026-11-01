@@ -1,0 +1,17 @@
+id = "tilde"
+name = "tilde"
+description = "Sezgisel terminal metin editörü."
+category = "editors"
+source = "https://os.ghalkes.nl/tilde/"
+license = "GPL-3.0"
+executable = "tilde"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "tilde"]
+install_notes = """
+pacman: sudo pacman -S tilde
+apt: sudo apt install tilde
+Resmî: https://os.ghalkes.nl/tilde/
+"""

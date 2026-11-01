@@ -1,0 +1,17 @@
+id = "dig"
+name = "dig"
+description = "DNS sorgu aracı (bind)."
+category = "networking"
+source = "https://www.isc.org/bind/"
+license = "MPL-2.0"
+executable = "dig"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "bind"]
+install_notes = """
+pacman: sudo pacman -S bind
+apt: sudo apt install dnsutils
+brew: brew install bind
+"""

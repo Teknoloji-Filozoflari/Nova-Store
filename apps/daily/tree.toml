@@ -1,0 +1,18 @@
+id = "tree"
+name = "tree"
+description = "Dizin yapısını ağaç olarak listeler."
+category = "daily"
+source = "https://oldmanprogrammer.net/source.php?dir=projects/tree"
+license = "GPL-2.0"
+executable = "tree"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "tree"]
+install_notes = """
+apt: sudo apt install tree
+brew: brew install tree
+Resmî paket yöneticinizden tree paketini kurun.
+pacman: sudo pacman -S tree
+"""

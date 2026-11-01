@@ -1,0 +1,17 @@
+id = "hledger"
+name = "hledger"
+description = "Hafif muhasebe (Haskell ledger)."
+category = "daily"
+source = "https://hledger.org/"
+license = "GPL-3.0"
+executable = "hledger"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "hledger"]
+install_notes = """
+pacman: sudo pacman -S hledger
+brew: brew install hledger
+Resmî: https://hledger.org/
+"""

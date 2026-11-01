@@ -1,0 +1,17 @@
+id = "iperf3"
+name = "iperf3"
+description = "Ağ performans ölçümü."
+category = "networking"
+source = "https://iperf.fr/"
+license = "BSD-3-Clause"
+executable = "iperf3"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "iperf3"]
+install_notes = """
+pacman: sudo pacman -S iperf3
+apt: sudo apt install iperf3
+brew: brew install iperf3
+"""

@@ -1,0 +1,16 @@
+id = "editorconfig-checker"
+name = "ec"
+description = "EditorConfig doğrulayıcı."
+category = "development"
+source = "https://github.com/editorconfig-checker/editorconfig-checker"
+license = "MIT"
+executable = "ec"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "editorconfig-checker"]
+install_notes = """
+pacman: sudo pacman -S editorconfig-checker
+brew: brew install editorconfig-checker
+"""

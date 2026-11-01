@@ -1,0 +1,17 @@
+id = "moreutils"
+name = "moreutils"
+description = "Unix araç kutusu (sponge, ts, parallel...)."
+category = "daily"
+source = "https://joeyh.name/code/moreutils/"
+license = "GPL-2.0"
+executable = "sponge"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "moreutils"]
+install_notes = """
+pacman: sudo pacman -S moreutils
+apt: sudo apt install moreutils
+brew: brew install moreutils
+"""

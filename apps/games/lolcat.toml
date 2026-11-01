@@ -1,0 +1,17 @@
+id = "lolcat"
+name = "lolcat"
+description = "Gökkuşağı renkli cat."
+category = "games"
+source = "https://github.com/busyloop/lolcat"
+license = "BSD-3-Clause"
+executable = "lolcat"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "lolcat"]
+install_notes = """
+pacman: sudo pacman -S lolcat
+gem: gem install lolcat
+apt: sudo apt install lolcat
+"""

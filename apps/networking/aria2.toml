@@ -1,0 +1,18 @@
+id = "aria2"
+name = "aria2"
+description = "Çok protokolü destekleyen indirme yardımcısı."
+category = "networking"
+source = "https://aria2.github.io/"
+license = "GPL-2.0"
+executable = "aria2c"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "aria2"]
+install_notes = """
+apt: sudo apt install aria2
+brew: brew install aria2
+pacman: sudo pacman -S aria2
+Resmî: https://aria2.github.io/
+"""

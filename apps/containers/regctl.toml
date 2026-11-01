@@ -1,0 +1,15 @@
+id = "regctl"
+name = "regctl"
+description = "Konteyner kayıt defteri CLI."
+category = "containers"
+source = "https://github.com/regclient/regclient"
+license = "Apache-2.0"
+executable = "regctl"
+install_method = "manual"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "none"
+trust_class = "D"
+install_notes = """
+Resmî: https://github.com/regclient/regclient/releases
+brew: brew install regclient
+"""

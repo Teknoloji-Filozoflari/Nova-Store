@@ -1,0 +1,17 @@
+id = "ninja"
+name = "ninja"
+description = "Küçük ve hızlı derleme sistemi."
+category = "development"
+source = "https://ninja-build.org/"
+license = "Apache-2.0"
+executable = "ninja"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "ninja"]
+install_notes = """
+pacman: sudo pacman -S ninja
+apt: sudo apt install ninja-build
+brew: brew install ninja
+"""

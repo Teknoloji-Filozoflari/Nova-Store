@@ -1,0 +1,16 @@
+id = "far2l"
+name = "far2l"
+description = "Far Manager Linux portu."
+category = "files"
+source = "https://github.com/elfmz/far2l"
+license = "GPL-2.0"
+executable = "far2l"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "far2l"]
+install_notes = """
+pacman: sudo pacman -S far2l
+Resmî: https://github.com/elfmz/far2l
+"""

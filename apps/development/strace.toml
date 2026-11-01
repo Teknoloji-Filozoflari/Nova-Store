@@ -1,0 +1,16 @@
+id = "strace"
+name = "strace"
+description = "Sistem çağrısı izleyici."
+category = "development"
+source = "https://strace.io/"
+license = "LGPL-2.1"
+executable = "strace"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "strace"]
+install_notes = """
+pacman: sudo pacman -S strace
+apt: sudo apt install strace
+"""

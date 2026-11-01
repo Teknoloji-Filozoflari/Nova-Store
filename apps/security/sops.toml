@@ -1,0 +1,16 @@
+id = "sops"
+name = "sops"
+description = "Mozilla/CNCF sırları şifreleme aracı (YAML/JSON/ENV)."
+category = "security"
+source = "https://github.com/getsops/sops"
+license = "MPL-2.0"
+executable = "sops"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "sops"]
+install_notes = """
+brew: brew install sops
+Resmî: https://github.com/getsops/sops#install
+"""

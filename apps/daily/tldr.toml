@@ -1,0 +1,20 @@
+id = "tldr"
+name = "tldr"
+description = "Komutların kısa ve örnekli kullanım özetlerini gösterir."
+category = "daily"
+source = "https://github.com/tldr-pages/tldr"
+license = "MIT"
+executable = "tldr"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "tldr"]
+install_notes = """
+npm: npm install -g tldr
+pipx: pipx install tldr
+brew: brew install tldr
+apt: sudo apt install tldr
+pacman: sudo pacman -S tldr
+Resmî: https://github.com/tldr-pages/tldr#install
+"""

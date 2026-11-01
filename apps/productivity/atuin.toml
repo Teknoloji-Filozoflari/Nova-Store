@@ -1,0 +1,17 @@
+id = "atuin"
+name = "Atuin"
+description = "Senkronize, aranabilir kabuk geçmişi."
+category = "productivity"
+source = "https://atuin.sh/"
+license = "MIT"
+executable = "atuin"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "atuin"]
+install_notes = """
+curl: curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
+brew: brew install atuin
+Resmî: https://docs.atuin.sh/guide/installation/
+"""

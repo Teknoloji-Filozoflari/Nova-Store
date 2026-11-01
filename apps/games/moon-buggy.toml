@@ -1,0 +1,16 @@
+id = "moon-buggy"
+name = "moon-buggy"
+description = "Ay aracı engel oyunu."
+category = "games"
+source = "https://github.com/k-takata/moon-buggy"
+license = "GPL-2.0"
+executable = "moon-buggy"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "moon-buggy"]
+install_notes = """
+pacman: sudo pacman -S moon-buggy
+apt: sudo apt install moon-buggy
+"""

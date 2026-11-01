@@ -1,0 +1,16 @@
+id = "tty-solitaire"
+name = "ttysolitaire"
+description = "Terminal solitaire."
+category = "games"
+source = "https://github.com/mpereira/tty-solitaire"
+license = "MIT"
+executable = "ttysolitaire"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "tty-solitaire"]
+install_notes = """
+pacman: sudo pacman -S tty-solitaire
+brew: brew install tty-solitaire
+"""

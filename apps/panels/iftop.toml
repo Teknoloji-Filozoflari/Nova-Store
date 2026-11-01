@@ -1,0 +1,17 @@
+id = "iftop"
+name = "iftop"
+description = "Ağ bant genişliği izleyici."
+category = "panels"
+source = "https://www.ex-parrot.com/pdw/iftop/"
+license = "GPL-2.0"
+executable = "iftop"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "iftop"]
+install_notes = """
+pacman: sudo pacman -S iftop
+apt: sudo apt install iftop
+Resmî: https://www.ex-parrot.com/pdw/iftop/
+"""

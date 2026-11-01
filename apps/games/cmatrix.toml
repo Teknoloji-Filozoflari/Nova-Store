@@ -1,0 +1,18 @@
+id = "cmatrix"
+name = "cmatrix"
+description = "Matrix yağmuru ekran efekti."
+category = "games"
+source = "https://github.com/abishekvashok/cmatrix"
+license = "GPL-3.0"
+executable = "cmatrix"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "cmatrix"]
+install_notes = """
+apt: sudo apt install cmatrix
+brew: brew install cmatrix
+pacman: sudo pacman -S cmatrix
+Resmî: https://github.com/abishekvashok/cmatrix
+"""

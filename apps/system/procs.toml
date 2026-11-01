@@ -1,0 +1,20 @@
+id = "procs"
+name = "procs"
+description = "Modern, kullanıcı dostu ps alternatifi."
+category = "system"
+source = "https://github.com/dalance/procs"
+license = "MIT"
+executable = "procs"
+install_method = "cargo"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["cargo", "install", "procs"]
+install_notes = """
+cargo: cargo install procs
+brew: brew install procs
+Resmî: https://github.com/dalance/procs#installation
+"""

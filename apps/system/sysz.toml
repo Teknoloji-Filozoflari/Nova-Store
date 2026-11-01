@@ -1,0 +1,15 @@
+id = "sysz"
+name = "sysz"
+description = "systemctl için fzf tabanlı TUI."
+category = "system"
+source = "https://github.com/joehillen/sysz"
+license = "Unlicense"
+executable = "sysz"
+install_method = "manual"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "none"
+trust_class = "D"
+install_notes = """
+curl: curl -fsSL https://github.com/joehillen/sysz/releases/latest/download/sysz -o ~/.local/bin/sysz && chmod +x ~/.local/bin/sysz
+Resmî: https://github.com/joehillen/sysz
+"""

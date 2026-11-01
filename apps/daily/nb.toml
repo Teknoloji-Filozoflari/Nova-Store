@@ -1,0 +1,17 @@
+id = "nb"
+name = "nb"
+description = "Terminal not defteri ve bilgi tabanı."
+category = "daily"
+source = "https://xwmx.github.io/nb/"
+license = "AGPL-3.0-or-later"
+executable = "nb"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "nb"]
+install_notes = """
+pacman: sudo pacman -S nb
+brew: brew install xwmx/taps/nb
+Resmî: https://xwmx.github.io/nb/
+"""

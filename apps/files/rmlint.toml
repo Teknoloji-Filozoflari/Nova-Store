@@ -1,0 +1,17 @@
+id = "rmlint"
+name = "rmlint"
+description = "Yinelenen dosya bulucu ve temizleyici."
+category = "files"
+source = "https://github.com/sahib/rmlint"
+license = "GPL-3.0"
+executable = "rmlint"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "rmlint"]
+install_notes = """
+pacman: sudo pacman -S rmlint
+apt: sudo apt install rmlint
+Resmî: https://rmlint.readthedocs.io/
+"""

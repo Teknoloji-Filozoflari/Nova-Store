@@ -1,0 +1,16 @@
+id = "ninvaders"
+name = "ninvaders"
+description = "Space Invaders klonu (ncurses)."
+category = "games"
+source = "https://ninvaders.sourceforge.net/"
+license = "GPL-2.0"
+executable = "ninvaders"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "ninvaders"]
+install_notes = """
+pacman: sudo pacman -S ninvaders
+apt: sudo apt install ninvaders
+"""

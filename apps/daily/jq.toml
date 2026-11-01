@@ -1,0 +1,18 @@
+id = "jq"
+name = "jq"
+description = "JSON sorgulama ve biçimlendirme aracı."
+category = "daily"
+source = "https://github.com/jqlang/jq"
+license = "MIT"
+executable = "jq"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "jq"]
+install_notes = """
+apt: sudo apt install jq
+brew: brew install jq
+pacman: sudo pacman -S jq
+Resmî: https://jqlang.github.io/jq/download/
+"""

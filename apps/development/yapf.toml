@@ -1,0 +1,20 @@
+id = "yapf"
+name = "yapf"
+description = "Python biçimlendirici."
+category = "development"
+source = "https://github.com/google/yapf"
+license = "Apache-2.0"
+executable = "yapf"
+install_method = "pipx"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["pipx", "install", "yapf"]
+install_notes = """
+pipx: pipx install yapf
+pacman: sudo pacman -S yapf
+Resmî: https://github.com/google/yapf
+"""

@@ -1,0 +1,17 @@
+id = "cbonsai"
+name = "cbonsai"
+description = "Terminalde büyüyen bonsai ağacı."
+category = "games"
+source = "https://gitlab.com/jallbrit/cbonsai"
+license = "GPL-3.0"
+executable = "cbonsai"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "cbonsai"]
+install_notes = """
+pacman: sudo pacman -S cbonsai
+brew: brew install cbonsai
+Resmî: https://gitlab.com/jallbrit/cbonsai
+"""

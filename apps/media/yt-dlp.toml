@@ -1,0 +1,19 @@
+id = "yt-dlp"
+name = "yt-dlp"
+description = "YouTube ve diğer sitelerden video/ses indirme aracı."
+category = "media"
+source = "https://github.com/yt-dlp/yt-dlp"
+license = "Unlicense"
+executable = "yt-dlp"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "yt-dlp"]
+install_notes = """
+pipx: pipx install yt-dlp
+brew: brew install yt-dlp
+apt: sudo apt install yt-dlp
+pacman: sudo pacman -S yt-dlp
+Resmî: https://github.com/yt-dlp/yt-dlp#installation
+"""

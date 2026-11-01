@@ -1,0 +1,16 @@
+id = "bashtop"
+name = "bashtop"
+description = "Bash kaynak izleyici (btop atası)."
+category = "panels"
+source = "https://github.com/aristocratos/bashtop"
+license = "Apache-2.0"
+executable = "bashtop"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "bashtop"]
+install_notes = """
+pacman: sudo pacman -S bashtop
+Resmî: https://github.com/aristocratos/bashtop
+"""

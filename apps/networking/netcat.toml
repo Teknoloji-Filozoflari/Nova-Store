@@ -1,0 +1,16 @@
+id = "netcat"
+name = "netcat"
+description = "TCP/UDP İsviçre çakısı."
+category = "networking"
+source = "https://nmap.org/ncat/"
+license = "BSD-3-Clause"
+executable = "nc"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "gnu-netcat"]
+install_notes = """
+pacman: sudo pacman -S gnu-netcat openbsd-netcat
+apt: sudo apt install netcat-openbsd
+"""

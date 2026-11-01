@@ -1,0 +1,18 @@
+id = "chafa"
+name = "chafa"
+description = "Terminalde görüntü gösterici (ASCII/ANSI)."
+category = "web"
+source = "https://hpjansson.org/chafa/"
+license = "LGPL-3.0-or-later"
+executable = "chafa"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "chafa"]
+install_notes = """
+apt: sudo apt install chafa
+brew: brew install chafa
+pacman: sudo pacman -S chafa
+Resmî: https://hpjansson.org/chafa/
+"""

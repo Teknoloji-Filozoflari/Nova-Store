@@ -1,0 +1,18 @@
+id = "vifm"
+name = "Vifm"
+description = "vim benzeri dosya yöneticisi."
+category = "files"
+source = "https://vifm.info/"
+license = "GPL-2.0"
+executable = "vifm"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "vifm"]
+install_notes = """
+pacman: sudo pacman -S vifm
+apt: sudo apt install vifm
+brew: brew install vifm
+Resmî: https://vifm.info/
+"""

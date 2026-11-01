@@ -1,0 +1,19 @@
+id = "tickrs"
+name = "tickrs"
+description = "Borsa ticker TUI."
+category = "daily"
+source = "https://github.com/tarkah/tickrs"
+license = "MIT"
+executable = "tickrs"
+install_method = "cargo"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["cargo", "install", "tickrs"]
+install_notes = """
+cargo: cargo install tickrs
+Resmî: https://github.com/tarkah/tickrs
+"""

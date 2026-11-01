@@ -1,0 +1,18 @@
+id = "calcurse"
+name = "calcurse"
+description = "Takvim ve yapılacaklar için metin arayüzü."
+category = "productivity"
+source = "https://calcurse.org/"
+license = "BSD-2-Clause"
+executable = "calcurse"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "calcurse"]
+install_notes = """
+apt: sudo apt install calcurse
+brew: brew install calcurse
+pacman: sudo pacman -S calcurse
+Resmî: https://calcurse.org/
+"""

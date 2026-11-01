@@ -1,0 +1,15 @@
+id = "cdebug"
+name = "cdebug"
+description = "Çalışan konteynerlere debug kabuğu."
+category = "containers"
+source = "https://github.com/iximiuz/cdebug"
+license = "Apache-2.0"
+executable = "cdebug"
+install_method = "manual"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "none"
+trust_class = "D"
+install_notes = """
+go: go install github.com/iximiuz/cdebug@latest
+Resmî: https://github.com/iximiuz/cdebug
+"""

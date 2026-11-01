@@ -1,0 +1,17 @@
+id = "inxi"
+name = "inxi"
+description = "Sistem bilgi özeti."
+category = "system"
+source = "https://smxi.org/docs/inxi.htm"
+license = "GPL-3.0"
+executable = "inxi"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "inxi"]
+install_notes = """
+pacman: sudo pacman -S inxi
+apt: sudo apt install inxi
+Resmî: https://smxi.org/docs/inxi.htm
+"""

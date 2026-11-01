@@ -1,0 +1,18 @@
+id = "rclone"
+name = "rclone"
+description = "Bulut depolama için rsync benzeri senkronizasyon."
+category = "files"
+source = "https://rclone.org/"
+license = "MIT"
+executable = "rclone"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "rclone"]
+install_notes = """
+pacman: sudo pacman -S rclone
+apt: sudo apt install rclone
+brew: brew install rclone
+Resmî: https://rclone.org/install/
+"""

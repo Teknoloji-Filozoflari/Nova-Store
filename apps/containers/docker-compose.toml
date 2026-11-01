@@ -1,0 +1,17 @@
+id = "docker-compose"
+name = "docker-compose"
+description = "Docker Compose V2 eklentisi (compose)."
+category = "containers"
+source = "https://docs.docker.com/compose/"
+license = "Apache-2.0"
+executable = "docker-compose"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "docker-compose"]
+install_notes = """
+pacman: sudo pacman -S docker-compose
+apt: sudo apt install docker-compose-plugin
+Resmî: https://docs.docker.com/compose/
+"""

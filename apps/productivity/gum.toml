@@ -1,0 +1,17 @@
+id = "gum"
+name = "gum"
+description = "Kabuk betikleri için güzel etkileşimli istemler."
+category = "productivity"
+source = "https://github.com/charmbracelet/gum"
+license = "MIT"
+executable = "gum"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "gum"]
+install_notes = """
+brew: brew install gum
+go: go install github.com/charmbracelet/gum@latest
+Resmî: https://github.com/charmbracelet/gum#installation
+"""

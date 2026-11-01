@@ -1,0 +1,18 @@
+id = "jless"
+name = "jless"
+description = "JSON için etkileşimli komut satırı sayfalayıcı."
+category = "files"
+source = "https://github.com/PaulJuliusMartinez/jless"
+license = "MIT"
+executable = "jless"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "jless"]
+install_notes = """
+pacman: sudo pacman -S jless
+cargo: cargo install jless
+brew: brew install jless
+Resmî: https://github.com/PaulJuliusMartinez/jless
+"""

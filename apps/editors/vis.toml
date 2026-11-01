@@ -1,0 +1,17 @@
+id = "vis"
+name = "vis"
+description = "vi benzeri yapılandırılabilir editör."
+category = "editors"
+source = "https://github.com/martanne/vis"
+license = "ISC"
+executable = "vis"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "vis"]
+install_notes = """
+pacman: sudo pacman -S vis
+apt: sudo apt install vis
+Resmî: https://github.com/martanne/vis
+"""

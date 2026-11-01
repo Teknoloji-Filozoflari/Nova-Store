@@ -32,4 +32,3 @@ repo = "muesli/duf"
 tag_prefix = "v"
 asset_pattern = "duf_{version}_linux_x86_64.tar.gz"
 checksum_asset_pattern = "checksums.txt"
-

@@ -1,0 +1,16 @@
+id = "nikto"
+name = "nikto"
+description = "Web sunucu tarayıcı."
+category = "security"
+source = "https://github.com/sullo/nikto"
+license = "GPL-2.0"
+executable = "nikto"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "nikto"]
+install_notes = """
+pacman: sudo pacman -S nikto
+apt: sudo apt install nikto
+"""

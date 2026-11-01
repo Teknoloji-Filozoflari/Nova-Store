@@ -1,0 +1,15 @@
+id = "lazysql"
+name = "lazysql"
+description = "Veritabanlarını gezmek için terminal arayüzü."
+category = "database"
+source = "https://github.com/jorgerojas26/lazysql"
+license = "MIT"
+executable = "lazysql"
+install_method = "manual"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "none"
+trust_class = "D"
+install_notes = """
+go: go install github.com/jorgerojas26/lazysql@latest
+Resmî: https://github.com/jorgerojas26/lazysql#installation
+"""

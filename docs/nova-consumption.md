@@ -36,9 +36,11 @@ signed release artifact is authoritative.
 | `risk_note` | new (class C) | Show on confirm |
 | `install_method` / `install_command` / artifacts | same | Keep argv shell-free rules |
 
-## Categories in v1 scaffold
+## Categories
 
-`development`, `networking`, `system`, `security`, `containers`, `productivity`
+Full Nova mağaza set (18), mirrored under `apps/<slug>/` with Turkish labels
+in `metadata/categories.toml`:
 
-Additional Nova categories (AI, Git, …) can be added later as new
-`apps/<slug>/` directories + schema enum updates.
+`ai`, `git`, `files`, `development`, `editors`, `system`, `panels`,
+`networking`, `containers`, `database`, `security`, `media`, `messaging`,
+`productivity`, `games`, `screensavers`, `web`, `daily`

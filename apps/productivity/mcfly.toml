@@ -1,0 +1,17 @@
+id = "mcfly"
+name = "mcfly"
+description = "Akıllı kabuk geçmişi araması."
+category = "productivity"
+source = "https://github.com/cantino/mcfly"
+license = "MIT"
+executable = "mcfly"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "mcfly"]
+install_notes = """
+pacman: sudo pacman -S mcfly
+brew: brew install mcfly
+Resmî: https://github.com/cantino/mcfly
+"""

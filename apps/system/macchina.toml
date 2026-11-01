@@ -1,0 +1,17 @@
+id = "macchina"
+name = "macchina"
+description = "Hızlı sistem bilgisi (Rust)."
+category = "system"
+source = "https://github.com/Macchina-CLI/macchina"
+license = "MIT"
+executable = "macchina"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "macchina"]
+install_notes = """
+pacman: sudo pacman -S macchina
+cargo: cargo install macchina
+Resmî: https://github.com/Macchina-CLI/macchina
+"""

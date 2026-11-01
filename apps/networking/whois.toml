@@ -1,0 +1,17 @@
+id = "whois"
+name = "whois"
+description = "WHOIS sorgu aracı."
+category = "networking"
+source = "https://github.com/rfc1036/whois"
+license = "GPL-2.0"
+executable = "whois"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "whois"]
+install_notes = """
+pacman: sudo pacman -S whois
+apt: sudo apt install whois
+brew: brew install whois
+"""

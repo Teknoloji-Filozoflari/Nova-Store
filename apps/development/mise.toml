@@ -1,0 +1,17 @@
+id = "mise"
+name = "mise"
+description = "Çoklu dil sürüm yöneticisi (asdf alternatifi)."
+category = "development"
+source = "https://mise.jdx.dev/"
+license = "MIT"
+executable = "mise"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "mise"]
+install_notes = """
+curl: curl https://mise.run | sh
+brew: brew install mise
+Resmî: https://mise.jdx.dev/getting-started.html
+"""

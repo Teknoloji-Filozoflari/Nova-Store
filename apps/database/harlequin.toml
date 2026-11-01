@@ -1,0 +1,20 @@
+id = "harlequin"
+name = "Harlequin"
+description = "Terminal için SQL IDE."
+category = "database"
+source = "https://github.com/tconbeer/harlequin"
+license = "MIT"
+executable = "harlequin"
+install_method = "pipx"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["pipx", "install", "harlequin"]
+install_notes = """
+pipx: pipx install harlequin
+uv: uv tool install harlequin
+Resmî: https://harlequin.sh/
+"""

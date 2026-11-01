@@ -1,0 +1,19 @@
+id = "continue-cli"
+name = "Continue CLI"
+description = "Continue.dev açık kaynak kod asistanının CLI istemcisi."
+category = "ai"
+source = "https://continue.dev"
+license = "Apache-2.0"
+executable = "cn"
+install_method = "npm"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["npm", "i", "-g", "@continuedev/cli"]
+install_notes = """
+npm: npm i -g @continuedev/cli
+Resmî: https://docs.continue.dev/
+"""

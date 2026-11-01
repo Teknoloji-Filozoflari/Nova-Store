@@ -1,0 +1,18 @@
+id = "jj"
+name = "jj"
+description = "Jujutsu: Git uyumlu, basit ve güçlü sürüm kontrol sistemi."
+category = "git"
+source = "https://github.com/jj-vcs/jj"
+license = "Apache-2.0"
+executable = "jj"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "jujutsu"]
+install_notes = """
+pacman: sudo pacman -S jujutsu
+cargo: cargo install --locked --bin jj jj-cli
+brew: brew install jj
+Resmî: https://jj-vcs.github.io/jj/
+"""

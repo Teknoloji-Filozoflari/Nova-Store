@@ -1,0 +1,17 @@
+id = "thefuck"
+name = "thefuck"
+description = "Yanlış komutu düzeltme sihirbazı."
+category = "productivity"
+source = "https://github.com/nvbn/thefuck"
+license = "MIT"
+executable = "fuck"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "thefuck"]
+install_notes = """
+pacman: sudo pacman -S thefuck
+pipx: pipx install thefuck
+Resmî: https://github.com/nvbn/thefuck
+"""

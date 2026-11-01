@@ -1,0 +1,18 @@
+id = "weechat"
+name = "WeeChat"
+description = "Hafif ve genişletilebilir IRC / sohbet istemcisi."
+category = "messaging"
+source = "https://weechat.org/"
+license = "GPL-3.0"
+executable = "weechat"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "weechat"]
+install_notes = """
+apt: sudo apt install weechat
+brew: brew install weechat
+pacman: sudo pacman -S weechat
+Resmî: https://weechat.org/download/
+"""

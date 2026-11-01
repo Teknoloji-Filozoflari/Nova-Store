@@ -1,0 +1,17 @@
+id = "diskonaut"
+name = "diskonaut"
+description = "Disk alanı terminal haritası."
+category = "daily"
+source = "https://github.com/imsnif/diskonaut"
+license = "MIT"
+executable = "diskonaut"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "diskonaut"]
+install_notes = """
+pacman: sudo pacman -S diskonaut
+cargo: cargo install diskonaut
+Resmî: https://github.com/imsnif/diskonaut
+"""

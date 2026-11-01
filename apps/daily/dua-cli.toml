@@ -1,0 +1,17 @@
+id = "dua-cli"
+name = "dua"
+description = "Disk kullanım analizcisi (etkileşimli)."
+category = "daily"
+source = "https://github.com/Byron/dua-cli"
+license = "MIT"
+executable = "dua"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "dua-cli"]
+install_notes = """
+pacman: sudo pacman -S dua-cli
+cargo: cargo install dua-cli
+Resmî: https://github.com/Byron/dua-cli
+"""

@@ -1,0 +1,20 @@
+id = "navi"
+name = "navi"
+description = "Etkileşimli cheatsheet aracı."
+category = "productivity"
+source = "https://github.com/denisidoro/navi"
+license = "Apache-2.0"
+executable = "navi"
+install_method = "cargo"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["cargo", "install", "--locked", "navi"]
+install_notes = """
+brew: brew install navi
+cargo: cargo install --locked navi
+Resmî: https://github.com/denisidoro/navi#installation
+"""

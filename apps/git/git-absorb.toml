@@ -1,0 +1,17 @@
+id = "git-absorb"
+name = "git-absorb"
+description = "Otomatik fixup commit emici."
+category = "git"
+source = "https://github.com/tummychow/git-absorb"
+license = "BSD-3-Clause"
+executable = "git-absorb"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "git-absorb"]
+install_notes = """
+pacman: sudo pacman -S git-absorb
+cargo: cargo install git-absorb
+brew: brew install git-absorb
+"""

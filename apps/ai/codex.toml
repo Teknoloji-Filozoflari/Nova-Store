@@ -1,0 +1,19 @@
+id = "codex"
+name = "Codex"
+description = "OpenAI'nin terminal tabanlı kodlama ajanı."
+category = "ai"
+source = "https://github.com/openai/codex"
+license = "Apache-2.0"
+executable = "codex"
+install_method = "npm"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["npm", "install", "-g", "@openai/codex"]
+install_notes = """
+npm: npm install -g @openai/codex
+Resmî: https://github.com/openai/codex#installation
+"""

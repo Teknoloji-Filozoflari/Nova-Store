@@ -1,0 +1,17 @@
+id = "autojump"
+name = "autojump"
+description = "Dizin atlama (öğrenen cd)."
+category = "productivity"
+source = "https://github.com/wting/autojump"
+license = "GPL-3.0"
+executable = "autojump"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "autojump"]
+install_notes = """
+pacman: sudo pacman -S autojump
+apt: sudo apt install autojump
+brew: brew install autojump
+"""

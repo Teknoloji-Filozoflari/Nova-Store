@@ -1,0 +1,21 @@
+id = "iredis"
+name = "iredis"
+description = "Otomatik tamamlamalı Redis terminal istemcisi."
+category = "database"
+source = "https://github.com/laixintao/iredis"
+license = "BSD-3-Clause"
+executable = "iredis"
+install_method = "pipx"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["pipx", "install", "iredis"]
+install_notes = """
+pipx: pipx install iredis
+uv: uv tool install iredis
+pacman: sudo pacman -S iredis / AUR
+Resmî: https://github.com/laixintao/iredis
+"""

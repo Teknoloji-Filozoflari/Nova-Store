@@ -1,0 +1,17 @@
+id = "syft"
+name = "syft"
+description = "Konteyner ve dosya sistemlerinden SBOM üretici (Anchore)."
+category = "security"
+source = "https://github.com/anchore/syft"
+license = "Apache-2.0"
+executable = "syft"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "syft"]
+install_notes = """
+pacman: sudo pacman -S syft
+brew: brew install syft
+Resmî: https://github.com/anchore/syft
+"""

@@ -1,0 +1,16 @@
+id = "gopls"
+name = "gopls"
+description = "Go dil sunucusu."
+category = "development"
+source = "https://github.com/golang/tools"
+license = "BSD-3-Clause"
+executable = "gopls"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "gopls"]
+install_notes = """
+pacman: sudo pacman -S gopls
+go: go install golang.org/x/tools/gopls@latest
+"""

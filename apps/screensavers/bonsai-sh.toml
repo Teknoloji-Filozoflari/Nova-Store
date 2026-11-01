@@ -1,0 +1,15 @@
+id = "bonsai-sh"
+name = "bonsai.sh"
+description = "Kabuk ile bonsai ağacı."
+category = "screensavers"
+source = "https://gitlab.com/jallbrit/cbonsai"
+license = "GPL-3.0"
+executable = "bonsai"
+install_method = "manual"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "none"
+trust_class = "D"
+install_notes = """
+cbonsai tercih edilir: pacman -S cbonsai
+Resmî: https://gitlab.com/jallbrit/cbonsai
+"""

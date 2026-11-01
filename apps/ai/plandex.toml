@@ -1,0 +1,15 @@
+id = "plandex"
+name = "Plandex"
+description = "Büyük kod tabanları için terminal AI geliştirme aracı."
+category = "ai"
+source = "https://github.com/plandex-ai/plandex"
+license = "MIT"
+executable = "plandex"
+install_method = "manual"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "none"
+trust_class = "D"
+install_notes = """
+curl: curl -sL https://plandex.ai/install.sh | bash
+Resmî: https://github.com/plandex-ai/plandex#install
+"""

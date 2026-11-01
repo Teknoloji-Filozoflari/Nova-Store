@@ -1,0 +1,17 @@
+id = "toot"
+name = "toot"
+description = "Mastodon CLI istemcisi."
+category = "messaging"
+source = "https://github.com/ihabunek/toot"
+license = "GPL-3.0"
+executable = "toot"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "toot"]
+install_notes = """
+pacman: sudo pacman -S toot
+pipx: pipx install toot
+Resmî: https://github.com/ihabunek/toot
+"""

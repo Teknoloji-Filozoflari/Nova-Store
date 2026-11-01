@@ -1,0 +1,19 @@
+id = "tiptop"
+name = "tiptop"
+description = "Modern kaynak izleyici."
+category = "panels"
+source = "https://github.com/nschloe/tiptop"
+license = "GPL-3.0"
+executable = "tiptop"
+install_method = "pipx"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["pipx", "install", "tiptop"]
+install_notes = """
+pipx: pipx install tiptop
+Resmî: https://github.com/nschloe/tiptop
+"""

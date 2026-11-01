@@ -1,0 +1,19 @@
+id = "zoxide"
+name = "zoxide"
+description = "Akıllı cd; sık kullanılan dizinlere hızlı atlar."
+category = "productivity"
+source = "https://github.com/ajeetdsouza/zoxide"
+license = "MIT"
+executable = "zoxide"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "zoxide"]
+install_notes = """
+cargo: cargo install zoxide --locked
+brew: brew install zoxide
+apt: sudo apt install zoxide
+pacman: sudo pacman -S zoxide
+Resmî: https://github.com/ajeetdsouza/zoxide#installation
+"""

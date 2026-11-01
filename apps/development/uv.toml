@@ -1,0 +1,18 @@
+id = "uv"
+name = "uv"
+description = "Astral'ın çok hızlı Python paket ve proje yöneticisi."
+category = "development"
+source = "https://github.com/astral-sh/uv"
+license = "MIT OR Apache-2.0"
+executable = "uv"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "uv"]
+install_notes = """
+curl: curl -LsSf https://astral.sh/uv/install.sh | sh
+brew: brew install uv
+pip: pip install uv
+Resmî: https://docs.astral.sh/uv/getting-started/installation/
+"""

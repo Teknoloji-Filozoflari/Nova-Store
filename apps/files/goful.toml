@@ -1,0 +1,15 @@
+id = "goful"
+name = "goful"
+description = "Go ile yazılmış TUI dosya yöneticisi."
+category = "files"
+source = "https://github.com/anmitsu/goful"
+license = "MIT"
+executable = "goful"
+install_method = "manual"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "none"
+trust_class = "D"
+install_notes = """
+go: go install github.com/anmitsu/goful@latest
+Resmî: https://github.com/anmitsu/goful
+"""

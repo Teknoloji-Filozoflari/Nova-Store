@@ -1,0 +1,16 @@
+id = "ncpamixer"
+name = "ncpamixer"
+description = "ncurses PulseAudio karıştırıcı."
+category = "system"
+source = "https://github.com/fulhax/ncpamixer"
+license = "MIT"
+executable = "ncpamixer"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "ncpamixer"]
+install_notes = """
+pacman: sudo pacman -S ncpamixer
+Resmî: https://github.com/fulhax/ncpamixer
+"""

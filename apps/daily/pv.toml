@@ -1,0 +1,17 @@
+id = "pv"
+name = "pv"
+description = "Pipe Viewer — boru hattı ilerlemesi."
+category = "daily"
+source = "https://www.ivarch.com/programs/pv.shtml"
+license = "Artistic-2.0"
+executable = "pv"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "pv"]
+install_notes = """
+pacman: sudo pacman -S pv
+apt: sudo apt install pv
+brew: brew install pv
+"""

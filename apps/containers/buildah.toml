@@ -1,0 +1,17 @@
+id = "buildah"
+name = "buildah"
+description = "OCI imaj oluşturma aracı."
+category = "containers"
+source = "https://buildah.io/"
+license = "Apache-2.0"
+executable = "buildah"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "buildah"]
+install_notes = """
+pacman: sudo pacman -S buildah
+apt: sudo apt install buildah
+Resmî: https://buildah.io/
+"""

@@ -1,0 +1,18 @@
+id = "rustscan"
+name = "rustscan"
+description = "Hızlı modern port tarayıcı."
+category = "networking"
+source = "https://github.com/bee-san/RustScan"
+license = "GPL-3.0"
+executable = "rustscan"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "rustscan"]
+install_notes = """
+pacman: sudo pacman -S rustscan
+cargo: cargo install rustscan
+brew: brew install rustscan
+Resmî: https://github.com/bee-san/RustScan
+"""

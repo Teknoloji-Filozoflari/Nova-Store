@@ -1,0 +1,17 @@
+id = "cheat"
+name = "cheat"
+description = "Etkileşimli cheatsheet."
+category = "productivity"
+source = "https://github.com/cheat/cheat"
+license = "MIT"
+executable = "cheat"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "cheat"]
+install_notes = """
+pacman: sudo pacman -S cheat
+brew: brew install cheat
+Resmî: https://github.com/cheat/cheat
+"""

@@ -1,0 +1,19 @@
+id = "bat"
+name = "bat"
+description = "Sözdizimi renklendirmeli dosya görüntüleyici."
+category = "files"
+source = "https://github.com/sharkdp/bat"
+license = "MIT OR Apache-2.0"
+executable = "bat"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "bat"]
+install_notes = """
+brew: brew install bat
+apt: sudo apt install bat  # ikili adı bazen batcat
+cargo: cargo install bat
+pacman: sudo pacman -S bat
+Resmî: https://github.com/sharkdp/bat#installation
+"""
