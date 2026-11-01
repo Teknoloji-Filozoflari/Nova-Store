@@ -1,0 +1,18 @@
+id = "psnet"
+name = "psnet"
+description = "[Windows] Hız grafikleri ve DNS çözümlemeli gerçek zamanlı ağ monitörü TUI."
+category = "networking"
+source = "https://github.com/psmux/psnet"
+license = "MIT"
+executable = "psnet"
+install_method = "cargo"
+supported_platforms = ["windows-x64"]
+privilege = "user"
+trust_class = "C"
+risk_note = "crates.io üzerinden kurulur; Nova-Store imzası yoktur. WinGet tercih edilebilir."
+install_command = ["cargo", "install", "psnet"]
+install_notes = """
+cargo: cargo install psnet
+winget: winget install psmux.psnet
+Resmî: https://github.com/psmux/psnet
+"""

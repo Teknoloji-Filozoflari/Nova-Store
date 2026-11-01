@@ -1,0 +1,17 @@
+id = "macmon"
+name = "macmon"
+description = "[macOS] Apple Silicon için sudosuz gerçek zamanlı performans monitörü."
+category = "system"
+source = "https://github.com/vladkens/macmon"
+license = "MIT"
+executable = "macmon"
+install_method = "brew"
+supported_platforms = ["macos-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "macmon"]
+install_notes = """
+brew: brew install macmon
+cargo: cargo install macmon
+Resmî: https://github.com/vladkens/macmon
+"""

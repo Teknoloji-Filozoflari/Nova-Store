@@ -1,0 +1,19 @@
+id = "psmux"
+name = "psmux"
+description = "[Windows] PowerShell/Windows Terminal için yerel tmux uyumlu çoğullayıcı."
+category = "productivity"
+source = "https://github.com/psmux/psmux"
+license = "MIT"
+executable = "psmux"
+install_method = "cargo"
+supported_platforms = ["windows-x64", "windows-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = "crates.io üzerinden kurulur; Nova-Store imzası yoktur. WinGet/Scoop tercih edilebilir."
+install_command = ["cargo", "install", "psmux"]
+install_notes = """
+cargo: cargo install psmux
+winget: winget install psmux
+scoop: scoop bucket add psmux https://github.com/psmux/scoop-psmux && scoop install psmux
+Resmî: https://github.com/psmux/psmux
+"""

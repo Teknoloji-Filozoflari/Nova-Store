@@ -1,0 +1,18 @@
+id = "pstop"
+name = "pstop"
+description = "[Windows] Çekirdek başına CPU çubukları ve ağaç görünümlü htop tarzı sistem monitörü."
+category = "system"
+source = "https://github.com/psmux/pstop"
+license = "MIT"
+executable = "pstop"
+install_method = "cargo"
+supported_platforms = ["windows-x64"]
+privilege = "user"
+trust_class = "C"
+risk_note = "crates.io üzerinden kurulur; Nova-Store imzası yoktur. WinGet tercih edilebilir."
+install_command = ["cargo", "install", "pstop"]
+install_notes = """
+cargo: cargo install pstop
+winget: winget install marlocarlo.pstop
+Resmî: https://github.com/psmux/pstop
+"""
