@@ -1,0 +1,16 @@
+id = "perf"
+name = "perf"
+description = "Linux performans sayaçları."
+category = "development"
+source = "https://perf.wiki.kernel.org/"
+license = "GPL-2.0"
+executable = "perf"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "perf"]
+install_notes = """
+pacman: sudo pacman -S perf
+apt: sudo apt install linux-tools-generic
+"""

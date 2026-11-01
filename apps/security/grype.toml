@@ -1,0 +1,17 @@
+id = "grype"
+name = "grype"
+description = "Konteyner imajı ve dosya sistemi güvenlik açığı tarayıcısı (Anchore)."
+category = "security"
+source = "https://github.com/anchore/grype"
+license = "Apache-2.0"
+executable = "grype"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "grype"]
+install_notes = """
+pacman: sudo pacman -S grype / AUR
+brew: brew install grype
+Resmî: https://github.com/anchore/grype
+"""

@@ -1,0 +1,20 @@
+id = "pgcli"
+name = "pgcli"
+description = "Otomatik tamamlama özellikli PostgreSQL istemcisi."
+category = "database"
+source = "https://github.com/dbcli/pgcli"
+license = "BSD-3-Clause"
+executable = "pgcli"
+install_method = "pipx"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["pipx", "install", "pgcli"]
+install_notes = """
+pipx: pipx install pgcli
+brew: brew install pgcli
+Resmî: https://www.pgcli.com/
+"""

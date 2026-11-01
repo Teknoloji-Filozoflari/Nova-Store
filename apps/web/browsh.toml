@@ -1,0 +1,16 @@
+id = "browsh"
+name = "browsh"
+description = "Modern web'i terminalde gösteren tarayıcı."
+category = "web"
+source = "https://www.brow.sh/"
+license = "LGPL-2.1"
+executable = "browsh"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "browsh"]
+install_notes = """
+brew: brew install browsh
+Resmî: https://www.brow.sh/
+"""

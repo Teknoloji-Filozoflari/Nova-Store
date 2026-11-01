@@ -1,0 +1,16 @@
+id = "fff"
+name = "fff"
+description = "Basit ve hızlı dosya yöneticisi."
+category = "files"
+source = "https://github.com/dylanaraps/fff"
+license = "MIT"
+executable = "fff"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "fff"]
+install_notes = """
+pacman: sudo pacman -S fff
+Resmî: https://github.com/dylanaraps/fff
+"""

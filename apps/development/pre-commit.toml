@@ -1,0 +1,17 @@
+id = "pre-commit"
+name = "pre-commit"
+description = "Git kanca yöneticisi."
+category = "development"
+source = "https://pre-commit.com/"
+license = "MIT"
+executable = "pre-commit"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "pre-commit"]
+install_notes = """
+pacman: sudo pacman -S pre-commit
+pipx: pipx install pre-commit
+brew: brew install pre-commit
+"""

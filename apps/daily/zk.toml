@@ -1,0 +1,17 @@
+id = "zk"
+name = "zk"
+description = "Zettelkasten not CLI."
+category = "daily"
+source = "https://github.com/zk-org/zk"
+license = "GPL-3.0"
+executable = "zk"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "zk"]
+install_notes = """
+pacman: sudo pacman -S zk
+brew: brew install zk
+Resmî: https://github.com/zk-org/zk
+"""

@@ -1,0 +1,19 @@
+id = "tts"
+name = "tts"
+description = "Coqui TTS komut satırı ses sentezi."
+category = "ai"
+source = "https://github.com/coqui-ai/TTS"
+license = "MPL-2.0"
+executable = "tts"
+install_method = "pipx"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["pipx", "install", "TTS"]
+install_notes = """
+pipx: pipx install TTS
+Resmî: https://github.com/coqui-ai/TTS
+"""

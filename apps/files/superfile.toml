@@ -1,0 +1,16 @@
+id = "superfile"
+name = "superfile"
+description = "Modern ve güzel terminal dosya yöneticisi."
+category = "files"
+source = "https://github.com/yorukot/superfile"
+license = "MIT"
+executable = "spf"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "superfile"]
+install_notes = """
+brew: brew install superfile
+Resmî: https://github.com/yorukot/superfile#installation
+"""

@@ -1,0 +1,18 @@
+id = "irssi"
+name = "irssi"
+description = "Modüler IRC istemcisi."
+category = "messaging"
+source = "https://irssi.org/"
+license = "GPL-2.0"
+executable = "irssi"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "irssi"]
+install_notes = """
+apt: sudo apt install irssi
+brew: brew install irssi
+pacman: sudo pacman -S irssi
+Resmî: https://irssi.org/download/
+"""

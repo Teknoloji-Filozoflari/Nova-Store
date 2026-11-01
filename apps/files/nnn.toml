@@ -1,0 +1,18 @@
+id = "nnn"
+name = "nnn"
+description = "Hafif ve hızlı terminal dosya yöneticisi."
+category = "files"
+source = "https://github.com/jarun/nnn"
+license = "BSD-2-Clause"
+executable = "nnn"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "nnn"]
+install_notes = """
+apt: sudo apt install nnn
+brew: brew install nnn
+pacman: sudo pacman -S nnn
+Resmî: https://github.com/jarun/nnn#installation
+"""

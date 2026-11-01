@@ -1,0 +1,18 @@
+id = "sqlite3"
+name = "sqlite3"
+description = "SQLite komut satırı kabuğu."
+category = "database"
+source = "https://www.sqlite.org/"
+license = "CC0-1.0"
+executable = "sqlite3"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "sqlite3"]
+install_notes = """
+apt: sudo apt install sqlite3
+brew: brew install sqlite
+pacman: sudo pacman -S sqlite
+Resmî: https://www.sqlite.org/download.html
+"""

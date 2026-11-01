@@ -1,0 +1,16 @@
+id = "vault"
+name = "Vault CLI"
+description = "HashiCorp Vault komut satırı istemcisi."
+category = "security"
+source = "https://www.vaultproject.io/"
+license = "BUSL-1.1"
+executable = "vault"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "vault"]
+install_notes = """
+brew: brew install vault
+Resmî: https://developer.hashicorp.com/vault/install
+"""

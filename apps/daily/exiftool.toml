@@ -1,0 +1,17 @@
+id = "exiftool"
+name = "exiftool"
+description = "Meta veri okuma/yazma."
+category = "daily"
+source = "https://exiftool.org/"
+license = "GPL-1.0-or-later"
+executable = "exiftool"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "perl-image-exiftool"]
+install_notes = """
+pacman: sudo pacman -S perl-image-exiftool
+apt: sudo apt install libimage-exiftool-perl
+brew: brew install exiftool
+"""

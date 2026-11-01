@@ -1,0 +1,17 @@
+id = "john"
+name = "John the Ripper"
+description = "Parola kırma aracı."
+category = "security"
+source = "https://www.openwall.com/john/"
+license = "GPL-2.0"
+executable = "john"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "john"]
+install_notes = """
+pacman: sudo pacman -S john
+apt: sudo apt install john
+Resmî: https://www.openwall.com/john/
+"""

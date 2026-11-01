@@ -1,0 +1,20 @@
+id = "jrnl"
+name = "jrnl"
+description = "Komut satırı günlük/journal."
+category = "daily"
+source = "https://jrnl.sh/"
+license = "GPL-3.0"
+executable = "jrnl"
+install_method = "pipx"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["pipx", "install", "jrnl"]
+install_notes = """
+pipx: pipx install jrnl
+pacman: AUR jrnl
+Resmî: https://jrnl.sh/
+"""

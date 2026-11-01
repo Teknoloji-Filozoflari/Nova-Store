@@ -1,0 +1,15 @@
+id = "lavat"
+name = "lavat"
+description = "Lava lamba ASCII animasyonu."
+category = "screensavers"
+source = "https://github.com/AngelJumbo/lavat"
+license = "MIT"
+executable = "lavat"
+install_method = "manual"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "none"
+trust_class = "D"
+install_notes = """
+Resmî: https://github.com/AngelJumbo/lavat
+make && sudo make install
+"""

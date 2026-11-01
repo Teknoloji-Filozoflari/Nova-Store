@@ -1,0 +1,17 @@
+id = "vhs"
+name = "vhs"
+description = "Charmbracelet terminal GIF kaydı."
+category = "daily"
+source = "https://github.com/charmbracelet/vhs"
+license = "MIT"
+executable = "vhs"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "vhs"]
+install_notes = """
+pacman: sudo pacman -S vhs
+brew: brew install vhs
+Resmî: https://github.com/charmbracelet/vhs
+"""

@@ -1,7 +1,7 @@
 id = "goose"
 name = "Goose"
 description = "Block'un açık kaynaklı, yerel çalışabilen AI ajanı."
-category = "development"
+category = "ai"
 source = "https://block.github.io/goose/"
 license = "Apache-2.0"
 executable = "goose"
@@ -9,6 +9,4 @@ install_method = "manual"
 supported_platforms = ["linux-x64", "linux-aarch64"]
 privilege = "none"
 trust_class = "D"
-install_notes = """
-Resmî kurulum: https://block.github.io/goose/docs/getting-started/installation/
-"""
+install_notes = "Resmî kurulum: https://block.github.io/goose/docs/getting-started/installation/"

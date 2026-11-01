@@ -1,0 +1,17 @@
+id = "wireshark-cli"
+name = "tshark"
+description = "Wireshark CLI (tshark)."
+category = "security"
+source = "https://www.wireshark.org/"
+license = "GPL-2.0"
+executable = "tshark"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "wireshark-cli"]
+install_notes = """
+pacman: sudo pacman -S wireshark-cli
+apt: sudo apt install tshark
+Resmî: https://www.wireshark.org/
+"""

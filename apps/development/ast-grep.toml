@@ -1,0 +1,19 @@
+id = "ast-grep"
+name = "ast-grep"
+description = "AST tabanlı yapısal kod arama, lint ve yeniden yazma (sg)."
+category = "development"
+source = "https://ast-grep.github.io/"
+license = "MIT"
+executable = "sg"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "ast-grep"]
+install_notes = """
+pacman: sudo pacman -S ast-grep
+cargo: cargo install ast-grep --locked
+npm: npm install -g @ast-grep/cli
+brew: brew install ast-grep
+Resmî: https://ast-grep.github.io/
+"""

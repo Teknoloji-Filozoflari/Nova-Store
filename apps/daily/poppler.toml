@@ -1,0 +1,17 @@
+id = "poppler"
+name = "pdftotext"
+description = "PDF araçları (poppler)."
+category = "daily"
+source = "https://poppler.freedesktop.org/"
+license = "GPL-2.0"
+executable = "pdftotext"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "poppler"]
+install_notes = """
+pacman: sudo pacman -S poppler
+apt: sudo apt install poppler-utils
+brew: brew install poppler
+"""

@@ -1,0 +1,17 @@
+id = "ne"
+name = "ne"
+description = "Nice Editor — kullanıcı dostu metin editörü."
+category = "editors"
+source = "https://ne.di.unimi.it/"
+license = "GPL-3.0"
+executable = "ne"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "ne"]
+install_notes = """
+pacman: sudo pacman -S ne
+apt: sudo apt install ne
+Resmî: https://ne.di.unimi.it/
+"""

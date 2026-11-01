@@ -1,0 +1,17 @@
+id = "yq"
+name = "yq"
+description = "YAML, JSON ve TOML sorgulama ve dönüştürme aracı."
+category = "daily"
+source = "https://github.com/mikefarah/yq"
+license = "MIT"
+executable = "yq"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "yq"]
+install_notes = """
+brew: brew install yq
+go: go install github.com/mikefarah/yq/v4@latest
+Resmî: https://github.com/mikefarah/yq#install
+"""

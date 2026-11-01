@@ -1,0 +1,18 @@
+id = "aerc"
+name = "aerc"
+description = "E-posta için zarif terminal istemcisi."
+category = "messaging"
+source = "https://aerc-mail.org/"
+license = "MIT"
+executable = "aerc"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "aerc"]
+install_notes = """
+apt: sudo apt install aerc
+brew: brew install aerc
+pacman: sudo pacman -S aerc
+Resmî: https://aerc-mail.org/
+"""

@@ -1,0 +1,17 @@
+id = "podman"
+name = "podman"
+description = "Kök gerektirmeyen konteyner motoru."
+category = "containers"
+source = "https://podman.io/"
+license = "Apache-2.0"
+executable = "podman"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "podman"]
+install_notes = """
+pacman: sudo pacman -S podman
+apt: sudo apt install podman
+Resmî: https://podman.io/
+"""

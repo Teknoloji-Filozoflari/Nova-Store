@@ -1,0 +1,18 @@
+id = "shellcheck"
+name = "ShellCheck"
+description = "Kabuk betiği statik analiz aracı."
+category = "development"
+source = "https://www.shellcheck.net/"
+license = "GPL-3.0"
+executable = "shellcheck"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "shellcheck"]
+install_notes = """
+apt: sudo apt install shellcheck
+brew: brew install shellcheck
+pacman: sudo pacman -S shellcheck
+Resmî: https://github.com/koalaman/shellcheck#installing
+"""

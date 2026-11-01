@@ -1,0 +1,17 @@
+id = "git-lfs"
+name = "git-lfs"
+description = "Git Large File Storage."
+category = "git"
+source = "https://git-lfs.com/"
+license = "MIT"
+executable = "git-lfs"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "git-lfs"]
+install_notes = """
+pacman: sudo pacman -S git-lfs
+apt: sudo apt install git-lfs
+brew: brew install git-lfs
+"""

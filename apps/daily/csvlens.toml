@@ -1,0 +1,20 @@
+id = "csvlens"
+name = "csvlens"
+description = "CSV görüntüleyici TUI."
+category = "daily"
+source = "https://github.com/YS-L/csvlens"
+license = "MIT"
+executable = "csvlens"
+install_method = "cargo"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["cargo", "install", "csvlens"]
+install_notes = """
+cargo: cargo install csvlens
+brew: brew install csvlens
+Resmî: https://github.com/YS-L/csvlens
+"""

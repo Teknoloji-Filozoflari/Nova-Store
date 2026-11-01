@@ -1,0 +1,18 @@
+id = "w3m"
+name = "w3m"
+description = "Metin tabanlı web tarayıcı."
+category = "web"
+source = "https://github.com/tats/w3m"
+license = "LicenseRef-w3m"
+executable = "w3m"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "w3m"]
+install_notes = """
+apt: sudo apt install w3m
+brew: brew install w3m
+pacman: sudo pacman -S w3m
+Resmî: https://w3m.sourceforge.net/
+"""

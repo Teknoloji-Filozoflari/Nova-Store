@@ -1,0 +1,17 @@
+id = "helm"
+name = "Helm"
+description = "Kubernetes paket yöneticisi."
+category = "containers"
+source = "https://helm.sh/"
+license = "Apache-2.0"
+executable = "helm"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "helm"]
+install_notes = """
+brew: brew install helm
+curl: curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+Resmî: https://helm.sh/docs/intro/install/
+"""

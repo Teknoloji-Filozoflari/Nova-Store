@@ -1,0 +1,16 @@
+id = "bluetuith"
+name = "bluetuith"
+description = "Bluetooth yöneticisi TUI."
+category = "daily"
+source = "https://github.com/darkhz/bluetuith"
+license = "MIT"
+executable = "bluetuith"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "bluetuith"]
+install_notes = """
+pacman: sudo pacman -S bluetuith
+Resmî: https://github.com/darkhz/bluetuith
+"""

@@ -1,0 +1,20 @@
+id = "ncspot"
+name = "ncspot"
+description = "Spotify için ncurses istemcisi."
+category = "media"
+source = "https://github.com/hrkfdn/ncspot"
+license = "BSD-2-Clause"
+executable = "ncspot"
+install_method = "cargo"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["cargo", "install", "ncspot"]
+install_notes = """
+cargo: cargo install ncspot
+brew: brew install ncspot
+Resmî: https://github.com/hrkfdn/ncspot#installation
+"""

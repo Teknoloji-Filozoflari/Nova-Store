@@ -1,0 +1,16 @@
+id = "img2txt"
+name = "img2txt"
+description = "Görüntüyü ASCII'ye çevir (libcaca)."
+category = "daily"
+source = "https://caca.zoy.org/"
+license = "WTFPL"
+executable = "img2txt"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "libcaca"]
+install_notes = """
+pacman: sudo pacman -S libcaca
+apt: sudo apt install caca-utils
+"""

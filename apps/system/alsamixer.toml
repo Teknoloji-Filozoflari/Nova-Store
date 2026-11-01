@@ -1,0 +1,16 @@
+id = "alsamixer"
+name = "alsamixer"
+description = "ALSA ses karıştırıcı."
+category = "system"
+source = "https://www.alsa-project.org/"
+license = "GPL-2.0"
+executable = "alsamixer"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "alsa-utils"]
+install_notes = """
+pacman: sudo pacman -S alsa-utils
+apt: sudo apt install alsa-utils
+"""

@@ -1,0 +1,18 @@
+id = "lnk"
+name = "lnav"
+description = "Gelişmiş günlük dosyası görüntüleyici."
+category = "daily"
+source = "https://lnav.org/"
+license = "BSD-2-Clause"
+executable = "lnav"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "lnav"]
+install_notes = """
+pacman: sudo pacman -S lnav
+apt: sudo apt install lnav
+brew: brew install lnav
+Resmî: https://lnav.org/
+"""

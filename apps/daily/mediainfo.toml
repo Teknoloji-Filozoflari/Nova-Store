@@ -1,0 +1,17 @@
+id = "mediainfo"
+name = "mediainfo"
+description = "Medya dosyası teknik bilgisi."
+category = "daily"
+source = "https://mediaarea.net/MediaInfo"
+license = "BSD-3-Clause"
+executable = "mediainfo"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "mediainfo"]
+install_notes = """
+pacman: sudo pacman -S mediainfo
+apt: sudo apt install mediainfo
+brew: brew install media-info
+"""

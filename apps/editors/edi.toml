@@ -1,0 +1,16 @@
+id = "edi"
+name = "edi"
+description = "Enlightenment tabanlı metin editörü (CLI odak)."
+category = "editors"
+source = "https://www.enlightenment.org/"
+license = "BSD-3-Clause"
+executable = "edi"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "edi"]
+install_notes = """
+pacman: sudo pacman -S edi
+Resmî: https://www.enlightenment.org/
+"""

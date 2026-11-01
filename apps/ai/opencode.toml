@@ -1,0 +1,20 @@
+id = "opencode"
+name = "OpenCode"
+description = "Terminalde çalışan açık kaynaklı yapay zekâ kodlama asistanı."
+category = "ai"
+source = "https://opencode.ai"
+license = "MIT"
+executable = "opencode"
+install_method = "npm"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["npm", "install", "-g", "opencode-ai"]
+install_notes = """
+npm: npm install -g opencode-ai
+curl: curl -fsSL https://opencode.ai/install | bash
+Resmî: https://opencode.ai/
+"""

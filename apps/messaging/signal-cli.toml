@@ -1,0 +1,12 @@
+id = "signal-cli"
+name = "signal-cli"
+description = "Signal için resmi olmayan komut satırı istemcisi."
+category = "messaging"
+source = "https://github.com/AsamK/signal-cli"
+license = "GPL-3.0"
+executable = "signal-cli"
+install_method = "manual"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "none"
+trust_class = "D"
+install_notes = "Resmî kurulum: https://github.com/AsamK/signal-cli#installation"

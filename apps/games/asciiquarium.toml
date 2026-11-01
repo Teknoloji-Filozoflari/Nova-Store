@@ -1,0 +1,18 @@
+id = "asciiquarium"
+name = "asciiquarium"
+description = "ASCII akvaryum ekran koruyucusu."
+category = "games"
+source = "https://robobunny.com/projects/asciiquarium/html/"
+license = "GPL-2.0"
+executable = "asciiquarium"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "asciiquarium"]
+install_notes = """
+brew: brew install asciiquarium
+apt: sudo apt install asciiquarium
+pacman: sudo pacman -S asciiquarium
+Resmî: https://robobunny.com/projects/asciiquarium/html/
+"""

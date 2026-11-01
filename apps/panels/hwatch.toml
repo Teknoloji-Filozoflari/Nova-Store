@@ -1,0 +1,20 @@
+id = "hwatch"
+name = "hwatch"
+description = "Modern watch alternatifi (geçmiş/diff)."
+category = "panels"
+source = "https://github.com/black-desk/hwatch"
+license = "MIT"
+executable = "hwatch"
+install_method = "cargo"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["cargo", "install", "hwatch"]
+install_notes = """
+cargo: cargo install hwatch
+brew: brew install hwatch
+Resmî: https://github.com/black-desk/hwatch
+"""

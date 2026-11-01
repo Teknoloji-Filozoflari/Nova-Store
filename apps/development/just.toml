@@ -1,0 +1,19 @@
+id = "just"
+name = "just"
+description = "Komut çalıştırıcı; Makefile'a modern alternatif."
+category = "development"
+source = "https://github.com/casey/just"
+license = "CC0-1.0"
+executable = "just"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "just"]
+install_notes = """
+cargo: cargo install just
+brew: brew install just
+apt: sudo apt install just
+pacman: sudo pacman -S just
+Resmî: https://github.com/casey/just#installation
+"""

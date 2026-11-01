@@ -1,0 +1,15 @@
+id = "process-compose"
+name = "process-compose"
+description = "Süreç orkestrasyon TUI (docker-compose benzeri)."
+category = "panels"
+source = "https://github.com/f1bonacc1/process-compose"
+license = "Apache-2.0"
+executable = "process-compose"
+install_method = "manual"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "none"
+trust_class = "D"
+install_notes = """
+Resmî: https://github.com/f1bonacc1/process-compose/releases
+brew: brew install process-compose
+"""

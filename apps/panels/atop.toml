@@ -1,0 +1,17 @@
+id = "atop"
+name = "atop"
+description = "Gelişmiş sistem/process izleyici."
+category = "panels"
+source = "https://www.atoptool.nl/"
+license = "GPL-2.0"
+executable = "atop"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "atop"]
+install_notes = """
+pacman: sudo pacman -S atop
+apt: sudo apt install atop
+Resmî: https://www.atoptool.nl/
+"""

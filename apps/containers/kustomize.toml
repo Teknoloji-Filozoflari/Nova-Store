@@ -1,0 +1,17 @@
+id = "kustomize"
+name = "kustomize"
+description = "Kubernetes YAML özelleştirme."
+category = "containers"
+source = "https://kustomize.io/"
+license = "Apache-2.0"
+executable = "kustomize"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "kustomize"]
+install_notes = """
+pacman: sudo pacman -S kustomize
+brew: brew install kustomize
+Resmî: https://kustomize.io/
+"""

@@ -1,0 +1,33 @@
+id = "ripgrep"
+name = "ripgrep (rg)"
+description = "Çok hızlı dosya içeriği arama aracı."
+category = "files"
+source = "https://github.com/BurntSushi/ripgrep"
+license = "MIT"
+executable = "rg"
+install_method = "download_archive"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "B"
+version = "15.2.0"
+
+[[artifacts]]
+arch = "x86_64"
+download_url = "https://github.com/BurntSushi/ripgrep/releases/download/15.2.0/ripgrep-15.2.0-x86_64-unknown-linux-musl.tar.gz"
+checksum = "33e15bcf1624b25cdd2a55813a47a2f95dbe126268203e76aa6a585d1e7b149c"
+checksum_type = "sha256"
+asset_pattern = "ripgrep-{version}-x86_64-unknown-linux-musl.tar.gz"
+checksum_asset_pattern = "ripgrep-{version}-x86_64-unknown-linux-musl.tar.gz.sha256"
+
+[[artifacts]]
+arch = "aarch64"
+download_url = "https://github.com/BurntSushi/ripgrep/releases/download/15.2.0/ripgrep-15.2.0-aarch64-unknown-linux-musl.tar.gz"
+checksum = "800b1e7206afe799dfb5a6901f23147cfaabe0e52210538100f61e86e1740915"
+checksum_type = "sha256"
+asset_pattern = "ripgrep-{version}-aarch64-unknown-linux-musl.tar.gz"
+checksum_asset_pattern = "ripgrep-{version}-aarch64-unknown-linux-musl.tar.gz.sha256"
+
+[release]
+repo = "BurntSushi/ripgrep"
+asset_pattern = "ripgrep-{version}-x86_64-unknown-linux-musl.tar.gz"
+checksum_asset_pattern = "ripgrep-{version}-x86_64-unknown-linux-musl.tar.gz.sha256"

@@ -1,0 +1,17 @@
+id = "mods"
+name = "mods"
+description = "CLI için AI (Charmbracelet)."
+category = "ai"
+source = "https://github.com/charmbracelet/mods"
+license = "MIT"
+executable = "mods"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "mods"]
+install_notes = """
+pacman: sudo pacman -S mods
+brew: brew install charmbracelet/tap/mods
+Resmî: https://github.com/charmbracelet/mods
+"""

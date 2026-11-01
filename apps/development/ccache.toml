@@ -1,0 +1,17 @@
+id = "ccache"
+name = "ccache"
+description = "Derleyici önbelleği."
+category = "development"
+source = "https://ccache.dev/"
+license = "GPL-3.0"
+executable = "ccache"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "ccache"]
+install_notes = """
+pacman: sudo pacman -S ccache
+apt: sudo apt install ccache
+brew: brew install ccache
+"""

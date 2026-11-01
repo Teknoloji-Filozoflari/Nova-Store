@@ -1,0 +1,17 @@
+id = "jqp"
+name = "jqp"
+description = "jq ifadelerini denemek için TUI oyun alanı."
+category = "development"
+source = "https://github.com/noahgorstein/jqp"
+license = "MIT"
+executable = "jqp"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "jqp"]
+install_notes = """
+brew: brew install jqp
+go: go install github.com/noahgorstein/jqp@latest
+Resmî: https://github.com/noahgorstein/jqp#installation
+"""

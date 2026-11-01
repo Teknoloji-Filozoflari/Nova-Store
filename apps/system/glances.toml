@@ -1,0 +1,19 @@
+id = "glances"
+name = "Glances"
+description = "Çok panelli sistem izleyici; top/htop alternatifi."
+category = "system"
+source = "https://github.com/nicolargo/glances"
+license = "LGPL-3.0-or-later"
+executable = "glances"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "glances"]
+install_notes = """
+pipx: pipx install glances
+apt: sudo apt install glances
+brew: brew install glances
+pacman: sudo pacman -S glances
+Resmî: https://glances.readthedocs.io/en/latest/install.html
+"""

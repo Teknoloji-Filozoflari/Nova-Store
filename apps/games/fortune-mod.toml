@@ -1,0 +1,17 @@
+id = "fortune-mod"
+name = "fortune"
+description = "Rastgele özlü sözler."
+category = "games"
+source = "https://www.ibiblio.org/pub/linux/games/amusements/fortune/"
+license = "BSD-3-Clause"
+executable = "fortune"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "fortune-mod"]
+install_notes = """
+pacman: sudo pacman -S fortune-mod
+apt: sudo apt install fortune-mod
+Resmî: fortune-mod paketi
+"""

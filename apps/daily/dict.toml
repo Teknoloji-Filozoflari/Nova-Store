@@ -1,0 +1,16 @@
+id = "dict"
+name = "dict"
+description = "DICTd sözlük istemcisi."
+category = "daily"
+source = "https://sourceforge.net/projects/dict/"
+license = "GPL-2.0"
+executable = "dict"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "words"]
+install_notes = """
+pacman: sudo pacman -S words / dictd
+apt: sudo apt install dict
+"""

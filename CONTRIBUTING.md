@@ -6,9 +6,11 @@ not in the Nova Rust tree.
 
 ## Quick path: add an app
 
-1. Pick a category directory under `apps/`:
-   `development`, `networking`, `system`, `security`, `containers`,
-   `productivity`.
+1. Pick a category directory under `apps/` (must match
+   `metadata/categories.toml`): `ai`, `git`, `files`, `development`,
+   `editors`, `system`, `panels`, `networking`, `containers`, `database`,
+   `security`, `media`, `messaging`, `productivity`, `games`,
+   `screensavers`, `web`, `daily`.
 2. Create `apps/<category>/<id>.toml` (filename stem **must** equal `id`).
 3. Fill required fields (see `schema/app.schema.json`).
 4. Run validation locally:

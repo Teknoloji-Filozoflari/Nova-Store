@@ -1,0 +1,16 @@
+id = "ytfzf"
+name = "ytfzf"
+description = "YouTube arama/oynatma (fzf)."
+category = "media"
+source = "https://github.com/pystardust/ytfzf"
+license = "GPL-3.0"
+executable = "ytfzf"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "ytfzf"]
+install_notes = """
+pacman: sudo pacman -S ytfzf
+Resmî: https://github.com/pystardust/ytfzf
+"""

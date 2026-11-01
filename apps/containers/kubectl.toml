@@ -1,0 +1,16 @@
+id = "kubectl"
+name = "kubectl"
+description = "Kubernetes komut satırı aracı."
+category = "containers"
+source = "https://kubernetes.io/docs/reference/kubectl/"
+license = "Apache-2.0"
+executable = "kubectl"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "kubectl"]
+install_notes = """
+brew: brew install kubectl
+Resmî: https://kubernetes.io/docs/tasks/tools/
+"""

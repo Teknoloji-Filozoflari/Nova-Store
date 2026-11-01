@@ -1,0 +1,18 @@
+id = "nmap"
+name = "nmap"
+description = "Ağ keşif ve güvenlik tarama aracı."
+category = "networking"
+source = "https://nmap.org/"
+license = "LicenseRef-Nmap"
+executable = "nmap"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "nmap"]
+install_notes = """
+apt: sudo apt install nmap
+brew: brew install nmap
+pacman: sudo pacman -S nmap
+Resmî: https://nmap.org/download.html
+"""

@@ -1,0 +1,18 @@
+id = "pandoc"
+name = "pandoc"
+description = "Evrensel belge dönüştürücü."
+category = "daily"
+source = "https://pandoc.org/"
+license = "GPL-2.0"
+executable = "pandoc"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "pandoc"]
+install_notes = """
+apt: sudo apt install pandoc
+brew: brew install pandoc
+pacman: sudo pacman -S pandoc
+Resmî: https://pandoc.org/installing.html
+"""

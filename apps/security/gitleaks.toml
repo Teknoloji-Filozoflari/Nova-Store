@@ -1,0 +1,17 @@
+id = "gitleaks"
+name = "gitleaks"
+description = "Git depolarında sızdırılmış sır ve anahtar tarayıcısı."
+category = "security"
+source = "https://github.com/gitleaks/gitleaks"
+license = "MIT"
+executable = "gitleaks"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "gitleaks"]
+install_notes = """
+pacman: sudo pacman -S gitleaks
+brew: brew install gitleaks
+Resmî: https://github.com/gitleaks/gitleaks
+"""

@@ -1,0 +1,20 @@
+id = "amp-editor"
+name = "amp"
+description = "Tam özellikli terminal metin editörü."
+category = "editors"
+source = "https://github.com/jmacdonald/amp"
+license = "GPL-3.0"
+executable = "amp"
+install_method = "cargo"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["cargo", "install", "amp"]
+install_notes = """
+cargo: cargo install amp
+brew: brew install amp
+Resmî: https://github.com/jmacdonald/amp
+"""

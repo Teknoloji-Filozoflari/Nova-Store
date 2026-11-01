@@ -1,0 +1,16 @@
+id = "wtfutil"
+name = "wtfutil"
+description = "Kişisel bilgi panosu; widget'larla terminal dashboard."
+category = "productivity"
+source = "https://wtfutil.com/"
+license = "MPL-2.0"
+executable = "wtfutil"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "wtfutil"]
+install_notes = """
+brew: brew install wtfutil
+Resmî: https://wtfutil.com/
+"""

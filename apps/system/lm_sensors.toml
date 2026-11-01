@@ -1,0 +1,16 @@
+id = "lm_sensors"
+name = "sensors"
+description = "Donanım sensörleri."
+category = "system"
+source = "https://hwmon.wiki.kernel.org/lm_sensors"
+license = "GPL-2.0"
+executable = "sensors"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "lm_sensors"]
+install_notes = """
+pacman: sudo pacman -S lm_sensors
+apt: sudo apt install lm-sensors
+"""

@@ -1,0 +1,17 @@
+id = "usql"
+name = "usql"
+description = "Çoklu veritabanı için evrensel SQL CLI."
+category = "database"
+source = "https://github.com/xo/usql"
+license = "MIT"
+executable = "usql"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "usql"]
+install_notes = """
+brew: brew install usql
+go: go install github.com/xo/usql@latest
+Resmî: https://github.com/xo/usql#installing
+"""

@@ -1,6 +1,8 @@
 id = "bandwhich"
 name = "bandwhich"
-description = "Ağ bant genişliğini süreç ve bağlantı bazında gösterir. Yerel arayüzleri izlemek için ek izinler gerekebilir."
+description = """
+Ağ bant genişliğini süreç ve bağlantı bazında gösterir. Yerel arayüzleri izlemek için ek izinler gerekebilir.
+"""
 category = "networking"
 source = "https://github.com/imsnif/bandwhich"
 license = "MIT"
@@ -9,7 +11,9 @@ install_method = "cargo"
 supported_platforms = ["linux-x64", "linux-aarch64"]
 privilege = "user"
 trust_class = "C"
-risk_note = "Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install."
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
 install_command = ["cargo", "install", "bandwhich"]
 install_notes = """
 cargo: cargo install bandwhich

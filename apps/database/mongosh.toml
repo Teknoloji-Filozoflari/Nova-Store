@@ -1,0 +1,17 @@
+id = "mongosh"
+name = "mongosh"
+description = "MongoDB kabuğu."
+category = "database"
+source = "https://www.mongodb.com/docs/mongodb-shell/"
+license = "Apache-2.0"
+executable = "mongosh"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "mongosh"]
+install_notes = """
+pacman: sudo pacman -S mongosh / AUR
+npm: npm install -g mongosh
+Resmî: https://www.mongodb.com/docs/mongodb-shell/
+"""

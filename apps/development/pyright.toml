@@ -1,0 +1,20 @@
+id = "pyright"
+name = "pyright"
+description = "Microsoft Python dil sunucusu CLI."
+category = "development"
+source = "https://github.com/microsoft/pyright"
+license = "MIT"
+executable = "pyright"
+install_method = "npm"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["npm", "install", "-g", "pyright"]
+install_notes = """
+npm: npm install -g pyright
+pipx: pipx install pyright
+Resmî: https://github.com/microsoft/pyright
+"""

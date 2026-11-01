@@ -1,0 +1,16 @@
+id = "below"
+name = "below"
+description = "Facebook'un zaman yolculuklu kaynak izleyicisi."
+category = "panels"
+source = "https://github.com/facebookincubator/below"
+license = "Apache-2.0"
+executable = "below"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "below"]
+install_notes = """
+pacman: sudo pacman -S below
+Resmî: https://github.com/facebookincubator/below
+"""

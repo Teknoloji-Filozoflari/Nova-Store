@@ -1,0 +1,36 @@
+id = "fzf"
+name = "fzf"
+description = """
+Bulanık arama aracı; tek başına çalışır, Ctrl+T/Ctrl+R/Alt+C kısayolları için kabuk entegrasyonu gerekir.
+"""
+category = "files"
+source = "https://github.com/junegunn/fzf"
+license = "MIT"
+executable = "fzf"
+install_method = "download_archive"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "B"
+version = "0.74.5"
+
+[[artifacts]]
+arch = "x86_64"
+download_url = "https://github.com/junegunn/fzf/releases/download/v0.74.5/fzf-0.74.5-linux_amd64.tar.gz"
+checksum = "d47d7f882972c7d674dbbba998ffa4116e68379616ffac7695d0671e9a722c5f"
+checksum_type = "sha256"
+asset_pattern = "fzf-{version}-linux_amd64.tar.gz"
+checksum_asset_pattern = "fzf_{version}_checksums.txt"
+
+[[artifacts]]
+arch = "aarch64"
+download_url = "https://github.com/junegunn/fzf/releases/download/v0.74.5/fzf-0.74.5-linux_arm64.tar.gz"
+checksum = "cf058001da21724a469b714a29cf4aab9cbe860d218a0d6c1b5b661efad7784c"
+checksum_type = "sha256"
+asset_pattern = "fzf-{version}-linux_arm64.tar.gz"
+checksum_asset_pattern = "fzf_{version}_checksums.txt"
+
+[release]
+repo = "junegunn/fzf"
+tag_prefix = "v"
+asset_pattern = "fzf-{version}-linux_amd64.tar.gz"
+checksum_asset_pattern = "fzf_{version}_checksums.txt"

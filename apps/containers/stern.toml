@@ -1,0 +1,17 @@
+id = "stern"
+name = "stern"
+description = "Çoklu pod log kuyruğu."
+category = "containers"
+source = "https://github.com/stern/stern"
+license = "Apache-2.0"
+executable = "stern"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "stern"]
+install_notes = """
+pacman: sudo pacman -S stern
+brew: brew install stern
+Resmî: https://github.com/stern/stern
+"""

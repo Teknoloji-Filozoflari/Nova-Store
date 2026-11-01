@@ -1,0 +1,17 @@
+id = "masscan"
+name = "masscan"
+description = "Çok hızlı port tarayıcı."
+category = "security"
+source = "https://github.com/robertdavidgraham/masscan"
+license = "AGPL-3.0-or-later"
+executable = "masscan"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "masscan"]
+install_notes = """
+pacman: sudo pacman -S masscan
+apt: sudo apt install masscan
+Resmî: https://github.com/robertdavidgraham/masscan
+"""

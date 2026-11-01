@@ -19,12 +19,24 @@ ROOT = Path(__file__).resolve().parents[1]
 APPS_DIR = ROOT / "apps"
 OUT_DEFAULT = ROOT / "metadata" / "catalog.json"
 CATEGORIES = (
+    "ai",
+    "git",
+    "files",
     "development",
-    "networking",
+    "editors",
     "system",
-    "security",
+    "panels",
+    "networking",
     "containers",
+    "database",
+    "security",
+    "media",
+    "messaging",
     "productivity",
+    "games",
+    "screensavers",
+    "web",
+    "daily",
 )
 
 

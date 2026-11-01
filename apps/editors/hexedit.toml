@@ -1,0 +1,17 @@
+id = "hexedit"
+name = "hexedit"
+description = "Basit hex/binary editörü."
+category = "editors"
+source = "https://github.com/pixel/hexedit"
+license = "GPL-2.0"
+executable = "hexedit"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "hexedit"]
+install_notes = """
+pacman: sudo pacman -S hexedit
+apt: sudo apt install hexedit
+Resmî: http://rigaux.org/hexedit.html
+"""

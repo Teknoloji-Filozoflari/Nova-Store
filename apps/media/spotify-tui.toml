@@ -1,0 +1,17 @@
+id = "spotify-tui"
+name = "spt"
+description = "Spotify TUI istemcisi."
+category = "media"
+source = "https://github.com/Rigellute/spotify-tui"
+license = "MIT"
+executable = "spt"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "spotify-tui"]
+install_notes = """
+pacman: sudo pacman -S spotify-tui
+cargo: cargo install spotify-tui
+Resmî: https://github.com/Rigellute/spotify-tui
+"""

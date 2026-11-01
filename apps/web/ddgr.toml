@@ -1,0 +1,19 @@
+id = "ddgr"
+name = "ddgr"
+description = "DuckDuckGo komut satırı arama aracı."
+category = "web"
+source = "https://github.com/jarun/ddgr"
+license = "GPL-3.0"
+executable = "ddgr"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "ddgr"]
+install_notes = """
+pipx: pipx install ddgr
+brew: brew install ddgr
+apt: sudo apt install ddgr
+pacman: sudo pacman -S ddgr
+Resmî: https://github.com/jarun/ddgr#installation
+"""

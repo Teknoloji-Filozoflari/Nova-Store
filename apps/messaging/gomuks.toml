@@ -1,0 +1,15 @@
+id = "gomuks"
+name = "gomuks"
+description = "Matrix için terminal istemcisi."
+category = "messaging"
+source = "https://github.com/tulir/gomuks"
+license = "AGPL-3.0-or-later"
+executable = "gomuks"
+install_method = "manual"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "none"
+trust_class = "D"
+install_notes = """
+go: go install maunium.net/go/gomuks@latest
+Resmî: https://github.com/tulir/gomuks
+"""

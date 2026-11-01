@@ -1,0 +1,17 @@
+id = "bsdgames"
+name = "bsdgames"
+description = "Klasik BSD terminal oyunları seti."
+category = "games"
+source = "https://github.com/vattam/BSDGames"
+license = "BSD-3-Clause"
+executable = "tetris"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "bsd-games"]
+install_notes = """
+pacman: sudo pacman -S bsd-games
+apt: sudo apt install bsdgames
+Resmî: bsd-games paketi
+"""

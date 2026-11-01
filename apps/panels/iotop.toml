@@ -1,0 +1,17 @@
+id = "iotop"
+name = "iotop"
+description = "I/O kullanım izleyici."
+category = "panels"
+source = "https://github.com/Tomas-M/iotop"
+license = "GPL-2.0"
+executable = "iotop"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "iotop"]
+install_notes = """
+pacman: sudo pacman -S iotop
+apt: sudo apt install iotop
+Resmî: https://github.com/Tomas-M/iotop
+"""

@@ -1,0 +1,17 @@
+id = "pipes-sh"
+name = "pipes.sh"
+description = "Rastgele boru ekran koruyucusu."
+category = "screensavers"
+source = "https://github.com/pipeseroni/pipes.sh"
+license = "MIT"
+executable = "pipes.sh"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "pipes.sh"]
+install_notes = """
+pacman: sudo pacman -S pipes.sh
+brew: brew install pipes-sh
+Resmî: https://github.com/pipeseroni/pipes.sh
+"""

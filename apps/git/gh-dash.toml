@@ -1,0 +1,15 @@
+id = "gh-dash"
+name = "gh-dash"
+description = "GitHub PR ve issue'ları için zengin terminal panosu."
+category = "git"
+source = "https://github.com/dlvhdr/gh-dash"
+license = "MIT"
+executable = "gh-dash"
+install_method = "manual"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "none"
+trust_class = "D"
+install_notes = """
+gh: gh extension install dlvhdr/gh-dash
+Resmî: https://github.com/dlvhdr/gh-dash#installation
+"""

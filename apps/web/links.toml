@@ -1,0 +1,17 @@
+id = "links"
+name = "links"
+description = "Metin web tarayıcı."
+category = "web"
+source = "https://github.com/twibright-links/links"
+license = "GPL-2.0"
+executable = "links"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "links"]
+install_notes = """
+pacman: sudo pacman -S links
+apt: sudo apt install links
+brew: brew install links
+"""

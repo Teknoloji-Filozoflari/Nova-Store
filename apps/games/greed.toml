@@ -1,0 +1,16 @@
+id = "greed"
+name = "Greed"
+description = "Sayı yiyen terminal oyunu."
+category = "games"
+source = "https://www.catb.org/~esr/greed/"
+license = "GPL-2.0"
+executable = "greed"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "greed"]
+install_notes = """
+pacman: sudo pacman -S greed
+apt: sudo apt install greed
+"""

@@ -1,0 +1,19 @@
+id = "fd"
+name = "fd"
+description = "Kullanıcı dostu, hızlı dosya bulucu; find alternatifi."
+category = "files"
+source = "https://github.com/sharkdp/fd"
+license = "MIT OR Apache-2.0"
+executable = "fd"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "fd-find"]
+install_notes = """
+brew: brew install fd
+apt: sudo apt install fd-find  # ikili adı bazen fdfind
+cargo: cargo install fd-find
+pacman: sudo pacman -S fd
+Resmî: https://github.com/sharkdp/fd#installation
+"""

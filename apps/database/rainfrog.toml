@@ -1,0 +1,20 @@
+id = "rainfrog"
+name = "rainfrog"
+description = "Postgres, MySQL ve SQLite için veritabanı TUI."
+category = "database"
+source = "https://github.com/achristmascarl/rainfrog"
+license = "MIT"
+executable = "rainfrog"
+install_method = "cargo"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["cargo", "install", "rainfrog"]
+install_notes = """
+cargo: cargo install rainfrog
+brew: brew install rainfrog
+Resmî: https://github.com/achristmascarl/rainfrog#installation
+"""

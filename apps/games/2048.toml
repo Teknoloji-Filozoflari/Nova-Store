@@ -1,0 +1,18 @@
+id = "2048"
+name = "2048-cli"
+description = "Terminalde 2048 oyunu."
+category = "games"
+source = "https://github.com/tiehuis/2048-cli"
+license = "MIT"
+executable = "2048"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "2048"]
+install_notes = """
+apt: sudo apt install 2048
+brew: brew install 2048-cli
+pacman: sudo pacman -S 2048-cli
+Resmî: https://github.com/tiehuis/2048-cli
+"""

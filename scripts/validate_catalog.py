@@ -30,12 +30,24 @@ ROOT = Path(__file__).resolve().parents[1]
 APPS_DIR = ROOT / "apps"
 SCHEMA_PATH = ROOT / "schema" / "app.schema.json"
 CATEGORIES = (
+    "ai",
+    "git",
+    "files",
     "development",
-    "networking",
+    "editors",
     "system",
-    "security",
+    "panels",
+    "networking",
     "containers",
+    "database",
+    "security",
+    "media",
+    "messaging",
     "productivity",
+    "games",
+    "screensavers",
+    "web",
+    "daily",
 )
 
 INSTALL_METHODS = {
@@ -56,16 +68,20 @@ TRUST = {"A", "B", "C", "D"}
 
 # Curated SPDX license ids seen in Nova + common FOSS identifiers.
 # Expressions like "MIT OR Apache-2.0" are accepted when every atom is known.
+# LicenseRef-* covers non-SPDX / proprietary markers used in the catalog.
 SPDX_IDS = {
     "0BSD",
     "Apache-2.0",
+    "Artistic-2.0",
     "BSD-2-Clause",
     "BSD-3-Clause",
     "BSL-1.0",
     "BUSL-1.1",
     "CC0-1.0",
+    "CDDL-1.0",
     "curl",
     "EUPL-1.2",
+    "GPL-1.0-or-later",
     "GPL-2.0",
     "GPL-2.0-only",
     "GPL-2.0-or-later",
@@ -74,15 +90,25 @@ SPDX_IDS = {
     "GPL-3.0-or-later",
     "AGPL-3.0-only",
     "AGPL-3.0-or-later",
+    "ImageMagick",
+    "Info-ZIP",
     "ISC",
     "LGPL-2.1",
     "LGPL-2.1-only",
     "LGPL-2.1-or-later",
     "LGPL-3.0-only",
     "LGPL-3.0-or-later",
+    "LicenseRef-Nmap",
+    "LicenseRef-NGPL",
+    "LicenseRef-Proprietary",
+    "LicenseRef-w3m",
     "MIT",
     "MPL-2.0",
+    "NCSA",
+    "PostgreSQL",
     "Unlicense",
+    "Vim",
+    "WTFPL",
     "Zlib",
 }
 

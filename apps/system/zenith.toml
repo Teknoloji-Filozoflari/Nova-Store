@@ -1,0 +1,20 @@
+id = "zenith"
+name = "zenith"
+description = "Grafik metriklerle terminal sistem monitörü."
+category = "system"
+source = "https://github.com/bvaisvil/zenith"
+license = "MIT"
+executable = "zenith"
+install_method = "cargo"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["cargo", "install", "--locked", "zenith"]
+install_notes = """
+cargo: cargo install --locked zenith
+brew: brew install zenith
+Resmî: https://github.com/bvaisvil/zenith#installation
+"""

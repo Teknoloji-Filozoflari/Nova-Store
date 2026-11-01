@@ -1,0 +1,17 @@
+id = "pulsemixer"
+name = "pulsemixer"
+description = "PulseAudio/PipeWire TUI karıştırıcı."
+category = "system"
+source = "https://github.com/GeorgeFilipkin/pulsemixer"
+license = "MIT"
+executable = "pulsemixer"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "pulsemixer"]
+install_notes = """
+pacman: sudo pacman -S pulsemixer
+pipx: pipx install pulsemixer
+Resmî: https://github.com/GeorgeFilipkin/pulsemixer
+"""

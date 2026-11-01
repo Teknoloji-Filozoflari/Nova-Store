@@ -1,0 +1,17 @@
+id = "cmake"
+name = "cmake"
+description = "Çapraz platform derleme sistemi."
+category = "development"
+source = "https://cmake.org/"
+license = "BSD-3-Clause"
+executable = "cmake"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "cmake"]
+install_notes = """
+pacman: sudo pacman -S cmake
+apt: sudo apt install cmake
+brew: brew install cmake
+"""

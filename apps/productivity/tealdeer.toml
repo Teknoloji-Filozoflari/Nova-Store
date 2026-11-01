@@ -1,0 +1,17 @@
+id = "tealdeer"
+name = "tldr-tealdeer"
+description = "Hızlı tldr istemcisi (tealdeer)."
+category = "productivity"
+source = "https://github.com/tealdeer-rs/tealdeer"
+license = "MIT OR Apache-2.0"
+executable = "tldr"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "tealdeer"]
+install_notes = """
+pacman: sudo pacman -S tealdeer
+cargo: cargo install tealdeer
+Not: tldr id çakışabilir; tealdeer aynı exe.
+"""

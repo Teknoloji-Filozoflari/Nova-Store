@@ -1,0 +1,18 @@
+id = "nano"
+name = "nano"
+description = "Basit ve yaygın terminal editörü."
+category = "editors"
+source = "https://www.nano-editor.org/"
+license = "GPL-3.0"
+executable = "nano"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "nano"]
+install_notes = """
+pacman: sudo pacman -S nano
+apt: sudo apt install nano
+brew: brew install nano
+Resmî: https://www.nano-editor.org/
+"""

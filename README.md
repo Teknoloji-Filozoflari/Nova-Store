@@ -10,8 +10,9 @@ falls back to the last trusted catalog if verification fails.
 
 ```
 apps/
-  development/   networking/   system/
-  security/      containers/   productivity/
+  ai/ git/ files/ development/ editors/ system/ panels/
+  networking/ containers/ database/ security/ media/
+  messaging/ productivity/ games/ screensavers/ web/ daily/
 schema/
   app.schema.json      # per-app JSON Schema (trust A–D, privilege, …)
   catalog.schema.json  # published aggregate
@@ -22,6 +23,7 @@ metadata/
 scripts/
   validate_catalog.py
   build_catalog.py
+  migrate_from_nova.py # one-shot / resync from Nova assets/store
 keys/
   minisign.pub         # public verify key (secret key is NOT in git)
 docs/

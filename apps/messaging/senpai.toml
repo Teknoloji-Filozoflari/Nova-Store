@@ -1,0 +1,16 @@
+id = "senpai"
+name = "senpai"
+description = "Modern IRC istemcisi."
+category = "messaging"
+source = "https://git.sr.ht/~delthas/senpai"
+license = "ISC"
+executable = "senpai"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "senpai"]
+install_notes = """
+pacman: sudo pacman -S senpai
+Resmî: https://git.sr.ht/~delthas/senpai
+"""

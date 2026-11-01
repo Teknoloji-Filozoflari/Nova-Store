@@ -1,0 +1,17 @@
+id = "black"
+name = "black"
+description = "Kararsız Python biçimlendirici."
+category = "development"
+source = "https://github.com/psf/black"
+license = "MIT"
+executable = "black"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "python-black"]
+install_notes = """
+pacman: sudo pacman -S python-black
+pipx: pipx install black
+Resmî: https://github.com/psf/black
+"""

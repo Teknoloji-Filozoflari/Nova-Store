@@ -1,0 +1,16 @@
+id = "discordo"
+name = "discordo"
+description = "Hafif Discord TUI."
+category = "messaging"
+source = "https://github.com/ayn2op/discordo"
+license = "MIT"
+executable = "discordo"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "discordo"]
+install_notes = """
+pacman: sudo pacman -S discordo / AUR
+Resmî: https://github.com/ayn2op/discordo
+"""

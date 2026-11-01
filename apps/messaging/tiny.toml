@@ -1,0 +1,17 @@
+id = "tiny"
+name = "tiny"
+description = "Rust IRC istemcisi."
+category = "messaging"
+source = "https://github.com/osa1/tiny"
+license = "MIT"
+executable = "tiny"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "tiny"]
+install_notes = """
+pacman: sudo pacman -S tiny
+cargo: cargo install tiny
+Resmî: https://github.com/osa1/tiny
+"""

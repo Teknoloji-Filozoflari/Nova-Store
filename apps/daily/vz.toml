@@ -1,0 +1,18 @@
+id = "vz"
+name = "visiData"
+description = "Tablo verisi keşif TUI (vd)."
+category = "daily"
+source = "https://www.visidata.org/"
+license = "GPL-3.0"
+executable = "vd"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "visidata"]
+install_notes = """
+pacman: sudo pacman -S visidata
+pipx: pipx install visidata
+apt: sudo apt install visidata
+Resmî: https://www.visidata.org/
+"""

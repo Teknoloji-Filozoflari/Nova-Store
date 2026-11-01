@@ -1,0 +1,17 @@
+id = "glow"
+name = "Glow"
+description = "Terminalde Markdown okuyucu."
+category = "productivity"
+source = "https://github.com/charmbracelet/glow"
+license = "MIT"
+executable = "glow"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "glow"]
+install_notes = """
+brew: brew install glow
+go: go install github.com/charmbracelet/glow@latest
+Resmî: https://github.com/charmbracelet/glow#installation
+"""

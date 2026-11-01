@@ -1,0 +1,16 @@
+id = "act"
+name = "act"
+description = "GitHub Actions iş akışlarını yerelde çalıştırır."
+category = "development"
+source = "https://github.com/nektos/act"
+license = "MIT"
+executable = "act"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "act"]
+install_notes = """
+brew: brew install act
+Resmî: https://nektosact.com/installation/
+"""

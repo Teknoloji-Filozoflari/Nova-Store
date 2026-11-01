@@ -1,0 +1,17 @@
+id = "socat"
+name = "socat"
+description = "Çok amaçlı röle (netcat++)."
+category = "networking"
+source = "https://github.com/3ndG4me/socat"
+license = "GPL-2.0"
+executable = "socat"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "socat"]
+install_notes = """
+pacman: sudo pacman -S socat
+apt: sudo apt install socat
+brew: brew install socat
+"""

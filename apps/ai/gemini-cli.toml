@@ -1,0 +1,19 @@
+id = "gemini-cli"
+name = "Gemini CLI"
+description = "Google Gemini için resmi terminal kodlama istemcisi."
+category = "ai"
+source = "https://github.com/google-gemini/gemini-cli"
+license = "Apache-2.0"
+executable = "gemini"
+install_method = "npm"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["npm", "install", "-g", "@google/gemini-cli"]
+install_notes = """
+npm: npm install -g @google/gemini-cli
+Resmî: https://github.com/google-gemini/gemini-cli
+"""

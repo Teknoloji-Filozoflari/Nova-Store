@@ -1,0 +1,17 @@
+id = "neofetch"
+name = "neofetch"
+description = "Sistem bilgisi ASCII logo ile (bakımda)."
+category = "system"
+source = "https://github.com/dylanaraps/neofetch"
+license = "MIT"
+executable = "neofetch"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "neofetch"]
+install_notes = """
+pacman: sudo pacman -S neofetch
+apt: sudo apt install neofetch
+brew: brew install neofetch
+"""

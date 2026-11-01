@@ -1,0 +1,20 @@
+id = "s-tui"
+name = "s-tui"
+description = "CPU sıcaklık/gerilim stres terminal UI."
+category = "panels"
+source = "https://github.com/amanusk/s-tui"
+license = "GPL-2.0"
+executable = "s-tui"
+install_method = "pipx"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["pipx", "install", "s-tui"]
+install_notes = """
+pipx: pipx install s-tui
+pacman: sudo pacman -S s-tui
+Resmî: https://github.com/amanusk/s-tui
+"""

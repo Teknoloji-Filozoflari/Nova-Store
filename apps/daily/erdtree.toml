@@ -1,0 +1,17 @@
+id = "erdtree"
+name = "erdtree"
+description = "Modern tree + disk kullanımı."
+category = "daily"
+source = "https://github.com/solidiquis/erdtree"
+license = "MIT"
+executable = "et"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "erdtree"]
+install_notes = """
+pacman: sudo pacman -S erdtree
+cargo: cargo install erdtree
+Resmî: https://github.com/solidiquis/erdtree
+"""

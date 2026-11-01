@@ -1,0 +1,19 @@
+id = "mps-youtube"
+name = "mpsyt"
+description = "YouTube müzik CLI (bakımda)."
+category = "media"
+source = "https://github.com/mps-youtube/mps-youtube"
+license = "GPL-3.0"
+executable = "mpsyt"
+install_method = "pipx"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["pipx", "install", "mps-youtube"]
+install_notes = """
+pipx: pipx install mps-youtube
+Resmî: https://github.com/mps-youtube/mps-youtube
+"""

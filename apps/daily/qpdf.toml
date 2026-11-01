@@ -1,0 +1,17 @@
+id = "qpdf"
+name = "qpdf"
+description = "PDF dönüştürme ve onarım."
+category = "daily"
+source = "https://github.com/qpdf/qpdf"
+license = "Apache-2.0"
+executable = "qpdf"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "qpdf"]
+install_notes = """
+pacman: sudo pacman -S qpdf
+apt: sudo apt install qpdf
+brew: brew install qpdf
+"""

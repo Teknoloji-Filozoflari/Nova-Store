@@ -1,0 +1,17 @@
+id = "bmon"
+name = "bmon"
+description = "Bant genişliği izleyici ve hız ölçer."
+category = "panels"
+source = "https://github.com/tgraf/bmon"
+license = "MIT"
+executable = "bmon"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "bmon"]
+install_notes = """
+pacman: sudo pacman -S bmon
+apt: sudo apt install bmon
+brew: brew install bmon
+"""

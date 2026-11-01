@@ -1,0 +1,19 @@
+id = "micro"
+name = "micro"
+description = "Sezgisel, modern terminal metin editörü."
+category = "editors"
+source = "https://micro-editor.github.io/"
+license = "MIT"
+executable = "micro"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "micro"]
+install_notes = """
+apt: sudo apt install micro
+brew: brew install micro
+curl: curl https://getmic.ro | bash
+pacman: sudo pacman -S micro
+Resmî: https://micro-editor.github.io/
+"""

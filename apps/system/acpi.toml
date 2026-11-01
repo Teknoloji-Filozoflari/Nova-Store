@@ -1,0 +1,16 @@
+id = "acpi"
+name = "acpi"
+description = "Pil/ACPI bilgi aracı."
+category = "system"
+source = "https://sourceforge.net/projects/acpiclient/"
+license = "GPL-2.0"
+executable = "acpi"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "acpi"]
+install_notes = """
+pacman: sudo pacman -S acpi
+apt: sudo apt install acpi
+"""

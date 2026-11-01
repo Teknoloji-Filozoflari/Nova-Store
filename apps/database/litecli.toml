@@ -1,0 +1,19 @@
+id = "litecli"
+name = "litecli"
+description = "SQLite için otomatik tamamlamalı CLI."
+category = "database"
+source = "https://litecli.com/"
+license = "BSD-3-Clause"
+executable = "litecli"
+install_method = "pipx"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["pipx", "install", "litecli"]
+install_notes = """
+pipx: pipx install litecli
+Resmî: https://litecli.com/
+"""

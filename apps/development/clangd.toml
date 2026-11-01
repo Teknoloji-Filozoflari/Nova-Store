@@ -1,0 +1,17 @@
+id = "clangd"
+name = "clangd"
+description = "C/C++ dil sunucusu."
+category = "development"
+source = "https://clangd.llvm.org/"
+license = "Apache-2.0"
+executable = "clangd"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "clang"]
+install_notes = """
+pacman: sudo pacman -S clang
+apt: sudo apt install clangd
+Resmî: https://clangd.llvm.org/
+"""

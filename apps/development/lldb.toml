@@ -1,0 +1,17 @@
+id = "lldb"
+name = "lldb"
+description = "LLVM hata ayıklayıcı."
+category = "development"
+source = "https://lldb.llvm.org/"
+license = "Apache-2.0"
+executable = "lldb"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "lldb"]
+install_notes = """
+pacman: sudo pacman -S lldb
+apt: sudo apt install lldb
+brew: brew install llvm
+"""

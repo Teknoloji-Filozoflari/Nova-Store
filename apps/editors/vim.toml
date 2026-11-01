@@ -1,0 +1,18 @@
+id = "vim"
+name = "Vim"
+description = "Klasik gelişmiş metin editörü."
+category = "editors"
+source = "https://www.vim.org/"
+license = "Vim"
+executable = "vim"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "vim"]
+install_notes = """
+apt: sudo apt install vim
+brew: brew install vim
+pacman: sudo pacman -S vim
+Resmî: https://www.vim.org/download.php
+"""

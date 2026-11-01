@@ -1,0 +1,20 @@
+id = "asciimatics-demo"
+name = "asciimatics"
+description = "ASCII animasyon kütüphanesi demo."
+category = "screensavers"
+source = "https://github.com/peterbrittain/asciimatics"
+license = "Apache-2.0"
+executable = "asciimatics"
+install_method = "pipx"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["pipx", "install", "asciimatics"]
+install_notes = """
+pipx: pipx install asciimatics
+pip: pip install asciimatics
+Resmî: https://github.com/peterbrittain/asciimatics
+"""

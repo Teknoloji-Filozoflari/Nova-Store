@@ -1,0 +1,16 @@
+id = "screenfetch"
+name = "screenfetch"
+description = "Sistem bilgisi görüntüleyici."
+category = "system"
+source = "https://github.com/KittyKatt/screenFetch"
+license = "GPL-3.0"
+executable = "screenfetch"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "screenfetch"]
+install_notes = """
+pacman: sudo pacman -S screenfetch
+apt: sudo apt install screenfetch
+"""

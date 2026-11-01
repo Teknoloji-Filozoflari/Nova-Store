@@ -1,0 +1,16 @@
+id = "powertop"
+name = "powertop"
+description = "Güç tüketimi analizcisi."
+category = "system"
+source = "https://github.com/fenrus75/powertop"
+license = "GPL-2.0"
+executable = "powertop"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "powertop"]
+install_notes = """
+pacman: sudo pacman -S powertop
+apt: sudo apt install powertop
+"""

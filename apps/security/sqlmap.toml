@@ -1,0 +1,17 @@
+id = "sqlmap"
+name = "sqlmap"
+description = "SQL enjeksiyon test aracı."
+category = "security"
+source = "https://sqlmap.org/"
+license = "GPL-2.0"
+executable = "sqlmap"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "sqlmap"]
+install_notes = """
+pacman: sudo pacman -S sqlmap
+apt: sudo apt install sqlmap
+Resmî: https://sqlmap.org/
+"""

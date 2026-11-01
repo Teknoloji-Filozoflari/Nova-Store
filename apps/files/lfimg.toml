@@ -1,0 +1,15 @@
+id = "lfimg"
+name = "lfrun"
+description = "lf için görüntü önizleme sarmalayıcısı."
+category = "files"
+source = "https://github.com/cirala/lfimg"
+license = "MIT"
+executable = "lfrun"
+install_method = "manual"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "none"
+trust_class = "D"
+install_notes = """
+Resmî: https://github.com/cirala/lfimg
+lf kurulu olmalıdır.
+"""

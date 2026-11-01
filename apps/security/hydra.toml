@@ -1,0 +1,16 @@
+id = "hydra"
+name = "hydra"
+description = "Ağ oturum açma denetleyici."
+category = "security"
+source = "https://github.com/vanhauser-thc/thc-hydra"
+license = "AGPL-3.0-or-later"
+executable = "hydra"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "hydra"]
+install_notes = """
+pacman: sudo pacman -S hydra
+apt: sudo apt install hydra
+"""

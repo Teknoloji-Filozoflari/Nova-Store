@@ -1,0 +1,19 @@
+id = "khal"
+name = "khal"
+description = "CalDAV tabanlı komut satırı takvim uygulaması."
+category = "productivity"
+source = "https://lostpackets.de/khal/"
+license = "MIT"
+executable = "khal"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "khal"]
+install_notes = """
+pacman: sudo pacman -S khal
+pipx: pipx install khal
+apt: sudo apt install khal
+brew: brew install khal
+Resmî: https://lostpackets.de/khal/
+"""

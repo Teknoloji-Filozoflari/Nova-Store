@@ -1,0 +1,16 @@
+id = "bench"
+name = "bench"
+description = "Haskell benchmark aracı."
+category = "development"
+source = "https://github.com/gabriel439/bench"
+license = "BSD-3-Clause"
+executable = "bench"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "bench"]
+install_notes = """
+pacman: sudo pacman -S bench
+Resmî: https://github.com/gabriel439/bench
+"""

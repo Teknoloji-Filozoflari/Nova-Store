@@ -1,0 +1,16 @@
+id = "typespeed"
+name = "typespeed"
+description = "Yazma hızı yarışı."
+category = "games"
+source = "https://typespeed.sourceforge.net/"
+license = "GPL-2.0"
+executable = "typespeed"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "typespeed"]
+install_notes = """
+pacman: sudo pacman -S typespeed
+apt: sudo apt install typespeed
+"""

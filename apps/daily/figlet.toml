@@ -1,0 +1,17 @@
+id = "figlet"
+name = "figlet"
+description = "ASCII banner üretici."
+category = "daily"
+source = "https://www.figlet.org/"
+license = "BSD-3-Clause"
+executable = "figlet"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "figlet"]
+install_notes = """
+pacman: sudo pacman -S figlet
+apt: sudo apt install figlet
+brew: brew install figlet
+"""

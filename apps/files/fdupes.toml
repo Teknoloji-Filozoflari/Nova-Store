@@ -1,0 +1,17 @@
+id = "fdupes"
+name = "fdupes"
+description = "Yinelenen dosya bulucu."
+category = "files"
+source = "https://github.com/adrianlopezroche/fdupes"
+license = "MIT"
+executable = "fdupes"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "fdupes"]
+install_notes = """
+pacman: sudo pacman -S fdupes
+apt: sudo apt install fdupes
+Resmî: https://github.com/adrianlopezroche/fdupes
+"""

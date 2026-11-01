@@ -1,0 +1,20 @@
+id = "sqlite-utils"
+name = "sqlite-utils"
+description = "SQLite CLI yardımcıları."
+category = "database"
+source = "https://sqlite-utils.datasette.io/"
+license = "Apache-2.0"
+executable = "sqlite-utils"
+install_method = "pipx"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["pipx", "install", "sqlite-utils"]
+install_notes = """
+pipx: pipx install sqlite-utils
+uv: uv tool install sqlite-utils
+Resmî: https://sqlite-utils.datasette.io/
+"""

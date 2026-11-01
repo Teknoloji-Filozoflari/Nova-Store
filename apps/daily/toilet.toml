@@ -1,0 +1,16 @@
+id = "toilet"
+name = "toilet"
+description = "Renkli ASCII banner (figlet benzeri)."
+category = "daily"
+source = "https://github.com/cacalabs/toilet"
+license = "WTFPL"
+executable = "toilet"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "toilet"]
+install_notes = """
+pacman: sudo pacman -S toilet
+apt: sudo apt install toilet
+"""

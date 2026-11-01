@@ -1,0 +1,17 @@
+id = "termshark"
+name = "termshark"
+description = "Wireshark/tshark için terminal arayüzü."
+category = "networking"
+source = "https://github.com/gcla/termshark"
+license = "MIT"
+executable = "termshark"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "termshark"]
+install_notes = """
+go: go install github.com/gcla/termshark/v2/cmd/termshark@latest
+brew: brew install termshark
+Resmî: https://github.com/gcla/termshark#installation
+"""

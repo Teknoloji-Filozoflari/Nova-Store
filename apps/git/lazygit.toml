@@ -1,0 +1,34 @@
+id = "lazygit"
+name = "lazygit"
+description = "Git işlemleri için klavye odaklı terminal arayüzü."
+category = "git"
+source = "https://github.com/jesseduffield/lazygit"
+license = "MIT"
+executable = "lazygit"
+install_method = "download_archive"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "B"
+version = "0.66.2"
+
+[[artifacts]]
+arch = "x86_64"
+download_url = "https://github.com/jesseduffield/lazygit/releases/download/v0.66.2/lazygit_0.66.2_linux_x86_64.tar.gz"
+checksum = "158efc9ddfa1241fab5fb3526bb442c8dc6c4b1904d73213b9e4e93e03c52034"
+checksum_type = "sha256"
+asset_pattern = "lazygit_{version}_linux_x86_64.tar.gz"
+checksum_asset_pattern = "checksums.txt"
+
+[[artifacts]]
+arch = "aarch64"
+download_url = "https://github.com/jesseduffield/lazygit/releases/download/v0.66.2/lazygit_0.66.2_linux_arm64.tar.gz"
+checksum = "79a3161eeb642f0473e23db6341f7baabd4a5933e921a9c1167c5d5c765c41a4"
+checksum_type = "sha256"
+asset_pattern = "lazygit_{version}_linux_arm64.tar.gz"
+checksum_asset_pattern = "checksums.txt"
+
+[release]
+repo = "jesseduffield/lazygit"
+tag_prefix = "v"
+asset_pattern = "lazygit_{version}_linux_x86_64.tar.gz"
+checksum_asset_pattern = "checksums.txt"

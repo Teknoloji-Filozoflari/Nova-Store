@@ -1,0 +1,17 @@
+id = "asciinema"
+name = "asciinema"
+description = "Terminal oturumu kaydı."
+category = "daily"
+source = "https://asciinema.org/"
+license = "GPL-3.0"
+executable = "asciinema"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "asciinema"]
+install_notes = """
+pacman: sudo pacman -S asciinema
+apt: sudo apt install asciinema
+brew: brew install asciinema
+"""

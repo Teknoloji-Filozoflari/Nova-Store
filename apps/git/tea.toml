@@ -1,0 +1,16 @@
+id = "tea"
+name = "tea"
+description = "Gitea CLI."
+category = "git"
+source = "https://gitea.com/gitea/tea"
+license = "MIT"
+executable = "tea"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "tea"]
+install_notes = """
+pacman: sudo pacman -S tea
+Resmî: https://gitea.com/gitea/tea
+"""

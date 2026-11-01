@@ -1,0 +1,19 @@
+id = "amp"
+name = "Amp"
+description = "Sourcegraph'in terminal odaklı AI kodlama ajanı."
+category = "ai"
+source = "https://ampcode.com"
+license = "LicenseRef-Proprietary"
+executable = "amp"
+install_method = "npm"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["npm", "install", "-g", "@sourcegraph/amp"]
+install_notes = """
+npm: npm install -g @sourcegraph/amp
+Resmî: https://ampcode.com/
+"""

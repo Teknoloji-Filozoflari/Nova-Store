@@ -1,0 +1,17 @@
+id = "timewarrior"
+name = "timew"
+description = "Zaman takibi (Timewarrior)."
+category = "daily"
+source = "https://timewarrior.net/"
+license = "MIT"
+executable = "timew"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "timew"]
+install_notes = """
+pacman: sudo pacman -S timew
+apt: sudo apt install timewarrior
+Resmî: https://timewarrior.net/
+"""

@@ -1,0 +1,18 @@
+id = "osv-scanner"
+name = "osv-scanner"
+description = "OSV veritabanı ile bağımlılık güvenlik açığı tarayıcısı."
+category = "security"
+source = "https://github.com/google/osv-scanner"
+license = "Apache-2.0"
+executable = "osv-scanner"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "osv-scanner"]
+install_notes = """
+pacman: sudo pacman -S osv-scanner
+brew: brew install osv-scanner
+go: go install github.com/google/osv-scanner/cmd/osv-scanner@latest
+Resmî: https://google.github.io/osv-scanner/
+"""

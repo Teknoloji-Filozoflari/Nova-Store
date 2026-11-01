@@ -1,0 +1,20 @@
+id = "shell-gpt"
+name = "ShellGPT"
+description = "ChatGPT destekli kabuk asistanı (sgpt)."
+category = "ai"
+source = "https://github.com/TheR1D/shell_gpt"
+license = "MIT"
+executable = "sgpt"
+install_method = "pipx"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["pipx", "install", "shell-gpt"]
+install_notes = """
+pipx: pipx install shell-gpt
+uv: uv tool install shell-gpt
+Resmî: https://github.com/TheR1D/shell_gpt
+"""

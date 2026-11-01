@@ -1,0 +1,17 @@
+id = "sox"
+name = "sox"
+description = "Ses işleme İsviçre çakısı."
+category = "daily"
+source = "https://sourceforge.net/projects/sox/"
+license = "GPL-2.0"
+executable = "sox"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "sox"]
+install_notes = """
+pacman: sudo pacman -S sox
+apt: sudo apt install sox
+brew: brew install sox
+"""

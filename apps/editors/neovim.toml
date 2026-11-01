@@ -1,0 +1,18 @@
+id = "neovim"
+name = "Neovim"
+description = "Vim'in genişletilebilir modern çatalı."
+category = "editors"
+source = "https://neovim.io/"
+license = "Apache-2.0"
+executable = "nvim"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "neovim"]
+install_notes = """
+apt: sudo apt install neovim
+brew: brew install neovim
+pacman: sudo pacman -S neovim
+Resmî: https://github.com/neovim/neovim/blob/master/INSTALL.md
+"""

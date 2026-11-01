@@ -1,0 +1,18 @@
+id = "fzy"
+name = "fzy"
+description = "Hızlı bulanık bulucu."
+category = "files"
+source = "https://github.com/jhawthorn/fzy"
+license = "MIT"
+executable = "fzy"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "fzy"]
+install_notes = """
+pacman: sudo pacman -S fzy
+apt: sudo apt install fzy
+brew: brew install fzy
+Resmî: https://github.com/jhawthorn/fzy
+"""

@@ -1,0 +1,17 @@
+id = "tcpdump"
+name = "tcpdump"
+description = "Paket yakalama."
+category = "networking"
+source = "https://www.tcpdump.org/"
+license = "BSD-3-Clause"
+executable = "tcpdump"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "tcpdump"]
+install_notes = """
+pacman: sudo pacman -S tcpdump
+apt: sudo apt install tcpdump
+brew: brew install tcpdump
+"""

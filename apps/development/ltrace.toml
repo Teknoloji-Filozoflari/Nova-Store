@@ -1,0 +1,16 @@
+id = "ltrace"
+name = "ltrace"
+description = "Kütüphane çağrısı izleyici."
+category = "development"
+source = "https://www.ltrace.org/"
+license = "GPL-2.0"
+executable = "ltrace"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "ltrace"]
+install_notes = """
+pacman: sudo pacman -S ltrace
+apt: sudo apt install ltrace
+"""

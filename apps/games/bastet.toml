@@ -1,0 +1,17 @@
+id = "bastet"
+name = "bastet"
+description = "Terminal Tetris (bastard tetris)."
+category = "games"
+source = "https://fph.altervista.org/prog/bastet.html"
+license = "GPL-3.0"
+executable = "bastet"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "bastet"]
+install_notes = """
+apt: sudo apt install bastet
+pacman: sudo pacman -S bastet
+Resmî: https://fph.altervista.org/prog/bastet.html
+"""

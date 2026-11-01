@@ -1,0 +1,18 @@
+id = "qsv"
+name = "qsv"
+description = "CSV/tabular veri işleme araç seti (xsv çatalı)."
+category = "daily"
+source = "https://github.com/dathere/qsv"
+license = "MIT OR Unlicense"
+executable = "qsv"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "qsv"]
+install_notes = """
+pacman: sudo pacman -S qsv
+cargo: cargo install qsv
+brew: brew install qsv
+Resmî: https://github.com/dathere/qsv
+"""

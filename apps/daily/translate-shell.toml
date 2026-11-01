@@ -1,0 +1,17 @@
+id = "translate-shell"
+name = "trans"
+description = "Google Translate CLI (translate-shell)."
+category = "daily"
+source = "https://github.com/soimort/translate-shell"
+license = "Unlicense"
+executable = "trans"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "translate-shell"]
+install_notes = """
+pacman: sudo pacman -S translate-shell
+apt: sudo apt install translate-shell
+brew: brew install translate-shell
+"""

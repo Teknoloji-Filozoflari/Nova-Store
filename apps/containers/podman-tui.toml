@@ -1,0 +1,16 @@
+id = "podman-tui"
+name = "podman-tui"
+description = "Podman için resmi terminal kullanıcı arayüzü."
+category = "containers"
+source = "https://github.com/containers/podman-tui"
+license = "Apache-2.0"
+executable = "podman-tui"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "podman-tui"]
+install_notes = """
+brew: brew install podman-tui
+Resmî: https://github.com/containers/podman-tui#installation
+"""

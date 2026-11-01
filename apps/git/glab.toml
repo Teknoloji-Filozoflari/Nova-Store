@@ -1,0 +1,17 @@
+id = "glab"
+name = "glab"
+description = "GitLab resmi CLI."
+category = "git"
+source = "https://gitlab.com/gitlab-org/cli"
+license = "MIT"
+executable = "glab"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "glab"]
+install_notes = """
+pacman: sudo pacman -S glab
+brew: brew install glab
+Resmî: https://gitlab.com/gitlab-org/cli
+"""

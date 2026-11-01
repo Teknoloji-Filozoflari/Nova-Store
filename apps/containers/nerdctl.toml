@@ -1,0 +1,16 @@
+id = "nerdctl"
+name = "nerdctl"
+description = "containerd için Docker uyumlu CLI."
+category = "containers"
+source = "https://github.com/containerd/nerdctl"
+license = "Apache-2.0"
+executable = "nerdctl"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "nerdctl"]
+install_notes = """
+pacman: sudo pacman -S nerdctl
+Resmî: https://github.com/containerd/nerdctl
+"""

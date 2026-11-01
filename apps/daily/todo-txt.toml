@@ -1,0 +1,17 @@
+id = "todo-txt"
+name = "todo.sh"
+description = "todo.txt basit görev listesi."
+category = "daily"
+source = "https://github.com/todotxt/todo.txt-cli"
+license = "GPL-3.0"
+executable = "todo.sh"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "todo.txt-cli"]
+install_notes = """
+pacman: sudo pacman -S todo.txt-cli
+brew: brew install todo-txt
+Resmî: http://todotxt.org/
+"""

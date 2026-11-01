@@ -1,0 +1,20 @@
+id = "xsv"
+name = "xsv"
+description = "Hızlı CSV komut satırı araç seti."
+category = "daily"
+source = "https://github.com/BurntSushi/xsv"
+license = "MIT OR Unlicense"
+executable = "xsv"
+install_method = "cargo"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["cargo", "install", "xsv"]
+install_notes = """
+cargo: cargo install xsv
+brew: brew install xsv
+Resmî: https://github.com/BurntSushi/xsv
+"""

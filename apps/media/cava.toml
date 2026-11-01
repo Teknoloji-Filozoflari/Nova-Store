@@ -1,0 +1,18 @@
+id = "cava"
+name = "cava"
+description = "Konsol tabanlı ses görselleştirici."
+category = "media"
+source = "https://github.com/karlstav/cava"
+license = "MIT"
+executable = "cava"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "cava"]
+install_notes = """
+apt: sudo apt install cava
+brew: brew install cava
+pacman: sudo pacman -S cava
+Resmî: https://github.com/karlstav/cava#installing
+"""

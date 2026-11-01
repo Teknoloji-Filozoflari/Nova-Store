@@ -1,0 +1,17 @@
+id = "rust-analyzer"
+name = "rust-analyzer"
+description = "Rust dil sunucusu."
+category = "development"
+source = "https://rust-analyzer.github.io/"
+license = "Apache-2.0 OR MIT"
+executable = "rust-analyzer"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "rust-analyzer"]
+install_notes = """
+pacman: sudo pacman -S rust-analyzer
+rustup: rustup component add rust-analyzer
+Resmî: https://rust-analyzer.github.io/
+"""

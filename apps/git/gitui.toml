@@ -1,0 +1,19 @@
+id = "gitui"
+name = "gitui"
+description = "Rust ile yazılmış hızlı Git terminal arayüzü."
+category = "git"
+source = "https://github.com/extrawurst/gitui"
+license = "MIT"
+executable = "gitui"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "gitui"]
+install_notes = """
+cargo: cargo install gitui
+brew: brew install gitui
+apt: sudo apt install gitui
+pacman: sudo pacman -S gitui
+Resmî: https://github.com/extrawurst/gitui#installation
+"""

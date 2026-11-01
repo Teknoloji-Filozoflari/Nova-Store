@@ -1,0 +1,17 @@
+id = "sl"
+name = "sl"
+description = "ls yazım hatası için buharlı tren."
+category = "games"
+source = "https://github.com/mtoyoda/sl"
+license = "MIT"
+executable = "sl"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "sl"]
+install_notes = """
+pacman: sudo pacman -S sl
+apt: sudo apt install sl
+brew: brew install sl
+"""
