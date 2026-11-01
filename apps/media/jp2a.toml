@@ -1,0 +1,16 @@
+id = "jp2a"
+name = "jp2a"
+description = "JPEG görsellerini ASCII sanata dönüştürür."
+category = "media"
+source = "https://github.com/cslarsen/jp2a"
+license = "GPL-2.0-only"
+executable = "jp2a"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "jp2a"]
+install_notes = """
+pacman: sudo pacman -S jp2a
+Resmî: https://github.com/cslarsen/jp2a
+"""

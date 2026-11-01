@@ -1,0 +1,16 @@
+id = "playerctl"
+name = "playerctl"
+description = "MPRIS medya oynatıcı denetleyicisi (Spotify, VLC, …)."
+category = "media"
+source = "https://github.com/altdesktop/playerctl"
+license = "LGPL-3.0-only"
+executable = "playerctl"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "playerctl"]
+install_notes = """
+pacman: sudo pacman -S playerctl
+Resmî: https://github.com/altdesktop/playerctl
+"""

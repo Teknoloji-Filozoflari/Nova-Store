@@ -1,0 +1,16 @@
+id = "gitu"
+name = "gitu"
+description = "Magit esinli TUI Git istemcisi."
+category = "git"
+source = "https://github.com/altsem/gitu"
+license = "MIT"
+executable = "gitu"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "gitu"]
+install_notes = """
+pacman: sudo pacman -S gitu
+Resmî: https://github.com/altsem/gitu
+"""

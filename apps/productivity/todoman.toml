@@ -1,0 +1,17 @@
+id = "todoman"
+name = "todoman"
+description = "Standartlara dayalı basit CLI görev yöneticisi."
+category = "productivity"
+source = "https://github.com/pimutils/todoman"
+license = "ISC"
+executable = "todo"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "todoman"]
+install_notes = """
+pacman: sudo pacman -S todoman
+Çalıştırılabilir: todo
+Resmî: https://github.com/pimutils/todoman
+"""

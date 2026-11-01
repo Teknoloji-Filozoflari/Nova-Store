@@ -1,0 +1,16 @@
+id = "viu"
+name = "viu"
+description = "Basit terminal görüntü görüntüleyici."
+category = "media"
+source = "https://github.com/atanunq/viu"
+license = "MIT"
+executable = "viu"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "viu"]
+install_notes = """
+pacman: sudo pacman -S viu
+Resmî: https://github.com/atanunq/viu
+"""

@@ -1,0 +1,16 @@
+id = "mosh"
+name = "mosh"
+description = "Kopmalara dayanıklı mobil kabuk (SSH alternatifi)."
+category = "networking"
+source = "https://mosh.org/"
+license = "GPL-3.0-only"
+executable = "mosh"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "mosh"]
+install_notes = """
+pacman: sudo pacman -S mosh
+Resmî: https://mosh.org/
+"""

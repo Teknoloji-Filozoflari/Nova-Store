@@ -1,0 +1,16 @@
+id = "screen"
+name = "screen"
+description = "GNU Screen — klasik terminal çoğullayıcı."
+category = "productivity"
+source = "https://www.gnu.org/software/screen/"
+license = "GPL-3.0-or-later"
+executable = "screen"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "screen"]
+install_notes = """
+pacman: sudo pacman -S screen
+Resmî: https://www.gnu.org/software/screen/
+"""

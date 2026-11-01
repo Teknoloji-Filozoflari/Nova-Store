@@ -1,0 +1,16 @@
+id = "remind"
+name = "remind"
+description = "Gelişmiş takvim ve alarm / hatırlatma programı."
+category = "daily"
+source = "https://dianne.skoll.ca/projects/remind/"
+license = "GPL-2.0-or-later"
+executable = "remind"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "remind"]
+install_notes = """
+pacman: sudo pacman -S remind
+Resmî: https://dianne.skoll.ca/projects/remind/
+"""

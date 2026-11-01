@@ -1,0 +1,17 @@
+id = "soft-serve"
+name = "soft-serve"
+description = "Komut satırı için self-host Git sunucusu (Charm)."
+category = "git"
+source = "https://github.com/charmbracelet/soft-serve"
+license = "MIT"
+executable = "soft"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "soft-serve"]
+install_notes = """
+pacman: sudo pacman -S soft-serve
+Çalıştırılabilir: soft
+Resmî: https://github.com/charmbracelet/soft-serve
+"""

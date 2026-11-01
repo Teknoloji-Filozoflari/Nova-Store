@@ -1,0 +1,16 @@
+id = "ducker"
+name = "ducker"
+description = "k9s tarzı Docker yönetim TUI'si."
+category = "containers"
+source = "https://github.com/robertpsoane/ducker"
+license = "MIT"
+executable = "ducker"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "ducker"]
+install_notes = """
+pacman: sudo pacman -S ducker
+Resmî: https://github.com/robertpsoane/ducker
+"""

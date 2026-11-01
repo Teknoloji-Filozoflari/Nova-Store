@@ -1,0 +1,16 @@
+id = "khard"
+name = "khard"
+description = "CardDAV / vCard konsol adres defteri yöneticisi."
+category = "productivity"
+source = "https://github.com/lucc/khard"
+license = "GPL-3.0-only"
+executable = "khard"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "khard"]
+install_notes = """
+pacman: sudo pacman -S khard
+Resmî: https://github.com/lucc/khard
+"""

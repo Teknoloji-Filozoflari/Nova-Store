@@ -1,0 +1,16 @@
+id = "mpc"
+name = "mpc"
+description = "MPD için minimalist komut satırı istemcisi."
+category = "media"
+source = "https://www.musicpd.org/clients/mpc/"
+license = "GPL-2.0-or-later"
+executable = "mpc"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "mpc"]
+install_notes = """
+pacman: sudo pacman -S mpc
+Resmî: https://www.musicpd.org/clients/mpc/
+"""

@@ -1,0 +1,17 @@
+id = "sysdig"
+name = "sysdig"
+description = "Sistem ve konteyner keşif / sorun giderme aracı (csysdig TUI)."
+category = "system"
+source = "https://github.com/draios/sysdig"
+license = "Apache-2.0"
+executable = "sysdig"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "sysdig"]
+install_notes = """
+pacman: sudo pacman -S sysdig
+TUI: csysdig
+Resmî: https://github.com/draios/sysdig
+"""

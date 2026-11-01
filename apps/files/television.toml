@@ -1,0 +1,17 @@
+id = "television"
+name = "television"
+description = "Genel amaçlı, hızlı terminal bulanık (fuzzy) bulucu."
+category = "files"
+source = "https://github.com/alexpasmantier/television"
+license = "MIT"
+executable = "tv"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "television"]
+install_notes = """
+pacman: sudo pacman -S television
+Çalıştırılabilir: tv
+Resmî: https://github.com/alexpasmantier/television
+"""

@@ -1,0 +1,16 @@
+id = "cscope"
+name = "cscope"
+description = "C kaynak kodu tarayıcı ve çapraz referans aracı."
+category = "development"
+source = "https://cscope.sourceforge.net/"
+license = "BSD-3-Clause"
+executable = "cscope"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "cscope"]
+install_notes = """
+pacman: sudo pacman -S cscope
+Resmî: https://cscope.sourceforge.net/
+"""

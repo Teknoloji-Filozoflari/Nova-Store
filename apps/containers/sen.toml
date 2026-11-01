@@ -1,0 +1,19 @@
+id = "sen"
+name = "sen"
+description = "Docker engine için terminal kullanıcı arayüzü."
+category = "containers"
+source = "https://github.com/TomasTomecek/sen"
+license = "MIT"
+executable = "sen"
+install_method = "pipx"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["pipx", "install", "sen"]
+install_notes = """
+pipx: pipx install sen
+Resmî: https://github.com/TomasTomecek/sen
+"""

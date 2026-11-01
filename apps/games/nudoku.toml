@@ -1,0 +1,16 @@
+id = "nudoku"
+name = "nudoku"
+description = "ncurses tabanlı Sudoku oyunu."
+category = "games"
+source = "https://github.com/jubalh/nudoku"
+license = "GPL-3.0-or-later"
+executable = "nudoku"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64", "macos-x64", "macos-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "nudoku"]
+install_notes = """
+brew: brew install nudoku
+Resmî: https://github.com/jubalh/nudoku
+"""

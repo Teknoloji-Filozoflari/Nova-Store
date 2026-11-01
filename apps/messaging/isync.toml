@@ -1,0 +1,17 @@
+id = "isync"
+name = "isync"
+description = "IMAP ve Maildir posta kutusu senkronizasyonu (mbsync)."
+category = "messaging"
+source = "https://isync.sourceforge.io/"
+license = "GPL-2.0-or-later"
+executable = "mbsync"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "isync"]
+install_notes = """
+pacman: sudo pacman -S isync
+Çalıştırılabilir: mbsync
+Resmî: https://isync.sourceforge.io/
+"""

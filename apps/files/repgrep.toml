@@ -1,0 +1,17 @@
+id = "repgrep"
+name = "repgrep"
+description = "ripgrep için etkileşimli bul-ve-değiştir aracı."
+category = "files"
+source = "https://github.com/acheronfail/repgrep"
+license = "MIT OR Apache-2.0 OR Unlicense"
+executable = "rgr"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "repgrep"]
+install_notes = """
+pacman: sudo pacman -S repgrep
+Çalıştırılabilir: rgr
+Resmî: https://github.com/acheronfail/repgrep
+"""

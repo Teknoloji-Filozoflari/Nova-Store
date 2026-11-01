@@ -1,0 +1,16 @@
+id = "lazyjournal"
+name = "lazyjournal"
+description = "journalctl, dosya ve konteyner günlükleri için TUI."
+category = "system"
+source = "https://github.com/Lifailon/lazyjournal"
+license = "MIT"
+executable = "lazyjournal"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64", "macos-x64", "macos-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "lazyjournal"]
+install_notes = """
+brew: brew install lazyjournal
+Resmî: https://github.com/Lifailon/lazyjournal
+"""

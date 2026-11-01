@@ -1,0 +1,16 @@
+id = "gonzo"
+name = "gonzo"
+description = "k9s esinli gerçek zamanlı log analiz TUI'si."
+category = "panels"
+source = "https://github.com/control-theory/gonzo"
+license = "MIT"
+executable = "gonzo"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64", "macos-x64", "macos-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "gonzo"]
+install_notes = """
+brew: brew install gonzo
+Resmî: https://github.com/control-theory/gonzo
+"""

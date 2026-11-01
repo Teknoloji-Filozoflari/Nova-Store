@@ -1,0 +1,17 @@
+id = "tabiew"
+name = "tabiew"
+description = "CSV dosyalarını görüntülemek ve sorgulamak için hafif TUI."
+category = "daily"
+source = "https://github.com/shshemi/tabiew"
+license = "MIT"
+executable = "tw"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "tabiew"]
+install_notes = """
+pacman: sudo pacman -S tabiew
+Çalıştırılabilir: tw
+Resmî: https://github.com/shshemi/tabiew
+"""

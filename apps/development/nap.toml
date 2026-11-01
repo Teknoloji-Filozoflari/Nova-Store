@@ -1,0 +1,16 @@
+id = "nap"
+name = "nap"
+description = "Terminal kod parçacığı (snippet) yöneticisi."
+category = "development"
+source = "https://github.com/maaslalani/nap"
+license = "MIT"
+executable = "nap"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64", "macos-x64", "macos-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "nap"]
+install_notes = """
+brew: brew install nap
+Resmî: https://github.com/maaslalani/nap
+"""

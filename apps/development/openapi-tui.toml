@@ -1,0 +1,16 @@
+id = "openapi-tui"
+name = "openapi-tui"
+description = "OpenAPI tanımlarını listeleyip tarayan ve çalıştıran TUI."
+category = "development"
+source = "https://github.com/zaghaghi/openapi-tui"
+license = "MIT"
+executable = "openapi-tui"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "openapi-tui"]
+install_notes = """
+pacman: sudo pacman -S openapi-tui
+Resmî: https://github.com/zaghaghi/openapi-tui
+"""
