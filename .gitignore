@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+dist/
+*.key
+*.secret
+cosign.key
+.DS_Store
+.pytest_cache/
+.mypy_cache/
+*.minisig
+!keys/

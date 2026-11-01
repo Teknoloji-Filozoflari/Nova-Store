@@ -1,0 +1,19 @@
+id = "httpie"
+name = "HTTPie"
+description = "İnsan dostu HTTP istemcisi."
+category = "development"
+source = "https://httpie.io/"
+license = "BSD-3-Clause"
+executable = "http"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "httpie"]
+install_notes = """
+brew: brew install httpie
+pipx: pipx install httpie
+apt: sudo apt install httpie
+pacman: sudo pacman -S httpie
+Resmî: https://httpie.io/docs/cli/installation
+"""

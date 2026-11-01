@@ -1,0 +1,262 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/Teknoloji-Filozoflari/Nova-Store/main/schema/app.schema.json",
+  "title": "Nova-Store app entry",
+  "description": "Single catalog application record. Source of truth is TOML under apps/<category>/<id>.toml; JSON Schema validates the normalized object.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "description",
+    "category",
+    "source",
+    "license",
+    "executable",
+    "install_method",
+    "supported_platforms",
+    "privilege",
+    "trust_class"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64,
+      "pattern": "^[a-z0-9][a-z0-9._-]*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 512
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "development",
+        "networking",
+        "system",
+        "security",
+        "containers",
+        "productivity"
+      ]
+    },
+    "source": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://"
+    },
+    "license": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "description": "SPDX license expression (e.g. MIT, Apache-2.0, GPL-2.0-or-later)."
+    },
+    "executable": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._+-]*$"
+    },
+    "install_method": {
+      "type": "string",
+      "enum": [
+        "manual",
+        "download_archive",
+        "pipx",
+        "npm",
+        "cargo",
+        "brew",
+        "apt",
+        "dnf",
+        "pacman",
+        "uv"
+      ]
+    },
+    "supported_platforms": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "linux-x64",
+          "linux-aarch64",
+          "macos-x64",
+          "macos-aarch64"
+        ]
+      }
+    },
+    "privilege": {
+      "type": "string",
+      "description": "Privilege required for the primary install path.",
+      "enum": ["none", "user", "elevated"]
+    },
+    "trust_class": {
+      "type": "string",
+      "description": "A=distro/official package manager; B=project official binary (+ signature preferred); C=language registry with risk note; D=manual docs only. Do not conflate A and B.",
+      "enum": ["A", "B", "C", "D"]
+    },
+    "risk_note": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 512,
+      "description": "Required when trust_class is C."
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64
+    },
+    "download_url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://"
+    },
+    "checksum": {
+      "type": "string",
+      "pattern": "^[a-fA-F0-9]{64}$"
+    },
+    "checksum_type": {
+      "type": "string",
+      "enum": ["sha256"]
+    },
+    "install_command": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "install_notes": {
+      "type": "string",
+      "minLength": 1
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["arch", "download_url", "checksum"],
+        "properties": {
+          "arch": {
+            "type": "string",
+            "enum": ["x86_64", "aarch64"]
+          },
+          "download_url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "checksum": {
+            "type": "string",
+            "pattern": "^[a-fA-F0-9]{64}$"
+          },
+          "checksum_type": {
+            "type": "string",
+            "enum": ["sha256"]
+          },
+          "asset_pattern": { "type": "string" },
+          "checksum_asset_pattern": { "type": "string" }
+        }
+      }
+    },
+    "release": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repo"],
+      "properties": {
+        "repo": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"
+        },
+        "tag_prefix": { "type": "string" },
+        "asset_pattern": { "type": "string" },
+        "checksum_asset_pattern": { "type": "string" }
+      }
+    },
+    "signature": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind"],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": ["minisign", "cosign", "gpg", "attestation"]
+        },
+        "public_key": { "type": "string" },
+        "public_key_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
+        },
+        "signature_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
+        },
+        "certificate_identity": { "type": "string" },
+        "oidc_issuer": { "type": "string" }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "trust_class": { "const": "C" } },
+        "required": ["trust_class"]
+      },
+      "then": { "required": ["risk_note"] }
+    },
+    {
+      "if": {
+        "properties": { "trust_class": { "const": "D" } },
+        "required": ["trust_class"]
+      },
+      "then": {
+        "properties": { "install_method": { "const": "manual" } },
+        "required": ["install_notes"]
+      }
+    },
+    {
+      "if": {
+        "properties": { "install_method": { "const": "manual" } },
+        "required": ["install_method"]
+      },
+      "then": {
+        "required": ["install_notes"],
+        "properties": { "trust_class": { "const": "D" } }
+      }
+    },
+    {
+      "if": {
+        "properties": { "install_method": { "const": "download_archive" } },
+        "required": ["install_method"]
+      },
+      "then": {
+        "properties": { "trust_class": { "const": "B" } },
+        "anyOf": [
+          { "required": ["version", "download_url", "checksum"] },
+          { "required": ["version", "artifacts"] }
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "install_method": {
+            "enum": ["pipx", "npm", "cargo", "brew", "apt", "dnf", "pacman", "uv"]
+          }
+        },
+        "required": ["install_method"]
+      },
+      "then": { "required": ["install_command"] }
+    }
+  ]
+}

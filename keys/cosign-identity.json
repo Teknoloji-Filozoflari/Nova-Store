@@ -1,0 +1,6 @@
+{
+  "method": "keyless",
+  "certificate_identity_regexp": "https://github.com/Teknoloji-Filozoflari/Nova-Store/.*",
+  "certificate_oidc_issuer": "https://token.actions.githubusercontent.com",
+  "notes": "Used when SIGNING_METHOD=cosign. Prefer minisign for simpler offline verify in Nova."
+}

@@ -1,0 +1,19 @@
+id = "age"
+name = "age"
+description = "Basit, modern ve güvenli dosya şifreleme aracı."
+category = "security"
+source = "https://github.com/FiloSottile/age"
+license = "BSD-3-Clause"
+executable = "age"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "age"]
+install_notes = """
+apt: sudo apt install age
+brew: brew install age
+go: go install filippo.io/age/cmd/...@latest
+pacman: sudo pacman -S age
+Resmî: https://github.com/FiloSottile/age#installation
+"""

@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate-catalog:
+    name: Validate catalog
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install validator dependencies
+        run: python3 -m pip install -r requirements-dev.txt
+
+      - name: Schema + unique id + SPDX + source + method + OS/arch + privilege
+        run: python3 scripts/validate_catalog.py
+
+      - name: Build aggregate catalog.json
+        run: python3 scripts/build_catalog.py
+
+      - name: Ensure catalog build is deterministic enough to parse
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          cat = json.loads(Path("metadata/catalog.json").read_text())
+          assert cat["schema_version"] == 1
+          assert cat["apps"], "catalog must contain apps"
+          ids = [a["id"] for a in cat["apps"]]
+          assert len(ids) == len(set(ids))
+          print(f"catalog ok: {len(ids)} apps")
+          PY

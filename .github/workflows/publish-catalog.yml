@@ -1,0 +1,114 @@
+name: Publish signed catalog
+
+# Builds metadata/catalog.json, signs with minisign (default) or cosign,
+# and uploads both to a GitHub Release. See docs/catalog-signing.md.
+#
+# Required secrets:
+#   MINISIGN_SECRET_KEY — contents of the minisign secret key file
+# Optional:
+#   SIGNING_METHOD — "minisign" (default) or "cosign"
+#   COSIGN_KEY / COSIGN_PASSWORD — for key-based cosign
+
+on:
+  push:
+    tags:
+      - "catalog-v*"
+  workflow_dispatch:
+    inputs:
+      signing_method:
+        description: "minisign or cosign"
+        required: false
+        default: "minisign"
+
+permissions:
+  contents: write
+  id-token: write
+
+jobs:
+  publish:
+    name: Build and sign catalog
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python3 -m pip install -r requirements-dev.txt
+          case "${{ github.event.inputs.signing_method || 'minisign' }}" in
+            minisign)
+              sudo apt-get update
+              sudo apt-get install -y minisign
+              ;;
+            cosign)
+              curl -fsSL -o /tmp/cosign \
+                "https://github.com/sigstore/cosign/releases/download/v2.4.1/cosign-linux-amd64"
+              sudo install -m 0755 /tmp/cosign /usr/local/bin/cosign
+              ;;
+            *)
+              echo "Unknown signing method" >&2
+              exit 1
+              ;;
+          esac
+
+      - name: Validate catalog
+        run: python3 scripts/validate_catalog.py
+
+      - name: Build catalog.json
+        run: |
+          mkdir -p dist
+          python3 scripts/build_catalog.py -o dist/catalog.json
+          cp dist/catalog.json metadata/catalog.json
+
+      - name: Sign with minisign
+        if: ${{ (github.event.inputs.signing_method || 'minisign') == 'minisign' }}
+        env:
+          MINISIGN_SECRET_KEY: ${{ secrets.MINISIGN_SECRET_KEY }}
+        run: |
+          if [ -z "$MINISIGN_SECRET_KEY" ]; then
+            echo "MINISIGN_SECRET_KEY secret is required to publish." >&2
+            echo "Generate with: minisign -G -p keys/minisign.pub -s nova-store.key" >&2
+            echo "Store nova-store.key contents as repo secret MINISIGN_SECRET_KEY." >&2
+            exit 1
+          fi
+          printf '%s\n' "$MINISIGN_SECRET_KEY" > /tmp/nova-store.key
+          chmod 600 /tmp/nova-store.key
+          minisign -S -s /tmp/nova-store.key -m dist/catalog.json -x dist/catalog.json.minisig
+          minisign -Vm dist/catalog.json -p keys/minisign.pub -x dist/catalog.json.minisig
+          rm -f /tmp/nova-store.key
+          echo "Signed assets:" 
+          ls -la dist/catalog.json dist/catalog.json.minisig
+
+      - name: Sign with cosign (keyless OIDC)
+        if: ${{ (github.event.inputs.signing_method || 'minisign') == 'cosign' }}
+        run: |
+          cosign sign-blob --yes \
+            --output-signature dist/catalog.json.sig \
+            --output-certificate dist/catalog.json.pem \
+            dist/catalog.json
+          cosign verify-blob \
+            --certificate dist/catalog.json.pem \
+            --signature dist/catalog.json.sig \
+            --certificate-identity-regexp 'https://github.com/Teknoloji-Filozoflari/Nova-Store/.*' \
+            --certificate-oidc-issuer https://token.actions.githubusercontent.com \
+            dist/catalog.json
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: Catalog ${{ github.ref_name }}
+          body: |
+            Signed Nova-Store catalog release `${{ github.ref_name }}`.
+
+            Nova clients must verify `catalog.json` with the pinned public key
+            in `keys/` before applying. See `docs/catalog-signing.md`.
+          files: |
+            dist/catalog.json
+            dist/catalog.json.minisig
+            dist/catalog.json.sig
+            dist/catalog.json.pem
+          fail_on_unmatched_files: false

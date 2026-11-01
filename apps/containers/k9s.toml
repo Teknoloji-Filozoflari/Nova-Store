@@ -1,0 +1,16 @@
+id = "k9s"
+name = "k9s"
+description = "Kubernetes kümelerini yönetmek için terminal panosu."
+category = "containers"
+source = "https://k9scli.io/"
+license = "Apache-2.0"
+executable = "k9s"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "k9s"]
+install_notes = """
+brew: brew install k9s
+Resmî: https://k9scli.io/topics/install/
+"""

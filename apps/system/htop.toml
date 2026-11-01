@@ -1,0 +1,19 @@
+id = "htop"
+name = "htop"
+description = "Etkileşimli süreç izleyici; top alternatifi."
+category = "system"
+source = "https://htop.dev/"
+license = "GPL-2.0"
+executable = "htop"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "htop"]
+install_notes = """
+apt: sudo apt install htop
+brew: brew install htop
+dnf: sudo dnf install htop
+pacman: sudo pacman -S htop
+Resmî: https://htop.dev/
+"""
