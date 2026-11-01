@@ -1,0 +1,16 @@
+id = "mac-cleanup-go"
+name = "mac-cleanup-go"
+description = "[macOS] Önbellek/log tarayıp Trash’e taşıyan disk temizleme TUI’si."
+category = "system"
+source = "https://github.com/2ykwang/mac-cleanup-go"
+license = "MIT"
+executable = "mac-cleanup"
+install_method = "brew"
+supported_platforms = ["macos-x64", "macos-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "mac-cleanup-go"]
+install_notes = """
+brew: brew install mac-cleanup-go
+Resmî: https://github.com/2ykwang/mac-cleanup-go
+"""

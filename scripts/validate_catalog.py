@@ -62,7 +62,14 @@ INSTALL_METHODS = {
     "pacman",
     "uv",
 }
-PLATFORMS = {"linux-x64", "linux-aarch64", "macos-x64", "macos-aarch64"}
+PLATFORMS = {
+    "linux-x64",
+    "linux-aarch64",
+    "macos-x64",
+    "macos-aarch64",
+    "windows-x64",
+    "windows-aarch64",
+}
 PRIVILEGES = {"none", "user", "elevated"}
 TRUST = {"A", "B", "C", "D"}
 

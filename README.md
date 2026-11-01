@@ -6,7 +6,7 @@ Signed, PR-reviewed application catalog for
 Contributors add apps here; Nova fetches **signed** release artifacts only and
 falls back to the last trusted catalog if verification fails.
 
-**465 apps** across 18 categories · Trust A 355 · B 6 · C 82 · D 22
+**471 apps** across 18 categories · Trust A 358 · B 6 · C 85 · D 22
 
 > Catalog entries below are generated from `apps/**/*.toml` (name, short
 > description, upstream link). Install methods and trust classes live in those
@@ -21,15 +21,15 @@ falls back to the last trusted catalog if verification fails.
 | [Dosya ve Arama](#files) | 39 | Finders, fuzzy selectors, file managers, and search. |
 | [Geliştirme](#development) | 59 | HTTP clients, JSON tools, language CLIs, and developer utilities. |
 | [Editörler](#editors) | 20 | Terminal editors and modal text editing tools. |
-| [Sistem](#system) | 27 | Process monitors, disk tools, and host observability. |
+| [Sistem](#system) | 30 | Process monitors, disk tools, and host observability. |
 | [Paneller](#panels) | 19 | Dashboards and system overview panels. |
-| [Ağ](#networking) | 25 | DNS, bandwidth, traceroute, and network diagnostics. |
-| [Konteyner](#containers) | 31 | Docker, Kubernetes, and container inspection tools. |
+| [Ağ](#networking) | 26 | DNS, bandwidth, traceroute, and network diagnostics. |
+| [Konteyner](#containers) | 32 | Docker, Kubernetes, and container inspection tools. |
 | [Veritabanı](#database) | 16 | Database CLIs, TUI clients, and query helpers. |
 | [Güvenlik](#security) | 20 | Crypto, secrets, scanners, and signing tooling. |
 | [Medya](#media) | 16 | Audio, video, and image terminal tools. |
 | [Mesajlaşma](#messaging) | 19 | IRC, Matrix, and chat terminal clients. |
-| [Verimlilik](#productivity) | 28 | Terminal multiplexers, notes, backup, and workflow helpers. |
+| [Verimlilik](#productivity) | 29 | Terminal multiplexers, notes, backup, and workflow helpers. |
 | [Oyunlar](#games) | 26 | Terminal games and playful diversions. |
 | [Ekran Koruyucular](#screensavers) | 11 | ASCII / terminal screensaver animations. |
 | [Web](#web) | 12 | Text-mode browsers and web fetch helpers. |
@@ -88,7 +88,8 @@ Git TUIs, diff tools, and VCS helpers.
 
 | App | Description | Trust | Install |
 |-----|-------------|:-----:|---------|
-| [delta](https://github.com/dandavison/delta) | Git diff'lerini renkli ve okunaklı gösterir; genellikle git yapılandırmasına bağlanır.  | A | `apt` |
+| [delta](https://github.com/dandavison/delta) | Git diff'lerini renkli ve okunaklı gösterir; genellikle git yapılandırmasına bağlanır.
+ | A | `apt` |
 | [difftastic](https://difftastic.wilfred.me.uk/) | Sözdizimi bilen yapısal diff aracı (difft). | A | `pacman` |
 | [gh-dash](https://github.com/dlvhdr/gh-dash) | GitHub PR ve issue'ları için zengin terminal panosu. | D | `manual` |
 | [git-absorb](https://github.com/tummychow/git-absorb) | Otomatik fixup commit emici. | A | `pacman` |
@@ -123,7 +124,8 @@ Finders, fuzzy selectors, file managers, and search.
 | [fd](https://github.com/sharkdp/fd) | Kullanıcı dostu, hızlı dosya bulucu; find alternatifi. | A | `apt` |
 | [fdupes](https://github.com/adrianlopezroche/fdupes) | Yinelenen dosya bulucu. | A | `pacman` |
 | [fff](https://github.com/dylanaraps/fff) | Basit ve hızlı dosya yöneticisi. | A | `pacman` |
-| [fzf](https://github.com/junegunn/fzf) | Bulanık arama aracı; tek başına çalışır, Ctrl+T/Ctrl+R/Alt+C kısayolları için kabuk entegrasyonu gerekir.  | B | `download_archive` |
+| [fzf](https://github.com/junegunn/fzf) | Bulanık arama aracı; tek başına çalışır, Ctrl+T/Ctrl+R/Alt+C kısayolları için kabuk entegrasyonu gerekir.
+ | B | `download_archive` |
 | [fzy](https://github.com/jhawthorn/fzy) | Hızlı bulanık bulucu. | A | `pacman` |
 | [gdu](https://github.com/dundee/gdu) | Hızlı disk kullanım analizcisi (ncdu benzeri). | A | `brew` |
 | [goful](https://github.com/anmitsu/goful) | Go ile yazılmış TUI dosya yöneticisi. | D | `manual` |
@@ -272,7 +274,9 @@ Process monitors, disk tools, and host observability.
 | [inxi](https://smxi.org/docs/inxi.htm) | Sistem bilgi özeti. | A | `pacman` |
 | [kmon](https://github.com/orhun/kmon) | Linux çekirdek yöneticisi ve etkinlik monitörü. | C | `cargo` |
 | [lazyjournal](https://github.com/Lifailon/lazyjournal) | journalctl, dosya ve konteyner günlükleri için TUI. | A | `brew` |
+| [mac-cleanup-go](https://github.com/2ykwang/mac-cleanup-go) | [macOS] Önbellek/log tarayıp Trash’e taşıyan disk temizleme TUI’si. | A | `brew` |
 | [macchina](https://github.com/Macchina-CLI/macchina) | Hızlı sistem bilgisi (Rust). | A | `pacman` |
+| [macmon](https://github.com/vladkens/macmon) | [macOS] Apple Silicon için sudosuz gerçek zamanlı performans monitörü. | A | `brew` |
 | [ncpamixer](https://github.com/fulhax/ncpamixer) | ncurses PulseAudio karıştırıcı. | A | `pacman` |
 | [neofetch](https://github.com/dylanaraps/neofetch) | Sistem bilgisi ASCII logo ile (bakımda). | A | `pacman` |
 | [nmon](https://nmon.sourceforge.io/) | Linux performans ve kaynak izleme aracı. | A | `pacman` |
@@ -280,6 +284,7 @@ Process monitors, disk tools, and host observability.
 | [paleofetch](https://github.com/ssleert/paleofetch) | C ile yazılmış hızlı neofetch. | D | `manual` |
 | [powertop](https://github.com/fenrus75/powertop) | Güç tüketimi analizcisi. | A | `pacman` |
 | [procs](https://github.com/dalance/procs) | Modern, kullanıcı dostu ps alternatifi. | C | `cargo` |
+| [pstop](https://github.com/psmux/pstop) | [Windows] Çekirdek başına CPU çubukları ve ağaç görünümlü htop tarzı sistem monitörü. | C | `cargo` |
 | [pulsemixer](https://github.com/GeorgeFilipkin/pulsemixer) | PulseAudio/PipeWire TUI karıştırıcı. | A | `pacman` |
 | [screenfetch](https://github.com/KittyKatt/screenFetch) | Sistem bilgisi görüntüleyici. | A | `pacman` |
 | [sensors](https://hwmon.wiki.kernel.org/lm_sensors) | Donanım sensörleri. | A | `pacman` |
@@ -324,7 +329,8 @@ DNS, bandwidth, traceroute, and network diagnostics.
 | App | Description | Trust | Install |
 |-----|-------------|:-----:|---------|
 | [aria2](https://aria2.github.io/) | Çok protokolü destekleyen indirme yardımcısı. | A | `apt` |
-| [bandwhich](https://github.com/imsnif/bandwhich) | Ağ bant genişliğini süreç ve bağlantı bazında gösterir. Yerel arayüzleri izlemek için ek izinler gerekebilir.  | C | `cargo` |
+| [bandwhich](https://github.com/imsnif/bandwhich) | Ağ bant genişliğini süreç ve bağlantı bazında gösterir. Yerel arayüzleri izlemek için ek izinler gerekebilir.
+ | C | `cargo` |
 | [croc](https://github.com/schollz/croc) | Bilgisayarlar arası kolay ve güvenli dosya transferi. | A | `pacman` |
 | [curl](https://curl.se/) | Veri transfer ve HTTP istek aracı. | A | `apt` |
 | [dig](https://www.isc.org/bind/) | DNS sorgu aracı (bind). | A | `pacman` |
@@ -339,6 +345,7 @@ DNS, bandwidth, traceroute, and network diagnostics.
 | [nmap](https://nmap.org/) | Ağ keşif ve güvenlik tarama aracı. | A | `apt` |
 | [oha](https://github.com/hatoo/oha) | HTTP yük üreteci (rakyll/hey esinli, TUI). | A | `pacman` |
 | [oryx](https://github.com/pythops/oryx) | eBPF ile ağ trafiği dinleme TUI'si. | A | `pacman` |
+| [psnet](https://github.com/psmux/psnet) | [Windows] Hız grafikleri ve DNS çözümlemeli gerçek zamanlı ağ monitörü TUI. | C | `cargo` |
 | [rustnet](https://github.com/domcyrus/rustnet) | eBPF ve paket incelemesiyle gerçek zamanlı ağ izleme TUI'si. | A | `pacman` |
 | [rustscan](https://github.com/bee-san/RustScan) | Hızlı modern port tarayıcı. | A | `pacman` |
 | [socat](https://github.com/3ndG4me/socat) | Çok amaçlı röle (netcat++). | A | `pacman` |
@@ -378,6 +385,7 @@ Docker, Kubernetes, and container inspection tools.
 | [kubens](https://github.com/ahmetb/kubectx) | Kubernetes namespace değiştirici. | A | `pacman` |
 | [kubetui](https://github.com/sarub0b0/kubetui) | Kubernetes kaynakları için TUI. | C | `cargo` |
 | [kustomize](https://kustomize.io/) | Kubernetes YAML özelleştirme. | A | `pacman` |
+| [lazycontainer](https://github.com/andreybleme/lazycontainer) | [macOS] Apple Containers yönetimi için TUI. | A | `brew` |
 | [lazydocker](https://github.com/jesseduffield/lazydocker) | Docker konteynerleri, imajları ve günlükleri için terminal arayüzü. | B | `download_archive` |
 | [minikube](https://minikube.sigs.k8s.io/) | Yerel Kubernetes kümesi. | A | `pacman` |
 | [nerdctl](https://github.com/containerd/nerdctl) | containerd için Docker uyumlu CLI. | A | `pacman` |
@@ -519,6 +527,7 @@ Terminal multiplexers, notes, backup, and workflow helpers.
 | [khard](https://github.com/lucc/khard) | CardDAV / vCard konsol adres defteri yöneticisi. | A | `pacman` |
 | [mcfly](https://github.com/cantino/mcfly) | Akıllı kabuk geçmişi araması. | A | `pacman` |
 | [navi](https://github.com/denisidoro/navi) | Etkileşimli cheatsheet aracı. | C | `cargo` |
+| [psmux](https://github.com/psmux/psmux) | [Windows] PowerShell/Windows Terminal için yerel tmux uyumlu çoğullayıcı. | C | `cargo` |
 | [restic](https://restic.net/) | Hızlı, güvenli ve verimli yedekleme aracı. | A | `pacman` |
 | [screen](https://www.gnu.org/software/screen/) | GNU Screen — klasik terminal çoğullayıcı. | A | `pacman` |
 | [slides](https://github.com/maaslalani/slides) | Markdown ile terminal sunumları. | A | `brew` |
@@ -675,53 +684,3 @@ Everyday utilities and general-purpose CLIs.
 | [yq](https://github.com/mikefarah/yq) | YAML, JSON ve TOML sorgulama ve dönüştürme aracı. | A | `brew` |
 | [zk](https://github.com/zk-org/zk) | Zettelkasten not CLI. | A | `pacman` |
 
-## Layout
-
-```
-apps/
-  ai/ git/ files/ development/ editors/ system/ panels/
-  networking/ containers/ database/ security/ media/
-  messaging/ productivity/ games/ screensavers/ web/ daily/
-schema/
-  app.schema.json      # per-app JSON Schema (trust A–D, privilege, …)
-  catalog.schema.json  # published aggregate
-metadata/
-  categories.toml
-  trust-classes.toml
-  catalog.json         # built aggregate
-scripts/
-  validate_catalog.py
-  build_catalog.py
-  migrate_from_nova.py # one-shot / resync from Nova assets/store
-keys/
-  minisign.pub         # public verify key (secret key is NOT in git)
-docs/
-  catalog-signing.md
-  nova-consumption.md
-```
-
-## Validate
-
-```bash
-python3 -m pip install -r requirements-dev.txt
-python3 scripts/validate_catalog.py
-python3 scripts/build_catalog.py
-```
-
-## How Nova consumes
-
-See [docs/nova-consumption.md](docs/nova-consumption.md) and
-[docs/catalog-signing.md](docs/catalog-signing.md).
-
-Short version: pin `keys/minisign.pub`, download the latest GitHub Release
-`catalog-v*` assets (`catalog.json` + `.minisig`), verify, then apply; on
-failure keep the previous trusted catalog.
-
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md). Add one `apps/<category>/<id>.toml` per
-app, match the schema, run `validate_catalog.py`, then open a PR.
-
-## License
-
-MIT — see [LICENSE](LICENSE).

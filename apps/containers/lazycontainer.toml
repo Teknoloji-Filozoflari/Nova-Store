@@ -1,0 +1,17 @@
+id = "lazycontainer"
+name = "lazycontainer"
+description = "[macOS] Apple Containers yönetimi için TUI."
+category = "containers"
+source = "https://github.com/andreybleme/lazycontainer"
+license = "MIT"
+executable = "lazycontainer"
+install_method = "brew"
+supported_platforms = ["macos-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "lazycontainer"]
+install_notes = """
+brew: brew install lazycontainer
+Gereksinim: brew install container (Apple containers CLI)
+Resmî: https://github.com/andreybleme/lazycontainer
+"""

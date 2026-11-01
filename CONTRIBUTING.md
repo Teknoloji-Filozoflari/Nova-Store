@@ -30,7 +30,7 @@ not in the Nova Rust tree.
 | `source` | `https://` project / homepage URL |
 | `license` | SPDX id or simple `AND`/`OR`/`WITH` expression |
 | `install_method` | `manual` \| `download_archive` \| `pipx` \| `npm` \| `cargo` \| `brew` \| `apt` \| `dnf` \| `pacman` \| `uv` |
-| `supported_platforms` | Non-empty; `linux-x64`, `linux-aarch64`, … |
+| `supported_platforms` | Non-empty; `linux-x64`, `linux-aarch64`, `macos-x64`, `macos-aarch64`, `windows-x64`, `windows-aarch64` |
 | `privilege` | `none` \| `user` \| `elevated` (must match method) |
 | `trust_class` | `A` \| `B` \| `C` \| `D` (must match method) |
 

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-01T17:50:16Z",
+  "generated_at": "2026-11-01T19:25:38Z",
   "apps": [
     {
       "id": "2048",
@@ -5080,6 +5080,27 @@
       "install_notes": "Resmî: https://github.com/AngelJumbo/lavat\nmake && sudo make install\n"
     },
     {
+      "id": "lazycontainer",
+      "name": "lazycontainer",
+      "description": "[macOS] Apple Containers yönetimi için TUI.",
+      "category": "containers",
+      "source": "https://github.com/andreybleme/lazycontainer",
+      "license": "MIT",
+      "executable": "lazycontainer",
+      "install_method": "brew",
+      "supported_platforms": [
+        "macos-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "A",
+      "install_command": [
+        "brew",
+        "install",
+        "lazycontainer"
+      ],
+      "install_notes": "brew: brew install lazycontainer\nGereksinim: brew install container (Apple containers CLI)\nResmî: https://github.com/andreybleme/lazycontainer\n"
+    },
+    {
       "id": "lazydocker",
       "name": "lazydocker",
       "description": "Docker konteynerleri, imajları ve günlükleri için terminal arayüzü.",
@@ -5551,6 +5572,28 @@
       "install_notes": "apt: sudo apt install lynx\nbrew: brew install lynx\npacman: sudo pacman -S lynx\nResmî: https://lynx.invisible-island.net/\n"
     },
     {
+      "id": "mac-cleanup-go",
+      "name": "mac-cleanup-go",
+      "description": "[macOS] Önbellek/log tarayıp Trash’e taşıyan disk temizleme TUI’si.",
+      "category": "system",
+      "source": "https://github.com/2ykwang/mac-cleanup-go",
+      "license": "MIT",
+      "executable": "mac-cleanup",
+      "install_method": "brew",
+      "supported_platforms": [
+        "macos-x64",
+        "macos-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "A",
+      "install_command": [
+        "brew",
+        "install",
+        "mac-cleanup-go"
+      ],
+      "install_notes": "brew: brew install mac-cleanup-go\nResmî: https://github.com/2ykwang/mac-cleanup-go\n"
+    },
+    {
       "id": "macchina",
       "name": "macchina",
       "description": "Hızlı sistem bilgisi (Rust).",
@@ -5573,6 +5616,27 @@
         "macchina"
       ],
       "install_notes": "pacman: sudo pacman -S macchina\ncargo: cargo install macchina\nResmî: https://github.com/Macchina-CLI/macchina\n"
+    },
+    {
+      "id": "macmon",
+      "name": "macmon",
+      "description": "[macOS] Apple Silicon için sudosuz gerçek zamanlı performans monitörü.",
+      "category": "system",
+      "source": "https://github.com/vladkens/macmon",
+      "license": "MIT",
+      "executable": "macmon",
+      "install_method": "brew",
+      "supported_platforms": [
+        "macos-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "A",
+      "install_command": [
+        "brew",
+        "install",
+        "macmon"
+      ],
+      "install_notes": "brew: brew install macmon\ncargo: cargo install macmon\nResmî: https://github.com/vladkens/macmon\n"
     },
     {
       "id": "masscan",
@@ -7693,6 +7757,51 @@
       "install_notes": "pacman: sudo pacman -S progress\napt: sudo apt install progress\nbrew: brew install progress\n"
     },
     {
+      "id": "psmux",
+      "name": "psmux",
+      "description": "[Windows] PowerShell/Windows Terminal için yerel tmux uyumlu çoğullayıcı.",
+      "category": "productivity",
+      "source": "https://github.com/psmux/psmux",
+      "license": "MIT",
+      "executable": "psmux",
+      "install_method": "cargo",
+      "supported_platforms": [
+        "windows-x64",
+        "windows-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "C",
+      "risk_note": "crates.io üzerinden kurulur; Nova-Store imzası yoktur. WinGet/Scoop tercih edilebilir.",
+      "install_command": [
+        "cargo",
+        "install",
+        "psmux"
+      ],
+      "install_notes": "cargo: cargo install psmux\nwinget: winget install psmux\nscoop: scoop bucket add psmux https://github.com/psmux/scoop-psmux && scoop install psmux\nResmî: https://github.com/psmux/psmux\n"
+    },
+    {
+      "id": "psnet",
+      "name": "psnet",
+      "description": "[Windows] Hız grafikleri ve DNS çözümlemeli gerçek zamanlı ağ monitörü TUI.",
+      "category": "networking",
+      "source": "https://github.com/psmux/psnet",
+      "license": "MIT",
+      "executable": "psnet",
+      "install_method": "cargo",
+      "supported_platforms": [
+        "windows-x64"
+      ],
+      "privilege": "user",
+      "trust_class": "C",
+      "risk_note": "crates.io üzerinden kurulur; Nova-Store imzası yoktur. WinGet tercih edilebilir.",
+      "install_command": [
+        "cargo",
+        "install",
+        "psnet"
+      ],
+      "install_notes": "cargo: cargo install psnet\nwinget: winget install psmux.psnet\nResmî: https://github.com/psmux/psnet\n"
+    },
+    {
       "id": "psql",
       "name": "psql",
       "description": "PostgreSQL etkileşimli terminal.",
@@ -7715,6 +7824,28 @@
         "postgresql"
       ],
       "install_notes": "pacman: sudo pacman -S postgresql\napt: sudo apt install postgresql-client\nbrew: brew install libpq\n"
+    },
+    {
+      "id": "pstop",
+      "name": "pstop",
+      "description": "[Windows] Çekirdek başına CPU çubukları ve ağaç görünümlü htop tarzı sistem monitörü.",
+      "category": "system",
+      "source": "https://github.com/psmux/pstop",
+      "license": "MIT",
+      "executable": "pstop",
+      "install_method": "cargo",
+      "supported_platforms": [
+        "windows-x64"
+      ],
+      "privilege": "user",
+      "trust_class": "C",
+      "risk_note": "crates.io üzerinden kurulur; Nova-Store imzası yoktur. WinGet tercih edilebilir.",
+      "install_command": [
+        "cargo",
+        "install",
+        "pstop"
+      ],
+      "install_notes": "cargo: cargo install pstop\nwinget: winget install marlocarlo.pstop\nResmî: https://github.com/psmux/pstop\n"
     },
     {
       "id": "pudb",
@@ -10989,5 +11120,5 @@
       "install_notes": "cargo: cargo install zoxide --locked\nbrew: brew install zoxide\napt: sudo apt install zoxide\npacman: sudo pacman -S zoxide\nResmî: https://github.com/ajeetdsouza/zoxide#installation\n"
     }
   ],
-  "git_sha": "e35d849adcdc96fe8e9028a6fcd5e77fa281b16f"
+  "git_sha": "a5996db496aebeb41b869b5e4619db0c69c97f25"
 }
