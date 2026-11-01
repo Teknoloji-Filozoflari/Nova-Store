@@ -1,0 +1,17 @@
+id = "md-tui"
+name = "md-tui"
+description = "Terminalde Markdown işleyici / görüntüleyici."
+category = "editors"
+source = "https://github.com/henriklovhaug/md-tui"
+license = "AGPL-3.0-only"
+executable = "mdt"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "md-tui"]
+install_notes = """
+pacman: sudo pacman -S md-tui
+Çalıştırılabilir: mdt
+Resmî: https://github.com/henriklovhaug/md-tui
+"""

@@ -1,0 +1,16 @@
+id = "caligula"
+name = "caligula"
+description = "Kullanıcı dostu hafif disk kalıbı yazma TUI'si."
+category = "system"
+source = "https://github.com/ifd3f/caligula"
+license = "GPL-3.0-only"
+executable = "caligula"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "caligula"]
+install_notes = """
+pacman: sudo pacman -S caligula
+Resmî: https://github.com/ifd3f/caligula
+"""

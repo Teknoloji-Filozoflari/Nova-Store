@@ -1,0 +1,16 @@
+id = "mutt"
+name = "mutt"
+description = "Küçük ama güçlü metin tabanlı e-posta istemcisi."
+category = "messaging"
+source = "https://www.mutt.org/"
+license = "GPL-2.0-or-later"
+executable = "mutt"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "mutt"]
+install_notes = """
+pacman: sudo pacman -S mutt
+Resmî: https://www.mutt.org/
+"""

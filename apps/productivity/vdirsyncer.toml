@@ -1,0 +1,16 @@
+id = "vdirsyncer"
+name = "vdirsyncer"
+description = "CalDAV ve CardDAV senkronizasyon aracı."
+category = "productivity"
+source = "https://github.com/pimutils/vdirsyncer"
+license = "BSD-3-Clause"
+executable = "vdirsyncer"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "vdirsyncer"]
+install_notes = """
+pacman: sudo pacman -S vdirsyncer
+Resmî: https://github.com/pimutils/vdirsyncer
+"""

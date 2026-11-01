@@ -1,0 +1,16 @@
+id = "onefetch"
+name = "onefetch"
+description = "Git deposu özetini terminalde gösteren araç."
+category = "git"
+source = "https://github.com/o2sh/onefetch"
+license = "MIT"
+executable = "onefetch"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "onefetch"]
+install_notes = """
+pacman: sudo pacman -S onefetch
+Resmî: https://github.com/o2sh/onefetch
+"""

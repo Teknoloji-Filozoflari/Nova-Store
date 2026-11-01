@@ -1,0 +1,16 @@
+id = "offlineimap"
+name = "offlineimap"
+description = "İki depo arasında e-posta senkronizasyonu."
+category = "messaging"
+source = "https://github.com/OfflineIMAP/offlineimap3"
+license = "GPL-2.0-or-later"
+executable = "offlineimap"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "offlineimap"]
+install_notes = """
+pacman: sudo pacman -S offlineimap
+Resmî: https://github.com/OfflineIMAP/offlineimap3
+"""

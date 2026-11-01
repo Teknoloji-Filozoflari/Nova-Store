@@ -1,0 +1,16 @@
+id = "bluetui"
+name = "bluetui"
+description = "Bluetooth cihazlarını yönetmek için TUI."
+category = "daily"
+source = "https://github.com/pythops/bluetui"
+license = "GPL-3.0-only"
+executable = "bluetui"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "bluetui"]
+install_notes = """
+pacman: sudo pacman -S bluetui
+Resmî: https://github.com/pythops/bluetui
+"""

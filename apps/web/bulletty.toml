@@ -1,0 +1,16 @@
+id = "bulletty"
+name = "bulletty"
+description = "Makaleleri Markdown olarak saklayan terminal besleme okuyucu."
+category = "web"
+source = "https://github.com/CrociDB/bulletty"
+license = "MIT"
+executable = "bulletty"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "bulletty"]
+install_notes = """
+pacman: sudo pacman -S bulletty
+Resmî: https://github.com/CrociDB/bulletty
+"""

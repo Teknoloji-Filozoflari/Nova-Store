@@ -1,0 +1,17 @@
+id = "pudb"
+name = "pudb"
+description = "Tam ekran konsol tabanlı Python hata ayıklayıcı."
+category = "development"
+source = "https://github.com/inducer/pudb"
+license = "MIT"
+executable = "pudb"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "python-pudb"]
+install_notes = """
+pacman: sudo pacman -S python-pudb
+pacman paketi: python-pudb
+Resmî: https://github.com/inducer/pudb
+"""

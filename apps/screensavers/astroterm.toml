@@ -1,0 +1,16 @@
+id = "astroterm"
+name = "astroterm"
+description = "Terminal için planetaryum / gökyüzü görüntüleyici."
+category = "screensavers"
+source = "https://github.com/da-luce/astroterm"
+license = "MIT"
+executable = "astroterm"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "astroterm"]
+install_notes = """
+pacman: sudo pacman -S astroterm
+Resmî: https://github.com/da-luce/astroterm
+"""

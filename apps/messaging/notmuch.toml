@@ -1,0 +1,16 @@
+id = "notmuch"
+name = "notmuch"
+description = "Hızlı, etiket tabanlı e-posta indeksleyici ve arayüz."
+category = "messaging"
+source = "https://notmuchmail.org/"
+license = "GPL-3.0-or-later"
+executable = "notmuch"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "notmuch"]
+install_notes = """
+pacman: sudo pacman -S notmuch
+Resmî: https://notmuchmail.org/
+"""

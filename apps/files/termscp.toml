@@ -1,0 +1,16 @@
+id = "termscp"
+name = "termscp"
+description = "SCP/SFTP/FTP/S3/SMB için özellik zengin terminal dosya transfer TUI'si."
+category = "files"
+source = "https://github.com/veeso/termscp"
+license = "MIT"
+executable = "termscp"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "termscp"]
+install_notes = """
+pacman: sudo pacman -S termscp
+Resmî: https://github.com/veeso/termscp
+"""

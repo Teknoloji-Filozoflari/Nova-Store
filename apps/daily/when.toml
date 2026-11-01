@@ -1,0 +1,16 @@
+id = "when"
+name = "when"
+description = "Basit komut satırı kişisel takvim aracı."
+category = "daily"
+source = "https://github.com/bcg/when"
+license = "GPL-2.0-or-later"
+executable = "when"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "when"]
+install_notes = """
+pacman: sudo pacman -S when
+Resmî: https://github.com/bcg/when
+"""

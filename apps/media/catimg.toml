@@ -1,0 +1,16 @@
+id = "catimg"
+name = "catimg"
+description = "Görselleri 256 renkli terminalde yazdırır."
+category = "media"
+source = "https://github.com/posva/catimg"
+license = "MIT"
+executable = "catimg"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "catimg"]
+install_notes = """
+pacman: sudo pacman -S catimg
+Resmî: https://github.com/posva/catimg
+"""

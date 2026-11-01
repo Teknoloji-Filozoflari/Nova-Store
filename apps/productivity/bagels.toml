@@ -1,0 +1,17 @@
+id = "bagels"
+name = "bagels"
+description = "Terminal gider / bütçe takip TUI'si."
+category = "productivity"
+source = "https://github.com/EnhancedJax/Bagels"
+license = "GPL-3.0-only"
+executable = "bagels"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64", "macos-x64", "macos-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "bagels"]
+install_notes = """
+brew: brew install bagels
+pipx: pipx install bagels
+Resmî: https://github.com/EnhancedJax/Bagels
+"""

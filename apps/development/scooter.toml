@@ -1,0 +1,17 @@
+id = "scooter"
+name = "scooter"
+description = "Etkileşimli bul ve değiştir TUI'si."
+category = "development"
+source = "https://github.com/thomasschafer/scooter"
+license = "MIT"
+executable = "scooter"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64", "macos-x64", "macos-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "scooter"]
+install_notes = """
+brew: brew install scooter
+cargo: cargo install scooter
+Resmî: https://github.com/thomasschafer/scooter
+"""

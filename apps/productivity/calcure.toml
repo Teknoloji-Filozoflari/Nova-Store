@@ -1,0 +1,17 @@
+id = "calcure"
+name = "calcure"
+description = "Modern TUI takvim ve görev uygulaması."
+category = "productivity"
+source = "https://github.com/anufrievroman/calcure"
+license = "MIT"
+executable = "calcure"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64", "macos-x64", "macos-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "calcure"]
+install_notes = """
+brew: brew install calcure
+pipx: pipx install calcure
+Resmî: https://github.com/anufrievroman/calcure
+"""

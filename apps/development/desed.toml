@@ -1,0 +1,17 @@
+id = "desed"
+name = "desed"
+description = "sed betikleri için etkileşimli hata ayıklama TUI'si."
+category = "development"
+source = "https://github.com/SoptikHa2/desed"
+license = "GPL-3.0-or-later"
+executable = "desed"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64", "macos-x64", "macos-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "desed"]
+install_notes = """
+brew: brew install desed
+cargo: cargo install desed
+Resmî: https://github.com/SoptikHa2/desed
+"""

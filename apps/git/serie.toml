@@ -1,0 +1,16 @@
+id = "serie"
+name = "serie"
+description = "Zengin git commit grafiği gösteren terminal aracı."
+category = "git"
+source = "https://github.com/lusingander/serie"
+license = "MIT"
+executable = "serie"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "serie"]
+install_notes = """
+pacman: sudo pacman -S serie
+Resmî: https://github.com/lusingander/serie
+"""

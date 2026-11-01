@@ -1,0 +1,16 @@
+id = "urlscan"
+name = "urlscan"
+description = "Mutt ve terminal için URL seçici."
+category = "messaging"
+source = "https://github.com/firecat53/urlscan"
+license = "GPL-2.0-or-later"
+executable = "urlscan"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "urlscan"]
+install_notes = """
+pacman: sudo pacman -S urlscan
+Resmî: https://github.com/firecat53/urlscan
+"""

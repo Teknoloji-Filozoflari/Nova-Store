@@ -1,0 +1,16 @@
+id = "tty-clock"
+name = "tty-clock"
+description = "Terminalde dijital saat ekran koruyucusu."
+category = "screensavers"
+source = "https://github.com/xorg62/tty-clock"
+license = "BSD-3-Clause"
+executable = "tty-clock"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64", "macos-x64", "macos-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "tty-clock"]
+install_notes = """
+brew: brew install tty-clock
+Resmî: https://github.com/xorg62/tty-clock
+"""

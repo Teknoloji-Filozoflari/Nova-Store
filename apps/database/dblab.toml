@@ -1,0 +1,16 @@
+id = "dblab"
+name = "dblab"
+description = "Komut satırı meraklıları için veritabanı istemcisi TUI."
+category = "database"
+source = "https://github.com/danvergara/dblab"
+license = "MIT"
+executable = "dblab"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64", "macos-x64", "macos-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "dblab"]
+install_notes = """
+brew: brew install dblab
+Resmî: https://github.com/danvergara/dblab
+"""

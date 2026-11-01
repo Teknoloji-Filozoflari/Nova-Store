@@ -1,0 +1,16 @@
+id = "nmon"
+name = "nmon"
+description = "Linux performans ve kaynak izleme aracı."
+category = "system"
+source = "https://nmon.sourceforge.io/"
+license = "GPL-3.0-only"
+executable = "nmon"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "nmon"]
+install_notes = """
+pacman: sudo pacman -S nmon
+Resmî: https://nmon.sourceforge.io/
+"""

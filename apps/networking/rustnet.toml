@@ -1,0 +1,16 @@
+id = "rustnet"
+name = "rustnet"
+description = "eBPF ve paket incelemesiyle gerçek zamanlı ağ izleme TUI'si."
+category = "networking"
+source = "https://github.com/domcyrus/rustnet"
+license = "Apache-2.0"
+executable = "rustnet"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "rustnet"]
+install_notes = """
+pacman: sudo pacman -S rustnet
+Resmî: https://github.com/domcyrus/rustnet
+"""

@@ -1,0 +1,16 @@
+id = "cotp"
+name = "cotp"
+description = "Şifreli komut satırı TOTP/HOTP kimlik doğrulayıcı."
+category = "security"
+source = "https://github.com/replydev/cotp"
+license = "GPL-3.0-only"
+executable = "cotp"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "cotp"]
+install_notes = """
+pacman: sudo pacman -S cotp
+Resmî: https://github.com/replydev/cotp
+"""

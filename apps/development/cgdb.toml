@@ -1,0 +1,16 @@
+id = "cgdb"
+name = "cgdb"
+description = "GNU Debugger için curses tabanlı TUI ön yüz."
+category = "development"
+source = "https://github.com/cgdb/cgdb"
+license = "GPL-2.0-or-later"
+executable = "cgdb"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "cgdb"]
+install_notes = """
+pacman: sudo pacman -S cgdb
+Resmî: https://github.com/cgdb/cgdb
+"""

@@ -1,0 +1,17 @@
+id = "dockly"
+name = "dockly"
+description = "Docker konteyner ve servis yönetimi için immersive TUI."
+category = "containers"
+source = "https://github.com/lirantal/dockly"
+license = "MIT"
+executable = "dockly"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64", "macos-x64", "macos-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "dockly"]
+install_notes = """
+brew: brew install dockly
+npm: npm install -g dockly
+Resmî: https://github.com/lirantal/dockly
+"""
