@@ -1,0 +1,18 @@
+id = "tmux"
+name = "tmux"
+description = "Terminal çoğullayıcı; oturum, pencere ve panel yönetimi."
+category = "productivity"
+source = "https://github.com/tmux/tmux"
+license = "ISC"
+executable = "tmux"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "tmux"]
+install_notes = """
+apt: sudo apt install tmux
+brew: brew install tmux
+pacman: sudo pacman -S tmux
+Resmî: https://github.com/tmux/tmux/wiki/Installing
+"""

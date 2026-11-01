@@ -1,0 +1,16 @@
+id = "dive"
+name = "dive"
+description = "Konteyner imaj katmanlarını keşfeder."
+category = "containers"
+source = "https://github.com/wagoodman/dive"
+license = "MIT"
+executable = "dive"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "dive"]
+install_notes = """
+brew: brew install dive
+Resmî: https://github.com/wagoodman/dive#installation
+"""

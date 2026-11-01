@@ -1,0 +1,18 @@
+id = "btop"
+name = "btop"
+description = "CPU, bellek, disk ve ağ kullanımını grafik olarak izler."
+category = "system"
+source = "https://github.com/aristocratos/btop"
+license = "Apache-2.0"
+executable = "btop"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "btop"]
+install_notes = """
+apt: sudo apt install btop
+brew: brew install btop
+pacman: sudo pacman -S btop
+Resmî: https://github.com/aristocratos/btop#installation
+"""

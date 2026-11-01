@@ -1,0 +1,18 @@
+{
+  "release_tag_prefix": "catalog-v",
+  "artifact": "catalog.json",
+  "signatures": {
+    "minisign": {
+      "asset": "catalog.json.minisig",
+      "public_key_path": "keys/minisign.pub",
+      "secret_name": "MINISIGN_SECRET_KEY"
+    },
+    "cosign": {
+      "asset": "catalog.json.sig",
+      "certificate_asset": "catalog.json.pem",
+      "identity": "keys/cosign-identity.json"
+    }
+  },
+  "default_method": "minisign",
+  "nova_policy": "Verify signature before apply; on failure keep last trusted catalog."
+}

@@ -1,0 +1,26 @@
+# Trust classes for catalog entries. Nova must surface these distinctly —
+# do not conflate A and B in UI or policy.
+
+[[trust_classes]]
+id = "A"
+name = "Distro / official package manager"
+summary = "Installed via apt, dnf, pacman, or brew from an official package source."
+nova_policy = "Preferred when available on the host; still requires user install confirmation."
+
+[[trust_classes]]
+id = "B"
+name = "Project official binary"
+summary = "Upstream project release archive with checksum; signature preferred (minisign/cosign/gpg/attestation)."
+nova_policy = "Nova downloads to user space, verifies SHA-256, and verifies signature when tooling is present."
+
+[[trust_classes]]
+id = "C"
+name = "Language registry"
+summary = "cargo, npm, pipx, or uv registry install. Contents are not pinned by Nova-Store signatures."
+nova_policy = "Requires risk_note; Nova must show the risk note on the confirm screen."
+
+[[trust_classes]]
+id = "D"
+name = "Manual documentation only"
+summary = "Nova does not install; install_notes point at official upstream docs."
+nova_policy = "No automatic install path. curl|bash and similar stay here."

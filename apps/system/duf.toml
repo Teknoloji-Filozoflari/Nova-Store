@@ -1,0 +1,35 @@
+id = "duf"
+name = "duf"
+description = "Diskleri ve doluluk oranlarını tablo hâlinde gösterir."
+category = "system"
+source = "https://github.com/muesli/duf"
+license = "MIT"
+executable = "duf"
+install_method = "download_archive"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "B"
+version = "0.9.1"
+
+[[artifacts]]
+arch = "x86_64"
+download_url = "https://github.com/muesli/duf/releases/download/v0.9.1/duf_0.9.1_linux_x86_64.tar.gz"
+checksum = "5add851e7062c5e56939abb664705e4d14fa2d06289490aff31d51f153832de7"
+checksum_type = "sha256"
+asset_pattern = "duf_{version}_linux_x86_64.tar.gz"
+checksum_asset_pattern = "checksums.txt"
+
+[[artifacts]]
+arch = "aarch64"
+download_url = "https://github.com/muesli/duf/releases/download/v0.9.1/duf_0.9.1_linux_arm64.tar.gz"
+checksum = "22ea0ad29f6610bf443aa351e600de97e47a9b380ef58316606a84bb8f595216"
+checksum_type = "sha256"
+asset_pattern = "duf_{version}_linux_arm64.tar.gz"
+checksum_asset_pattern = "checksums.txt"
+
+[release]
+repo = "muesli/duf"
+tag_prefix = "v"
+asset_pattern = "duf_{version}_linux_x86_64.tar.gz"
+checksum_asset_pattern = "checksums.txt"
+

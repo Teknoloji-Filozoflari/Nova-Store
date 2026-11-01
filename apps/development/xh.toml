@@ -1,0 +1,18 @@
+id = "xh"
+name = "xh"
+description = "Rust ile yazılmış hızlı HTTPie dostu HTTP istemcisi."
+category = "development"
+source = "https://github.com/ducaale/xh"
+license = "MIT"
+executable = "xh"
+install_method = "cargo"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = "Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install."
+install_command = ["cargo", "install", "xh"]
+install_notes = """
+cargo: cargo install xh
+brew: brew install xh
+Resmî: https://github.com/ducaale/xh#installation
+"""

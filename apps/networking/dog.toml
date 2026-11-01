@@ -1,0 +1,18 @@
+id = "dog"
+name = "dog"
+description = "Kullanıcı dostu DNS istemcisi; dig alternatifi."
+category = "networking"
+source = "https://github.com/ogham/dog"
+license = "EUPL-1.2"
+executable = "dog"
+install_method = "cargo"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = "Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install."
+install_command = ["cargo", "install", "dog"]
+install_notes = """
+brew: brew install dog
+cargo: cargo install dog
+Resmî: https://github.com/ogham/dog#installation
+"""

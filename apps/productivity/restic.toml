@@ -1,0 +1,18 @@
+id = "restic"
+name = "restic"
+description = "Hızlı, güvenli ve verimli yedekleme aracı."
+category = "productivity"
+source = "https://restic.net/"
+license = "BSD-2-Clause"
+executable = "restic"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "restic"]
+install_notes = """
+pacman: sudo pacman -S restic
+apt: sudo apt install restic
+brew: brew install restic
+Resmî: https://restic.readthedocs.io/en/stable/020_installation.html
+"""

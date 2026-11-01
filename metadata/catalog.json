@@ -1,0 +1,481 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-01T16:50:40Z",
+  "apps": [
+    {
+      "id": "age",
+      "name": "age",
+      "description": "Basit, modern ve güvenli dosya şifreleme aracı.",
+      "category": "security",
+      "source": "https://github.com/FiloSottile/age",
+      "license": "BSD-3-Clause",
+      "executable": "age",
+      "install_method": "apt",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "elevated",
+      "trust_class": "A",
+      "install_command": [
+        "sudo",
+        "apt",
+        "install",
+        "-y",
+        "age"
+      ],
+      "install_notes": "apt: sudo apt install age\nbrew: brew install age\ngo: go install filippo.io/age/cmd/...@latest\npacman: sudo pacman -S age\nResmî: https://github.com/FiloSottile/age#installation\n"
+    },
+    {
+      "id": "bandwhich",
+      "name": "bandwhich",
+      "description": "Ağ bant genişliğini süreç ve bağlantı bazında gösterir. Yerel arayüzleri izlemek için ek izinler gerekebilir.",
+      "category": "networking",
+      "source": "https://github.com/imsnif/bandwhich",
+      "license": "MIT",
+      "executable": "bandwhich",
+      "install_method": "cargo",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "C",
+      "risk_note": "Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.",
+      "install_command": [
+        "cargo",
+        "install",
+        "bandwhich"
+      ],
+      "install_notes": "cargo: cargo install bandwhich\nbrew: brew install bandwhich\nResmî: https://github.com/imsnif/bandwhich#installation\n"
+    },
+    {
+      "id": "btop",
+      "name": "btop",
+      "description": "CPU, bellek, disk ve ağ kullanımını grafik olarak izler.",
+      "category": "system",
+      "source": "https://github.com/aristocratos/btop",
+      "license": "Apache-2.0",
+      "executable": "btop",
+      "install_method": "apt",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "elevated",
+      "trust_class": "A",
+      "install_command": [
+        "sudo",
+        "apt",
+        "install",
+        "-y",
+        "btop"
+      ],
+      "install_notes": "apt: sudo apt install btop\nbrew: brew install btop\npacman: sudo pacman -S btop\nResmî: https://github.com/aristocratos/btop#installation\n"
+    },
+    {
+      "id": "cosign",
+      "name": "cosign",
+      "description": "Sigstore ile konteyner ve artefakt imzalama / doğrulama.",
+      "category": "security",
+      "source": "https://github.com/sigstore/cosign",
+      "license": "Apache-2.0",
+      "executable": "cosign",
+      "install_method": "pacman",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "elevated",
+      "trust_class": "A",
+      "install_command": [
+        "sudo",
+        "pacman",
+        "-S",
+        "--noconfirm",
+        "cosign"
+      ],
+      "install_notes": "pacman: sudo pacman -S cosign\nbrew: brew install cosign\ngo: go install github.com/sigstore/cosign/v2/cmd/cosign@latest\nResmî: https://docs.sigstore.dev/cosign/system_config/installation/\n"
+    },
+    {
+      "id": "curl",
+      "name": "curl",
+      "description": "Veri transfer ve HTTP istek aracı.",
+      "category": "networking",
+      "source": "https://curl.se/",
+      "license": "curl",
+      "executable": "curl",
+      "install_method": "apt",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "elevated",
+      "trust_class": "A",
+      "install_command": [
+        "sudo",
+        "apt",
+        "install",
+        "-y",
+        "curl"
+      ],
+      "install_notes": "apt: sudo apt install curl\nbrew: brew install curl\npacman: sudo pacman -S curl\nResmî: https://curl.se/docs/install.html\n"
+    },
+    {
+      "id": "dive",
+      "name": "dive",
+      "description": "Konteyner imaj katmanlarını keşfeder.",
+      "category": "containers",
+      "source": "https://github.com/wagoodman/dive",
+      "license": "MIT",
+      "executable": "dive",
+      "install_method": "brew",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "A",
+      "install_command": [
+        "brew",
+        "install",
+        "dive"
+      ],
+      "install_notes": "brew: brew install dive\nResmî: https://github.com/wagoodman/dive#installation\n"
+    },
+    {
+      "id": "dog",
+      "name": "dog",
+      "description": "Kullanıcı dostu DNS istemcisi; dig alternatifi.",
+      "category": "networking",
+      "source": "https://github.com/ogham/dog",
+      "license": "EUPL-1.2",
+      "executable": "dog",
+      "install_method": "cargo",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "C",
+      "risk_note": "Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.",
+      "install_command": [
+        "cargo",
+        "install",
+        "dog"
+      ],
+      "install_notes": "brew: brew install dog\ncargo: cargo install dog\nResmî: https://github.com/ogham/dog#installation\n"
+    },
+    {
+      "id": "duf",
+      "name": "duf",
+      "description": "Diskleri ve doluluk oranlarını tablo hâlinde gösterir.",
+      "category": "system",
+      "source": "https://github.com/muesli/duf",
+      "license": "MIT",
+      "executable": "duf",
+      "install_method": "download_archive",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "B",
+      "version": "0.9.1",
+      "artifacts": [
+        {
+          "arch": "x86_64",
+          "download_url": "https://github.com/muesli/duf/releases/download/v0.9.1/duf_0.9.1_linux_x86_64.tar.gz",
+          "checksum": "5add851e7062c5e56939abb664705e4d14fa2d06289490aff31d51f153832de7",
+          "checksum_type": "sha256",
+          "asset_pattern": "duf_{version}_linux_x86_64.tar.gz",
+          "checksum_asset_pattern": "checksums.txt"
+        },
+        {
+          "arch": "aarch64",
+          "download_url": "https://github.com/muesli/duf/releases/download/v0.9.1/duf_0.9.1_linux_arm64.tar.gz",
+          "checksum": "22ea0ad29f6610bf443aa351e600de97e47a9b380ef58316606a84bb8f595216",
+          "checksum_type": "sha256",
+          "asset_pattern": "duf_{version}_linux_arm64.tar.gz",
+          "checksum_asset_pattern": "checksums.txt"
+        }
+      ],
+      "release": {
+        "repo": "muesli/duf",
+        "tag_prefix": "v",
+        "asset_pattern": "duf_{version}_linux_x86_64.tar.gz",
+        "checksum_asset_pattern": "checksums.txt"
+      }
+    },
+    {
+      "id": "fx",
+      "name": "fx",
+      "description": "Etkileşimli terminal JSON görüntüleyici ve işleyici.",
+      "category": "development",
+      "source": "https://github.com/antonmedv/fx",
+      "license": "MIT",
+      "executable": "fx",
+      "install_method": "npm",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "C",
+      "risk_note": "Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.",
+      "install_command": [
+        "npm",
+        "install",
+        "-g",
+        "fx"
+      ],
+      "install_notes": "npm: npm install -g fx\nbrew: brew install fx\nResmî: https://fx.wtf/\n"
+    },
+    {
+      "id": "goose",
+      "name": "Goose",
+      "description": "Block'un açık kaynaklı, yerel çalışabilen AI ajanı.",
+      "category": "development",
+      "source": "https://block.github.io/goose/",
+      "license": "Apache-2.0",
+      "executable": "goose",
+      "install_method": "manual",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "none",
+      "trust_class": "D",
+      "install_notes": "Resmî kurulum: https://block.github.io/goose/docs/getting-started/installation/\n"
+    },
+    {
+      "id": "htop",
+      "name": "htop",
+      "description": "Etkileşimli süreç izleyici; top alternatifi.",
+      "category": "system",
+      "source": "https://htop.dev/",
+      "license": "GPL-2.0",
+      "executable": "htop",
+      "install_method": "apt",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "elevated",
+      "trust_class": "A",
+      "install_command": [
+        "sudo",
+        "apt",
+        "install",
+        "-y",
+        "htop"
+      ],
+      "install_notes": "apt: sudo apt install htop\nbrew: brew install htop\ndnf: sudo dnf install htop\npacman: sudo pacman -S htop\nResmî: https://htop.dev/\n"
+    },
+    {
+      "id": "httpie",
+      "name": "HTTPie",
+      "description": "İnsan dostu HTTP istemcisi.",
+      "category": "development",
+      "source": "https://httpie.io/",
+      "license": "BSD-3-Clause",
+      "executable": "http",
+      "install_method": "apt",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "elevated",
+      "trust_class": "A",
+      "install_command": [
+        "sudo",
+        "apt",
+        "install",
+        "-y",
+        "httpie"
+      ],
+      "install_notes": "brew: brew install httpie\npipx: pipx install httpie\napt: sudo apt install httpie\npacman: sudo pacman -S httpie\nResmî: https://httpie.io/docs/cli/installation\n"
+    },
+    {
+      "id": "k9s",
+      "name": "k9s",
+      "description": "Kubernetes kümelerini yönetmek için terminal panosu.",
+      "category": "containers",
+      "source": "https://k9scli.io/",
+      "license": "Apache-2.0",
+      "executable": "k9s",
+      "install_method": "brew",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "A",
+      "install_command": [
+        "brew",
+        "install",
+        "k9s"
+      ],
+      "install_notes": "brew: brew install k9s\nResmî: https://k9scli.io/topics/install/\n"
+    },
+    {
+      "id": "lazydocker",
+      "name": "lazydocker",
+      "description": "Docker konteynerleri, imajları ve günlükleri için terminal arayüzü.",
+      "category": "containers",
+      "source": "https://github.com/jesseduffield/lazydocker",
+      "license": "MIT",
+      "executable": "lazydocker",
+      "install_method": "download_archive",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "B",
+      "version": "0.25.2",
+      "artifacts": [
+        {
+          "arch": "x86_64",
+          "download_url": "https://github.com/jesseduffield/lazydocker/releases/download/v0.25.2/lazydocker_0.25.2_Linux_x86_64.tar.gz",
+          "checksum": "0d9dbfc26068b218e7ed84b104748cadc6e3cf733c0afd35465306fb39b9523c",
+          "checksum_type": "sha256",
+          "asset_pattern": "lazydocker_{version}_Linux_x86_64.tar.gz",
+          "checksum_asset_pattern": "checksums.txt"
+        },
+        {
+          "arch": "aarch64",
+          "download_url": "https://github.com/jesseduffield/lazydocker/releases/download/v0.25.2/lazydocker_0.25.2_Linux_arm64.tar.gz",
+          "checksum": "005c38b685aaa557e7d646d83a3dadb5024340eeed8c6a2e1949eee6f530de23",
+          "checksum_type": "sha256",
+          "asset_pattern": "lazydocker_{version}_Linux_arm64.tar.gz",
+          "checksum_asset_pattern": "checksums.txt"
+        }
+      ],
+      "release": {
+        "repo": "jesseduffield/lazydocker",
+        "tag_prefix": "v",
+        "asset_pattern": "lazydocker_{version}_Linux_x86_64.tar.gz",
+        "checksum_asset_pattern": "checksums.txt"
+      }
+    },
+    {
+      "id": "restic",
+      "name": "restic",
+      "description": "Hızlı, güvenli ve verimli yedekleme aracı.",
+      "category": "productivity",
+      "source": "https://restic.net/",
+      "license": "BSD-2-Clause",
+      "executable": "restic",
+      "install_method": "pacman",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "elevated",
+      "trust_class": "A",
+      "install_command": [
+        "sudo",
+        "pacman",
+        "-S",
+        "--noconfirm",
+        "restic"
+      ],
+      "install_notes": "pacman: sudo pacman -S restic\napt: sudo apt install restic\nbrew: brew install restic\nResmî: https://restic.readthedocs.io/en/stable/020_installation.html\n"
+    },
+    {
+      "id": "tmux",
+      "name": "tmux",
+      "description": "Terminal çoğullayıcı; oturum, pencere ve panel yönetimi.",
+      "category": "productivity",
+      "source": "https://github.com/tmux/tmux",
+      "license": "ISC",
+      "executable": "tmux",
+      "install_method": "apt",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "elevated",
+      "trust_class": "A",
+      "install_command": [
+        "sudo",
+        "apt",
+        "install",
+        "-y",
+        "tmux"
+      ],
+      "install_notes": "apt: sudo apt install tmux\nbrew: brew install tmux\npacman: sudo pacman -S tmux\nResmî: https://github.com/tmux/tmux/wiki/Installing\n"
+    },
+    {
+      "id": "trivy",
+      "name": "Trivy",
+      "description": "Konteyner, FS ve Git deposu güvenlik tarayıcısı.",
+      "category": "security",
+      "source": "https://trivy.dev/",
+      "license": "Apache-2.0",
+      "executable": "trivy",
+      "install_method": "brew",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "A",
+      "install_command": [
+        "brew",
+        "install",
+        "trivy"
+      ],
+      "install_notes": "brew: brew install trivy\nResmî: https://trivy.dev/latest/getting-started/installation/\n"
+    },
+    {
+      "id": "xh",
+      "name": "xh",
+      "description": "Rust ile yazılmış hızlı HTTPie dostu HTTP istemcisi.",
+      "category": "development",
+      "source": "https://github.com/ducaale/xh",
+      "license": "MIT",
+      "executable": "xh",
+      "install_method": "cargo",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "C",
+      "risk_note": "Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.",
+      "install_command": [
+        "cargo",
+        "install",
+        "xh"
+      ],
+      "install_notes": "cargo: cargo install xh\nbrew: brew install xh\nResmî: https://github.com/ducaale/xh#installation\n"
+    },
+    {
+      "id": "zellij",
+      "name": "zellij",
+      "description": "Kullanıcı dostu terminal çalışma alanı / çoğullayıcı.",
+      "category": "productivity",
+      "source": "https://zellij.dev/",
+      "license": "MIT",
+      "executable": "zellij",
+      "install_method": "cargo",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "C",
+      "risk_note": "Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.",
+      "install_command": [
+        "cargo",
+        "install",
+        "--locked",
+        "zellij"
+      ],
+      "install_notes": "cargo: cargo install --locked zellij\nbrew: brew install zellij\nResmî: https://zellij.dev/documentation/installation\n"
+    }
+  ],
+  "git_sha": "6eab5df22b8f2e154e03ba1cb455080cb4c1195d"
+}

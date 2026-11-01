@@ -1,0 +1,33 @@
+# Nova-Store category registry.
+# Directory name under apps/ must match `id`. `nova_label` is the Turkish
+# label used by the Nova desktop UI today.
+
+[[categories]]
+id = "development"
+nova_label = "Geliştirme"
+description = "HTTP clients, JSON tools, language CLIs, and developer utilities."
+
+[[categories]]
+id = "networking"
+nova_label = "Ağ"
+description = "DNS, bandwidth, traceroute, and network diagnostics."
+
+[[categories]]
+id = "system"
+nova_label = "Sistem"
+description = "Process monitors, disk tools, and host observability."
+
+[[categories]]
+id = "security"
+nova_label = "Güvenlik"
+description = "Crypto, secrets, scanners, and signing tooling."
+
+[[categories]]
+id = "containers"
+nova_label = "Konteyner"
+description = "Docker, Kubernetes, and container inspection tools."
+
+[[categories]]
+id = "productivity"
+nova_label = "Verimlilik"
+description = "Terminal multiplexers, notes, backup, and workflow helpers."

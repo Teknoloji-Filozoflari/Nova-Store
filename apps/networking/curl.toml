@@ -1,0 +1,18 @@
+id = "curl"
+name = "curl"
+description = "Veri transfer ve HTTP istek aracı."
+category = "networking"
+source = "https://curl.se/"
+license = "curl"
+executable = "curl"
+install_method = "apt"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "apt", "install", "-y", "curl"]
+install_notes = """
+apt: sudo apt install curl
+brew: brew install curl
+pacman: sudo pacman -S curl
+Resmî: https://curl.se/docs/install.html
+"""

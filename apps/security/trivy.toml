@@ -1,0 +1,16 @@
+id = "trivy"
+name = "Trivy"
+description = "Konteyner, FS ve Git deposu güvenlik tarayıcısı."
+category = "security"
+source = "https://trivy.dev/"
+license = "Apache-2.0"
+executable = "trivy"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "trivy"]
+install_notes = """
+brew: brew install trivy
+Resmî: https://trivy.dev/latest/getting-started/installation/
+"""
