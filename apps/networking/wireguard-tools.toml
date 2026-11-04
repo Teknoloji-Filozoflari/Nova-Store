@@ -1,6 +1,6 @@
 id = "wireguard-tools"
 name = "WireGuard tools"
-description = "WireGuard tünellerini yönetmek için `wg` ve `wg-quick` komutlarını sağlayan araçlar."
+description = "wireguard-tools, modern VPN tüneli WireGuard için kullanıcı alanı araçlarını sağlar: wg ile anahtar üretimi ve arayüz yapılandırması, wg-quick ile hızlı up/down. Kernel veya wireguard-go üzerinden çalışır; SSH benzeri genel anahtar değişimiyle kurulur, IPsec/OpenVPN’e göre daha sade ve performanslıdır. Nova ağ tüneli kurmaz; bu paket WireGuard arayüzlerini yönetir (root/CAP_NET_ADMIN)."
 category = "networking"
 source = "https://www.wireguard.com/"
 license = "GPL-2.0-only"

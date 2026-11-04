@@ -71,7 +71,7 @@ Terminal LLM clients, coding agents, and AI CLIs.
 | [llm](https://llm.datasette.io) | Simon Willison'ın çok modellli komut satırı LLM aracı. | C | `pipx` |
 | [llmfit](https://github.com/AlexsJones/llmfit) | Donanıma göre hangi yerel LLM modellerinin çalışacağını önerir (TUI). | A | `pacman` |
 | [mods](https://github.com/charmbracelet/mods) | CLI için AI (Charmbracelet). | A | `pacman` |
-| [oh-my-pi](https://github.com/can1357/oh-my-pi) | Birden çok model sağlayıcısıyla çalışan terminal kodlama ajanı; proje dosyalarını inceleme ve düzenleme araçları sunar. | D | `manual` |
+| [oh-my-pi](https://github.com/can1357/oh-my-pi) | omp (oh-my-pi), Stencil Labs’ın Pi tabanlı terminal kodlama ajanıdır: 60+ model sağlayıcısı, 31+ yerleşik araç, LSP ve gerçek hata ayıklayıcı (DAP) desteği sunar. Dosya okuma/düzenleme, alt ajanlar, kod çalıştırma ve işbirliği oturumları içerir. Nova bir mağaza/başlatıcıdır; oh-my-pi projede kod yazıp düzenleyen ajanın kendisidir. | D | `manual` |
 | [Ollama](https://ollama.com/) | Yerel LLM çalıştırma ve yönetme. | A | `pacman` |
 | [OpenCode](https://opencode.ai) | Terminalde çalışan açık kaynaklı yapay zekâ kodlama asistanı. | C | `npm` |
 | [OpenHands](https://github.com/All-Hands-AI/OpenHands) | Açık kaynak AI yazılım mühendisi ajanı. | C | `pipx` |
@@ -93,7 +93,7 @@ Git TUIs, diff tools, and VCS helpers.
  | A | `apt` |
 | [difftastic](https://difftastic.wilfred.me.uk/) | Sözdizimi bilen yapısal diff aracı (difft). | A | `pacman` |
 | [gh-dash](https://github.com/dlvhdr/gh-dash) | GitHub PR ve issue'ları için zengin terminal panosu. | D | `manual` |
-| [Git Town](https://github.com/git-town/git-town) | Git dalları ve katkı süreçleri için tekrarlanabilir iş akışları sağlayan Git aracı. | A | `pacman` |
+| [Git Town](https://github.com/git-town/git-town) | Git Town, özellik dallarının oluşturma, senkron, PR önerme, birleştirme ve temizleme adımlarını otomatikleştiren Git komut setidir. Git Flow, GitHub/GitLab Flow ve trunk-based iş akışlarıyla uyumludur; mono-repo ve yığılmış (stacked) değişiklikleri destekler. hack/sync/propose/ship ile çakışma sonrası continue/undo sunar. Nova depo yaşam döngüsü yönetmez; Git Town dal iş akışını hızlandırır. | A | `pacman` |
 | [git-absorb](https://github.com/tummychow/git-absorb) | Otomatik fixup commit emici. | A | `pacman` |
 | [git-cliff](https://github.com/orhun/git-cliff) | Changelog üretici. | A | `pacman` |
 | [git-lfs](https://git-lfs.com/) | Git Large File Storage. | A | `pacman` |
@@ -291,7 +291,7 @@ Process monitors, disk tools, and host observability.
 | [screenfetch](https://github.com/KittyKatt/screenFetch) | Sistem bilgisi görüntüleyici. | A | `pacman` |
 | [sensors](https://hwmon.wiki.kernel.org/lm_sensors) | Donanım sensörleri. | A | `pacman` |
 | [sysdig](https://github.com/draios/sysdig) | Sistem ve konteyner keşif / sorun giderme aracı (csysdig TUI). | A | `pacman` |
-| [systemctl-tui](https://github.com/rgwood/systemctl-tui) | systemd servislerini, zamanlayıcılarını ve günlüklerini terminal arayüzünde yönetmeye yarayan araç. | A | `pacman` |
+| [systemctl-tui](https://github.com/rgwood/systemctl-tui) | systemctl-tui, systemd birimlerini ve günlüklerini yönetmek için hızlı ve sade bir TUI’dir: servis/zamanlayıcı durumu ve logları gezme, başlat/durdur, birim dosyası görüntüleme/düzenleme. --host user@host ile SSH üzerinden uzaktan yönetim (uzakta ek kurulum gerekmez). Nova servis yöneticisi değildir; systemctl-tui Lazygit tarzı bir systemd yüzeyidir. | A | `pacman` |
 | [sysz](https://github.com/joehillen/sysz) | systemctl için fzf tabanlı TUI. | D | `manual` |
 | [zenith](https://github.com/bvaisvil/zenith) | Grafik metriklerle terminal sistem monitörü. | C | `cargo` |
 
@@ -353,13 +353,13 @@ DNS, bandwidth, traceroute, and network diagnostics.
 | [rustscan](https://github.com/bee-san/RustScan) | Hızlı modern port tarayıcı. | A | `pacman` |
 | [socat](https://github.com/3ndG4me/socat) | Çok amaçlı röle (netcat++). | A | `pacman` |
 | [speedtest-cli](https://github.com/sivel/speedtest-cli) | Ookla hız testi CLI. | A | `pacman` |
-| [Tailscale](https://tailscale.com/) | Tailscale ağındaki cihazları yönetmek ve bağlantıları tanılamak için komut satırı aracı. | A | `pacman` |
+| [Tailscale](https://tailscale.com/) | Tailscale, WireGuard® tabanlı özel ağları kolaylaştıran açık kaynak istemcidir: tailscaled arka plan hizmeti ve tailscale CLI ile cihazları tailnet’e bağlar, durum ve IP tanılaması yapar. Paketler pkgs.tailscale.com üzerinden sunulur. Nova bir VPN değildir; Tailscale makinenizi kimlik doğrulamalı şifreli mesh ağına ekler (elevated kurulum gerekir). | A | `pacman` |
 | [tcpdump](https://www.tcpdump.org/) | Paket yakalama. | A | `pacman` |
 | [termshark](https://github.com/gcla/termshark) | Wireshark/tshark için terminal arayüzü. | A | `brew` |
 | [trippy](https://github.com/fujiapple852/trippy) | mtr benzeri modern ağ tanılama aracı (trip). | C | `cargo` |
 | [wget](https://www.gnu.org/software/wget/) | Dosya indirme aracı. | A | `apt` |
 | [whois](https://github.com/rfc1036/whois) | WHOIS sorgu aracı. | A | `pacman` |
-| [WireGuard tools](https://www.wireguard.com/) | WireGuard tünellerini yönetmek için `wg` ve `wg-quick` komutlarını sağlayan araçlar. | A | `pacman` |
+| [WireGuard tools](https://www.wireguard.com/) | wireguard-tools, modern VPN tüneli WireGuard için kullanıcı alanı araçlarını sağlar: wg ile anahtar üretimi ve arayüz yapılandırması, wg-quick ile hızlı up/down. Kernel veya wireguard-go üzerinden çalışır; SSH benzeri genel anahtar değişimiyle kurulur, IPsec/OpenVPN’e göre daha sade ve performanslıdır. Nova ağ tüneli kurmaz; bu paket WireGuard arayüzlerini yönetir (root/CAP_NET_ADMIN). | A | `pacman` |
 
 <a id="containers"></a>
 
@@ -419,7 +419,7 @@ Database CLIs, TUI clients, and query helpers.
 | [litecli](https://litecli.com/) | SQLite için otomatik tamamlamalı CLI. | C | `pipx` |
 | [mongosh](https://www.mongodb.com/docs/mongodb-shell/) | MongoDB kabuğu. | A | `pacman` |
 | [mycli](https://github.com/dbcli/mycli) | Otomatik tamamlama özellikli MySQL/MariaDB istemcisi. | C | `pipx` |
-| [pg_activity](https://github.com/dalibo/pg_activity) | PostgreSQL oturumlarını, sorgu etkinliğini ve bekleyen işlemleri canlı gösteren terminal aracı. | C | `pipx` |
+| [pg_activity](https://github.com/dalibo/pg_activity) | PostgreSQL sunucu etkinliğini izleyen etkileşimli terminal aracı (Dalibo). Çalışan, bekleyen ve bloke eden sorguları canlı listeler; CPU/bellek/IO, TPS, kilitler ve geçici dosya boyutunu gösterir. Sorguları iptal veya sonlandırabilir; CSV çıktısı, profiller (narrow/wide/minimal) ve AWS RDS seçenekleri vardır. Yerel veya uzak bağlantı; tam sistem bilgisi için postgres kullanıcısı önerilir. | C | `pipx` |
 | [pgcli](https://github.com/dbcli/pgcli) | Otomatik tamamlama özellikli PostgreSQL istemcisi. | C | `pipx` |
 | [psql](https://www.postgresql.org/) | PostgreSQL etkileşimli terminal. | A | `pacman` |
 | [rainfrog](https://github.com/achristmascarl/rainfrog) | Postgres, MySQL ve SQLite için veritabanı TUI. | C | `cargo` |
@@ -448,10 +448,10 @@ Crypto, secrets, scanners, and signing tooling.
 | [John the Ripper](https://www.openwall.com/john/) | Parola kırma aracı. | A | `pacman` |
 | [masscan](https://github.com/robertdavidgraham/masscan) | Çok hızlı port tarayıcı. | A | `pacman` |
 | [nikto](https://github.com/sullo/nikto) | Web sunucu tarayıcı. | A | `pacman` |
-| [Nuclei](https://github.com/projectdiscovery/nuclei) | Şablonlarla çalışan, yapılandırılabilir güvenlik açığı tarayıcısı. | B | `download_archive` |
+| [Nuclei](https://github.com/projectdiscovery/nuclei) | ProjectDiscovery’nin YAML şablonlarıyla çalışan yüksek performanslı güvenlik açığı tarayıcısı. Topluluk şablonlarıyla gerçekçi adımlarla doğrulama yaparak yanlış pozitifleri azaltmayı hedefler; TCP/DNS/HTTP/SSL ve daha fazla protokol, paralel tarama ve CI/CD entegrasyonu destekler. Nova tarayıcı değildir; Nuclei hedeflerde şablon tabanlı güvenlik taraması çalıştırır (yalnızca yetkili sistemlerde kullanın). | B | `download_archive` |
 | [osv-scanner](https://github.com/google/osv-scanner) | OSV veritabanı ile bağımlılık güvenlik açığı tarayıcısı. | A | `pacman` |
 | [pass](https://www.passwordstore.org/) | Unix parola yöneticisi (the standard unix password manager). | A | `apt` |
-| [Semgrep](https://github.com/semgrep/semgrep) | Kaynak kodu güvenlik ve kalite kurallarına göre yerel olarak tarayan statik analiz aracı. | C | `pipx` |
+| [Semgrep](https://github.com/semgrep/semgrep) | Semgrep, kodda hata ve güvenlik sorunlarını arayan hızlı açık kaynak statik analiz (SAST) aracıdır: 30+ dil, semantik arama (grep gibi ama AST duyarlı), IDE/pre-commit/CI kullanımı. Kurallar yazdığınız koda benzer; varsayılan olarak kod yüklenmez. Community Edition dosya/fonksiyon sınırlıdır. Nova kod tarayıcısı değildir; Semgrep depoda güvenlik ve kalite kurallarını uygular. | C | `pipx` |
 | [sops](https://github.com/getsops/sops) | Mozilla/CNCF sırları şifreleme aracı (YAML/JSON/ENV). | A | `brew` |
 | [sqlmap](https://sqlmap.org/) | SQL enjeksiyon test aracı. | A | `pacman` |
 | [syft](https://github.com/anchore/syft) | Konteyner ve dosya sistemlerinden SBOM üretici (Anchore). | A | `pacman` |
@@ -527,7 +527,7 @@ Terminal multiplexers, notes, backup, and workflow helpers.
 | [calcure](https://github.com/anufrievroman/calcure) | Modern TUI takvim ve görev uygulaması. | A | `brew` |
 | [calcurse](https://calcurse.org/) | Takvim ve yapılacaklar için metin arayüzü. | A | `apt` |
 | [cheat](https://github.com/cheat/cheat) | Etkileşimli cheatsheet. | A | `pacman` |
-| [chezmoi](https://www.chezmoi.io/) | Dotfile ve kişisel ayarları farklı bilgisayarlar arasında yönetmeye yardımcı olan araç. | A | `pacman` |
+| [chezmoi](https://www.chezmoi.io/) | chezmoi, dotfile ve kişisel ayarları birden fazla makinede güvenli yöneten tek ikili araçtır. Şablonlar, parola yöneticisi entegrasyonu, age/gpg ile şifreleme, arşivden içe aktarma ve kurulum betikleri sunar. Yeni makinede init+apply; chezmoi update ile güncelleme. Nova yapılandırma senkronu değildir; chezmoi ev dizininizi git deposundan uygular. | A | `pacman` |
 | [fasd](https://github.com/clvv/fasd) | Sık kullanılan dosya/dizin erişimi. | A | `pacman` |
 | [Glow](https://github.com/charmbracelet/glow) | Terminalde Markdown okuyucu. | A | `brew` |
 | [gum](https://github.com/charmbracelet/gum) | Kabuk betikleri için güzel etkileşimli istemler. | A | `brew` |

@@ -1,6 +1,6 @@
 id = "semgrep"
 name = "Semgrep"
-description = "Kaynak kodu güvenlik ve kalite kurallarına göre yerel olarak tarayan statik analiz aracı."
+description = "Semgrep, kodda hata ve güvenlik sorunlarını arayan hızlı açık kaynak statik analiz (SAST) aracıdır: 30+ dil, semantik arama (grep gibi ama AST duyarlı), IDE/pre-commit/CI kullanımı. Kurallar yazdığınız koda benzer; varsayılan olarak kod yüklenmez. Community Edition dosya/fonksiyon sınırlıdır. Nova kod tarayıcısı değildir; Semgrep depoda güvenlik ve kalite kurallarını uygular."
 category = "security"
 source = "https://github.com/semgrep/semgrep"
 license = "LGPL-2.1-or-later"

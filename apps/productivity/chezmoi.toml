@@ -1,6 +1,6 @@
 id = "chezmoi"
 name = "chezmoi"
-description = "Dotfile ve kişisel ayarları farklı bilgisayarlar arasında yönetmeye yardımcı olan araç."
+description = "chezmoi, dotfile ve kişisel ayarları birden fazla makinede güvenli yöneten tek ikili araçtır. Şablonlar, parola yöneticisi entegrasyonu, age/gpg ile şifreleme, arşivden içe aktarma ve kurulum betikleri sunar. Yeni makinede init+apply; chezmoi update ile güncelleme. Nova yapılandırma senkronu değildir; chezmoi ev dizininizi git deposundan uygular."
 category = "productivity"
 source = "https://www.chezmoi.io/"
 license = "MIT"

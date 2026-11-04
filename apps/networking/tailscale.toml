@@ -1,6 +1,6 @@
 id = "tailscale"
 name = "Tailscale"
-description = "Tailscale ağındaki cihazları yönetmek ve bağlantıları tanılamak için komut satırı aracı."
+description = "Tailscale, WireGuard® tabanlı özel ağları kolaylaştıran açık kaynak istemcidir: tailscaled arka plan hizmeti ve tailscale CLI ile cihazları tailnet’e bağlar, durum ve IP tanılaması yapar. Paketler pkgs.tailscale.com üzerinden sunulur. Nova bir VPN değildir; Tailscale makinenizi kimlik doğrulamalı şifreli mesh ağına ekler (elevated kurulum gerekir)."
 category = "networking"
 source = "https://tailscale.com/"
 license = "BSD-3-Clause"

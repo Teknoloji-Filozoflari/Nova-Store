@@ -1,6 +1,6 @@
 id = "git-town"
 name = "Git Town"
-description = "Git dalları ve katkı süreçleri için tekrarlanabilir iş akışları sağlayan Git aracı."
+description = "Git Town, özellik dallarının oluşturma, senkron, PR önerme, birleştirme ve temizleme adımlarını otomatikleştiren Git komut setidir. Git Flow, GitHub/GitLab Flow ve trunk-based iş akışlarıyla uyumludur; mono-repo ve yığılmış (stacked) değişiklikleri destekler. hack/sync/propose/ship ile çakışma sonrası continue/undo sunar. Nova depo yaşam döngüsü yönetmez; Git Town dal iş akışını hızlandırır."
 category = "git"
 source = "https://github.com/git-town/git-town"
 license = "MIT"

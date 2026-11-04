@@ -1,6 +1,6 @@
 id = "systemctl-tui"
 name = "systemctl-tui"
-description = "systemd servislerini, zamanlayıcılarını ve günlüklerini terminal arayüzünde yönetmeye yarayan araç."
+description = "systemctl-tui, systemd birimlerini ve günlüklerini yönetmek için hızlı ve sade bir TUI’dir: servis/zamanlayıcı durumu ve logları gezme, başlat/durdur, birim dosyası görüntüleme/düzenleme. --host user@host ile SSH üzerinden uzaktan yönetim (uzakta ek kurulum gerekmez). Nova servis yöneticisi değildir; systemctl-tui Lazygit tarzı bir systemd yüzeyidir."
 category = "system"
 source = "https://github.com/rgwood/systemctl-tui"
 license = "MIT"

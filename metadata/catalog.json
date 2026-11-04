@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-04T21:33:26Z",
+  "generated_at": "2026-11-04T21:41:41Z",
   "apps": [
     {
       "id": "2048",
@@ -1522,7 +1522,7 @@
     {
       "id": "chezmoi",
       "name": "chezmoi",
-      "description": "Dotfile ve kişisel ayarları farklı bilgisayarlar arasında yönetmeye yardımcı olan araç.",
+      "description": "chezmoi, dotfile ve kişisel ayarları birden fazla makinede güvenli yöneten tek ikili araçtır. Şablonlar, parola yöneticisi entegrasyonu, age/gpg ile şifreleme, arşivden içe aktarma ve kurulum betikleri sunar. Yeni makinede init+apply; chezmoi update ile güncelleme. Nova yapılandırma senkronu değildir; chezmoi ev dizininizi git deposundan uygular.",
       "category": "productivity",
       "source": "https://www.chezmoi.io/",
       "license": "MIT",
@@ -3413,7 +3413,7 @@
     {
       "id": "git-town",
       "name": "Git Town",
-      "description": "Git dalları ve katkı süreçleri için tekrarlanabilir iş akışları sağlayan Git aracı.",
+      "description": "Git Town, özellik dallarının oluşturma, senkron, PR önerme, birleştirme ve temizleme adımlarını otomatikleştiren Git komut setidir. Git Flow, GitHub/GitLab Flow ve trunk-based iş akışlarıyla uyumludur; mono-repo ve yığılmış (stacked) değişiklikleri destekler. hack/sync/propose/ship ile çakışma sonrası continue/undo sunar. Nova depo yaşam döngüsü yönetmez; Git Town dal iş akışını hızlandırır.",
       "category": "git",
       "source": "https://github.com/git-town/git-town",
       "license": "MIT",
@@ -6954,7 +6954,7 @@
     {
       "id": "nuclei",
       "name": "Nuclei",
-      "description": "Şablonlarla çalışan, yapılandırılabilir güvenlik açığı tarayıcısı.",
+      "description": "ProjectDiscovery’nin YAML şablonlarıyla çalışan yüksek performanslı güvenlik açığı tarayıcısı. Topluluk şablonlarıyla gerçekçi adımlarla doğrulama yaparak yanlış pozitifleri azaltmayı hedefler; TCP/DNS/HTTP/SSL ve daha fazla protokol, paralel tarama ve CI/CD entegrasyonu destekler. Nova tarayıcı değildir; Nuclei hedeflerde şablon tabanlı güvenlik taraması çalıştırır (yalnızca yetkili sistemlerde kullanın).",
       "category": "security",
       "source": "https://github.com/projectdiscovery/nuclei",
       "license": "MIT",
@@ -7092,7 +7092,7 @@
     {
       "id": "oh-my-pi",
       "name": "oh-my-pi",
-      "description": "Birden çok model sağlayıcısıyla çalışan terminal kodlama ajanı; proje dosyalarını inceleme ve düzenleme araçları sunar.",
+      "description": "omp (oh-my-pi), Stencil Labs’ın Pi tabanlı terminal kodlama ajanıdır: 60+ model sağlayıcısı, 31+ yerleşik araç, LSP ve gerçek hata ayıklayıcı (DAP) desteği sunar. Dosya okuma/düzenleme, alt ajanlar, kod çalıştırma ve işbirliği oturumları içerir. Nova bir mağaza/başlatıcıdır; oh-my-pi projede kod yazıp düzenleyen ajanın kendisidir.",
       "category": "ai",
       "source": "https://github.com/can1357/oh-my-pi",
       "license": "MIT",
@@ -7508,7 +7508,7 @@
     {
       "id": "pg-activity",
       "name": "pg_activity",
-      "description": "PostgreSQL oturumlarını, sorgu etkinliğini ve bekleyen işlemleri canlı gösteren terminal aracı.",
+      "description": "PostgreSQL sunucu etkinliğini izleyen etkileşimli terminal aracı (Dalibo). Çalışan, bekleyen ve bloke eden sorguları canlı listeler; CPU/bellek/IO, TPS, kilitler ve geçici dosya boyutunu gösterir. Sorguları iptal veya sonlandırabilir; CSV çıktısı, profiller (narrow/wide/minimal) ve AWS RDS seçenekleri vardır. Yerel veya uzak bağlantı; tam sistem bilgisi için postgres kullanıcısı önerilir.",
       "category": "database",
       "source": "https://github.com/dalibo/pg_activity",
       "license": "PostgreSQL",
@@ -8752,7 +8752,7 @@
     {
       "id": "semgrep",
       "name": "Semgrep",
-      "description": "Kaynak kodu güvenlik ve kalite kurallarına göre yerel olarak tarayan statik analiz aracı.",
+      "description": "Semgrep, kodda hata ve güvenlik sorunlarını arayan hızlı açık kaynak statik analiz (SAST) aracıdır: 30+ dil, semantik arama (grep gibi ama AST duyarlı), IDE/pre-commit/CI kullanımı. Kurallar yazdığınız koda benzer; varsayılan olarak kod yüklenmez. Community Edition dosya/fonksiyon sınırlıdır. Nova kod tarayıcısı değildir; Semgrep depoda güvenlik ve kalite kurallarını uygular.",
       "category": "security",
       "source": "https://github.com/semgrep/semgrep",
       "license": "LGPL-2.1-or-later",
@@ -9446,7 +9446,7 @@
     {
       "id": "systemctl-tui",
       "name": "systemctl-tui",
-      "description": "systemd servislerini, zamanlayıcılarını ve günlüklerini terminal arayüzünde yönetmeye yarayan araç.",
+      "description": "systemctl-tui, systemd birimlerini ve günlüklerini yönetmek için hızlı ve sade bir TUI’dir: servis/zamanlayıcı durumu ve logları gezme, başlat/durdur, birim dosyası görüntüleme/düzenleme. --host user@host ile SSH üzerinden uzaktan yönetim (uzakta ek kurulum gerekmez). Nova servis yöneticisi değildir; systemctl-tui Lazygit tarzı bir systemd yüzeyidir.",
       "category": "system",
       "source": "https://github.com/rgwood/systemctl-tui",
       "license": "MIT",
@@ -9511,7 +9511,7 @@
     {
       "id": "tailscale",
       "name": "Tailscale",
-      "description": "Tailscale ağındaki cihazları yönetmek ve bağlantıları tanılamak için komut satırı aracı.",
+      "description": "Tailscale, WireGuard® tabanlı özel ağları kolaylaştıran açık kaynak istemcidir: tailscaled arka plan hizmeti ve tailscale CLI ile cihazları tailnet’e bağlar, durum ve IP tanılaması yapar. Paketler pkgs.tailscale.com üzerinden sunulur. Nova bir VPN değildir; Tailscale makinenizi kimlik doğrulamalı şifreli mesh ağına ekler (elevated kurulum gerekir).",
       "category": "networking",
       "source": "https://tailscale.com/",
       "license": "BSD-3-Clause",
@@ -10946,7 +10946,7 @@
     {
       "id": "wireguard-tools",
       "name": "WireGuard tools",
-      "description": "WireGuard tünellerini yönetmek için `wg` ve `wg-quick` komutlarını sağlayan araçlar.",
+      "description": "wireguard-tools, modern VPN tüneli WireGuard için kullanıcı alanı araçlarını sağlar: wg ile anahtar üretimi ve arayüz yapılandırması, wg-quick ile hızlı up/down. Kernel veya wireguard-go üzerinden çalışır; SSH benzeri genel anahtar değişimiyle kurulur, IPsec/OpenVPN’e göre daha sade ve performanslıdır. Nova ağ tüneli kurmaz; bu paket WireGuard arayüzlerini yönetir (root/CAP_NET_ADMIN).",
       "category": "networking",
       "source": "https://www.wireguard.com/",
       "license": "GPL-2.0-only",
@@ -11345,5 +11345,5 @@
       "install_notes": "cargo: cargo install zoxide --locked\nbrew: brew install zoxide\napt: sudo apt install zoxide\npacman: sudo pacman -S zoxide\nResmî: https://github.com/ajeetdsouza/zoxide#installation\n"
     }
   ],
-  "git_sha": "89bb17b5cbe684507ff634cb103bc8303d321441"
+  "git_sha": "2aa45d206a36f35ab96f695fb40e1f080fcbedb8"
 }
