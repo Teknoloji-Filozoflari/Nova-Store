@@ -1,0 +1,20 @@
+id = "git-town"
+name = "Git Town"
+description = "Git dalları ve katkı süreçleri için tekrarlanabilir iş akışları sağlayan Git aracı."
+category = "git"
+source = "https://github.com/git-town/git-town"
+license = "MIT"
+executable = "git-town"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "git-town"]
+install_notes = """
+pacman: sudo pacman -S git-town
+brew: brew install git-town
+Debian/Ubuntu: yayınladığı git-town_linux_intel_64.deb dosyasını indirip sudo apt-get install git-town_linux_intel_64.deb
+RedHat: rpm -i git-town_linux_intel_64.rpm
+Komutlar git-town olarak çalışır; git town komutu da aynı ikiliyi çağırır.
+Resmî: https://www.git-town.com/install.html
+"""

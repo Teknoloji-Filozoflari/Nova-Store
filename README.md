@@ -6,7 +6,7 @@ Signed, PR-reviewed application catalog for
 Contributors add apps here; Nova fetches **signed** release artifacts only and
 falls back to the last trusted catalog if verification fails.
 
-**471 apps** across 18 categories · Trust A 358 · B 6 · C 85 · D 22
+**480 apps** across 18 categories · Trust A 363 · B 7 · C 87 · D 23
 
 > Catalog entries below are generated from `apps/**/*.toml` (name, short
 > description, upstream link). Install methods and trust classes live in those
@@ -16,20 +16,20 @@ falls back to the last trusted catalog if verification fails.
 
 | Category | Apps | Focus |
 |----------|-----:|-------|
-| [AI](#ai) | 23 | Terminal LLM clients, coding agents, and AI CLIs. |
-| [Git](#git) | 17 | Git TUIs, diff tools, and VCS helpers. |
+| [AI](#ai) | 24 | Terminal LLM clients, coding agents, and AI CLIs. |
+| [Git](#git) | 18 | Git TUIs, diff tools, and VCS helpers. |
 | [Dosya ve Arama](#files) | 39 | Finders, fuzzy selectors, file managers, and search. |
 | [Geliştirme](#development) | 59 | HTTP clients, JSON tools, language CLIs, and developer utilities. |
 | [Editörler](#editors) | 20 | Terminal editors and modal text editing tools. |
-| [Sistem](#system) | 30 | Process monitors, disk tools, and host observability. |
+| [Sistem](#system) | 31 | Process monitors, disk tools, and host observability. |
 | [Paneller](#panels) | 19 | Dashboards and system overview panels. |
-| [Ağ](#networking) | 26 | DNS, bandwidth, traceroute, and network diagnostics. |
+| [Ağ](#networking) | 28 | DNS, bandwidth, traceroute, and network diagnostics. |
 | [Konteyner](#containers) | 32 | Docker, Kubernetes, and container inspection tools. |
-| [Veritabanı](#database) | 16 | Database CLIs, TUI clients, and query helpers. |
-| [Güvenlik](#security) | 20 | Crypto, secrets, scanners, and signing tooling. |
+| [Veritabanı](#database) | 17 | Database CLIs, TUI clients, and query helpers. |
+| [Güvenlik](#security) | 22 | Crypto, secrets, scanners, and signing tooling. |
 | [Medya](#media) | 16 | Audio, video, and image terminal tools. |
 | [Mesajlaşma](#messaging) | 19 | IRC, Matrix, and chat terminal clients. |
-| [Verimlilik](#productivity) | 29 | Terminal multiplexers, notes, backup, and workflow helpers. |
+| [Verimlilik](#productivity) | 30 | Terminal multiplexers, notes, backup, and workflow helpers. |
 | [Oyunlar](#games) | 26 | Terminal games and playful diversions. |
 | [Ekran Koruyucular](#screensavers) | 11 | ASCII / terminal screensaver animations. |
 | [Web](#web) | 12 | Text-mode browsers and web fetch helpers. |
@@ -71,6 +71,7 @@ Terminal LLM clients, coding agents, and AI CLIs.
 | [llm](https://llm.datasette.io) | Simon Willison'ın çok modellli komut satırı LLM aracı. | C | `pipx` |
 | [llmfit](https://github.com/AlexsJones/llmfit) | Donanıma göre hangi yerel LLM modellerinin çalışacağını önerir (TUI). | A | `pacman` |
 | [mods](https://github.com/charmbracelet/mods) | CLI için AI (Charmbracelet). | A | `pacman` |
+| [oh-my-pi](https://github.com/can1357/oh-my-pi) | Birden çok model sağlayıcısıyla çalışan terminal kodlama ajanı; proje dosyalarını inceleme ve düzenleme araçları sunar. | D | `manual` |
 | [Ollama](https://ollama.com/) | Yerel LLM çalıştırma ve yönetme. | A | `pacman` |
 | [OpenCode](https://opencode.ai) | Terminalde çalışan açık kaynaklı yapay zekâ kodlama asistanı. | C | `npm` |
 | [OpenHands](https://github.com/All-Hands-AI/OpenHands) | Açık kaynak AI yazılım mühendisi ajanı. | C | `pipx` |
@@ -92,6 +93,7 @@ Git TUIs, diff tools, and VCS helpers.
  | A | `apt` |
 | [difftastic](https://difftastic.wilfred.me.uk/) | Sözdizimi bilen yapısal diff aracı (difft). | A | `pacman` |
 | [gh-dash](https://github.com/dlvhdr/gh-dash) | GitHub PR ve issue'ları için zengin terminal panosu. | D | `manual` |
+| [Git Town](https://github.com/git-town/git-town) | Git dalları ve katkı süreçleri için tekrarlanabilir iş akışları sağlayan Git aracı. | A | `pacman` |
 | [git-absorb](https://github.com/tummychow/git-absorb) | Otomatik fixup commit emici. | A | `pacman` |
 | [git-cliff](https://github.com/orhun/git-cliff) | Changelog üretici. | A | `pacman` |
 | [git-lfs](https://git-lfs.com/) | Git Large File Storage. | A | `pacman` |
@@ -289,6 +291,7 @@ Process monitors, disk tools, and host observability.
 | [screenfetch](https://github.com/KittyKatt/screenFetch) | Sistem bilgisi görüntüleyici. | A | `pacman` |
 | [sensors](https://hwmon.wiki.kernel.org/lm_sensors) | Donanım sensörleri. | A | `pacman` |
 | [sysdig](https://github.com/draios/sysdig) | Sistem ve konteyner keşif / sorun giderme aracı (csysdig TUI). | A | `pacman` |
+| [systemctl-tui](https://github.com/rgwood/systemctl-tui) | systemd servislerini, zamanlayıcılarını ve günlüklerini terminal arayüzünde yönetmeye yarayan araç. | A | `pacman` |
 | [sysz](https://github.com/joehillen/sysz) | systemctl için fzf tabanlı TUI. | D | `manual` |
 | [zenith](https://github.com/bvaisvil/zenith) | Grafik metriklerle terminal sistem monitörü. | C | `cargo` |
 
@@ -350,11 +353,13 @@ DNS, bandwidth, traceroute, and network diagnostics.
 | [rustscan](https://github.com/bee-san/RustScan) | Hızlı modern port tarayıcı. | A | `pacman` |
 | [socat](https://github.com/3ndG4me/socat) | Çok amaçlı röle (netcat++). | A | `pacman` |
 | [speedtest-cli](https://github.com/sivel/speedtest-cli) | Ookla hız testi CLI. | A | `pacman` |
+| [Tailscale](https://tailscale.com/) | Tailscale ağındaki cihazları yönetmek ve bağlantıları tanılamak için komut satırı aracı. | A | `pacman` |
 | [tcpdump](https://www.tcpdump.org/) | Paket yakalama. | A | `pacman` |
 | [termshark](https://github.com/gcla/termshark) | Wireshark/tshark için terminal arayüzü. | A | `brew` |
 | [trippy](https://github.com/fujiapple852/trippy) | mtr benzeri modern ağ tanılama aracı (trip). | C | `cargo` |
 | [wget](https://www.gnu.org/software/wget/) | Dosya indirme aracı. | A | `apt` |
 | [whois](https://github.com/rfc1036/whois) | WHOIS sorgu aracı. | A | `pacman` |
+| [WireGuard tools](https://www.wireguard.com/) | WireGuard tünellerini yönetmek için `wg` ve `wg-quick` komutlarını sağlayan araçlar. | A | `pacman` |
 
 <a id="containers"></a>
 
@@ -414,6 +419,7 @@ Database CLIs, TUI clients, and query helpers.
 | [litecli](https://litecli.com/) | SQLite için otomatik tamamlamalı CLI. | C | `pipx` |
 | [mongosh](https://www.mongodb.com/docs/mongodb-shell/) | MongoDB kabuğu. | A | `pacman` |
 | [mycli](https://github.com/dbcli/mycli) | Otomatik tamamlama özellikli MySQL/MariaDB istemcisi. | C | `pipx` |
+| [pg_activity](https://github.com/dalibo/pg_activity) | PostgreSQL oturumlarını, sorgu etkinliğini ve bekleyen işlemleri canlı gösteren terminal aracı. | C | `pipx` |
 | [pgcli](https://github.com/dbcli/pgcli) | Otomatik tamamlama özellikli PostgreSQL istemcisi. | C | `pipx` |
 | [psql](https://www.postgresql.org/) | PostgreSQL etkileşimli terminal. | A | `pacman` |
 | [rainfrog](https://github.com/achristmascarl/rainfrog) | Postgres, MySQL ve SQLite için veritabanı TUI. | C | `cargo` |
@@ -442,8 +448,10 @@ Crypto, secrets, scanners, and signing tooling.
 | [John the Ripper](https://www.openwall.com/john/) | Parola kırma aracı. | A | `pacman` |
 | [masscan](https://github.com/robertdavidgraham/masscan) | Çok hızlı port tarayıcı. | A | `pacman` |
 | [nikto](https://github.com/sullo/nikto) | Web sunucu tarayıcı. | A | `pacman` |
+| [Nuclei](https://github.com/projectdiscovery/nuclei) | Şablonlarla çalışan, yapılandırılabilir güvenlik açığı tarayıcısı. | B | `download_archive` |
 | [osv-scanner](https://github.com/google/osv-scanner) | OSV veritabanı ile bağımlılık güvenlik açığı tarayıcısı. | A | `pacman` |
 | [pass](https://www.passwordstore.org/) | Unix parola yöneticisi (the standard unix password manager). | A | `apt` |
+| [Semgrep](https://github.com/semgrep/semgrep) | Kaynak kodu güvenlik ve kalite kurallarına göre yerel olarak tarayan statik analiz aracı. | C | `pipx` |
 | [sops](https://github.com/getsops/sops) | Mozilla/CNCF sırları şifreleme aracı (YAML/JSON/ENV). | A | `brew` |
 | [sqlmap](https://sqlmap.org/) | SQL enjeksiyon test aracı. | A | `pacman` |
 | [syft](https://github.com/anchore/syft) | Konteyner ve dosya sistemlerinden SBOM üretici (Anchore). | A | `pacman` |
@@ -519,6 +527,7 @@ Terminal multiplexers, notes, backup, and workflow helpers.
 | [calcure](https://github.com/anufrievroman/calcure) | Modern TUI takvim ve görev uygulaması. | A | `brew` |
 | [calcurse](https://calcurse.org/) | Takvim ve yapılacaklar için metin arayüzü. | A | `apt` |
 | [cheat](https://github.com/cheat/cheat) | Etkileşimli cheatsheet. | A | `pacman` |
+| [chezmoi](https://www.chezmoi.io/) | Dotfile ve kişisel ayarları farklı bilgisayarlar arasında yönetmeye yardımcı olan araç. | A | `pacman` |
 | [fasd](https://github.com/clvv/fasd) | Sık kullanılan dosya/dizin erişimi. | A | `pacman` |
 | [Glow](https://github.com/charmbracelet/glow) | Terminalde Markdown okuyucu. | A | `brew` |
 | [gum](https://github.com/charmbracelet/gum) | Kabuk betikleri için güzel etkileşimli istemler. | A | `brew` |

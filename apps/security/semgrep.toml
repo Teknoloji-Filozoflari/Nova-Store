@@ -1,0 +1,22 @@
+id = "semgrep"
+name = "Semgrep"
+description = "Kaynak kodu güvenlik ve kalite kurallarına göre yerel olarak tarayan statik analiz aracı."
+category = "security"
+source = "https://github.com/semgrep/semgrep"
+license = "LGPL-2.1-or-later"
+executable = "semgrep"
+install_method = "pipx"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["pipx", "install", "semgrep"]
+install_notes = """
+pipx: pipx install semgrep
+uv: uv tool install semgrep
+brew: brew install semgrep
+Python 3.10 ve üzeri gerekir. Kurulumdan sonra semgrep login ile hesap girişi isteğe bağlıdır; tarama semgrep --config auto ile yapılır.
+Resmî: https://semgrep.dev/docs/
+"""

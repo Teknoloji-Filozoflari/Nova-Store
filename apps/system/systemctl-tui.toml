@@ -1,0 +1,21 @@
+id = "systemctl-tui"
+name = "systemctl-tui"
+description = "systemd servislerini, zamanlayıcılarını ve günlüklerini terminal arayüzünde yönetmeye yarayan araç."
+category = "system"
+source = "https://github.com/rgwood/systemctl-tui"
+license = "MIT"
+executable = "systemctl-tui"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "systemctl-tui"]
+install_notes = """
+pacman: sudo pacman -S systemctl-tui
+cargo: cargo install systemctl-tui
+GitHub yayınları x64 ve ARM64 ikilileri sunar.
+Yalnızca systemd üzerinde çalışır; WSL kullanıcıları systemd etkin olmalıdır.
+Servis/zamanlayıcı başlatma, durdurma ve enable/disable işlemleri için sudo yetkisi gerekir.
+Uzak sunucu yönetimi: systemctl-tui --host user@hostname (SSH üzerinden, uzak tarafta kurulum gerekmez).
+Resmî: https://github.com/rgwood/systemctl-tui
+"""
