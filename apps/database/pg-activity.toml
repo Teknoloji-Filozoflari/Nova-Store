@@ -1,6 +1,6 @@
 id = "pg-activity"
 name = "pg_activity"
-description = "PostgreSQL oturumlarını, sorgu etkinliğini ve bekleyen işlemleri canlı gösteren terminal aracı."
+description = "PostgreSQL sunucu etkinliğini izleyen etkileşimli terminal aracı (Dalibo). Çalışan, bekleyen ve bloke eden sorguları canlı listeler; CPU/bellek/IO, TPS, kilitler ve geçici dosya boyutunu gösterir. Sorguları iptal veya sonlandırabilir; CSV çıktısı, profiller (narrow/wide/minimal) ve AWS RDS seçenekleri vardır. Yerel veya uzak bağlantı; tam sistem bilgisi için postgres kullanıcısı önerilir."
 category = "database"
 source = "https://github.com/dalibo/pg_activity"
 license = "PostgreSQL"

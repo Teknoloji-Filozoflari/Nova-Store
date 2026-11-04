@@ -1,6 +1,6 @@
 id = "nuclei"
 name = "Nuclei"
-description = "Şablonlarla çalışan, yapılandırılabilir güvenlik açığı tarayıcısı."
+description = "ProjectDiscovery’nin YAML şablonlarıyla çalışan yüksek performanslı güvenlik açığı tarayıcısı. Topluluk şablonlarıyla gerçekçi adımlarla doğrulama yaparak yanlış pozitifleri azaltmayı hedefler; TCP/DNS/HTTP/SSL ve daha fazla protokol, paralel tarama ve CI/CD entegrasyonu destekler. Nova tarayıcı değildir; Nuclei hedeflerde şablon tabanlı güvenlik taraması çalıştırır (yalnızca yetkili sistemlerde kullanın)."
 category = "security"
 source = "https://github.com/projectdiscovery/nuclei"
 license = "MIT"

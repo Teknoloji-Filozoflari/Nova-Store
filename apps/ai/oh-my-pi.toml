@@ -1,6 +1,6 @@
 id = "oh-my-pi"
 name = "oh-my-pi"
-description = "Birden çok model sağlayıcısıyla çalışan terminal kodlama ajanı; proje dosyalarını inceleme ve düzenleme araçları sunar."
+description = "omp (oh-my-pi), Stencil Labs’ın Pi tabanlı terminal kodlama ajanıdır: 60+ model sağlayıcısı, 31+ yerleşik araç, LSP ve gerçek hata ayıklayıcı (DAP) desteği sunar. Dosya okuma/düzenleme, alt ajanlar, kod çalıştırma ve işbirliği oturumları içerir. Nova bir mağaza/başlatıcıdır; oh-my-pi projede kod yazıp düzenleyen ajanın kendisidir."
 category = "ai"
 source = "https://github.com/can1357/oh-my-pi"
 license = "MIT"
