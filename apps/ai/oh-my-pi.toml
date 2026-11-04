@@ -1,0 +1,19 @@
+id = "oh-my-pi"
+name = "oh-my-pi"
+description = "Birden çok model sağlayıcısıyla çalışan terminal kodlama ajanı; proje dosyalarını inceleme ve düzenleme araçları sunar."
+category = "ai"
+source = "https://github.com/can1357/oh-my-pi"
+license = "MIT"
+executable = "omp"
+install_method = "manual"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "none"
+trust_class = "D"
+install_notes = """
+Upstream önerisi (Bun >= 1.4.4): bun install -g @oh-my-pi/pi-coding-agent
+Homebrew: brew install can1357/tap/omp
+Kurulum betiği (ön derleme ikilisini SHA-256 ile doğrular): curl -fsSL https://omp.sh/install | sh
+Nix: nix profile add github:can1357/oh-my-pi
+Not: Nova uzak curl|sh betiğini otomatik çalıştırmaz; npm paketi (@oh-my-pi/pi-coding-agent) çalışmak için Bun çalışma zamanı gerektirir.
+Resmî: https://github.com/can1357/oh-my-pi
+"""

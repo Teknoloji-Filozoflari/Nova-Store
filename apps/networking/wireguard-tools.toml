@@ -1,0 +1,21 @@
+id = "wireguard-tools"
+name = "WireGuard tools"
+description = "WireGuard tünellerini yönetmek için `wg` ve `wg-quick` komutlarını sağlayan araçlar."
+category = "networking"
+source = "https://www.wireguard.com/"
+license = "GPL-2.0-only"
+executable = "wg"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "wireguard-tools"]
+install_notes = """
+pacman: sudo pacman -S wireguard-tools
+apt: sudo apt install wireguard-tools
+dnf: sudo dnf install wireguard-tools
+Komutlar: wg (tünel yapılandırma ve anahtar üretimi) ve wg-quick (bash tabanlı hızlı kurulum).
+Sistem izinleri: wg-quick arayüz oluşturma ve yönlendirme için root (CAP_NET_ADMIN) gerektirir; up/down komutları sudo ile çalıştırılmalıdır.
+wireguard çekirdek modülü gerekir; yoksa wireguard-go kullanıcı alanı uygulamasına düşer.
+Resmî: https://www.wireguard.com/
+"""

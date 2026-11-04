@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-01T19:25:38Z",
+  "generated_at": "2026-11-04T21:33:26Z",
   "apps": [
     {
       "id": "2048",
@@ -1518,6 +1518,30 @@
         "chess-tui"
       ],
       "install_notes": "cargo: cargo install chess-tui\nResmî: https://github.com/thomas-daniels/chess-tui\n"
+    },
+    {
+      "id": "chezmoi",
+      "name": "chezmoi",
+      "description": "Dotfile ve kişisel ayarları farklı bilgisayarlar arasında yönetmeye yardımcı olan araç.",
+      "category": "productivity",
+      "source": "https://www.chezmoi.io/",
+      "license": "MIT",
+      "executable": "chezmoi",
+      "install_method": "pacman",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "elevated",
+      "trust_class": "A",
+      "install_command": [
+        "sudo",
+        "pacman",
+        "-S",
+        "--noconfirm",
+        "chezmoi"
+      ],
+      "install_notes": "pacman: sudo pacman -S chezmoi\napt: sudo apt-get install chezmoi\ndnf: sudo dnf install chezmoi\nbrew: brew install chezmoi\nResmî: https://www.chezmoi.io/install/\n"
     },
     {
       "id": "choose",
@@ -3385,6 +3409,30 @@
         "git-lfs"
       ],
       "install_notes": "pacman: sudo pacman -S git-lfs\napt: sudo apt install git-lfs\nbrew: brew install git-lfs\n"
+    },
+    {
+      "id": "git-town",
+      "name": "Git Town",
+      "description": "Git dalları ve katkı süreçleri için tekrarlanabilir iş akışları sağlayan Git aracı.",
+      "category": "git",
+      "source": "https://github.com/git-town/git-town",
+      "license": "MIT",
+      "executable": "git-town",
+      "install_method": "pacman",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "elevated",
+      "trust_class": "A",
+      "install_command": [
+        "sudo",
+        "pacman",
+        "-S",
+        "--noconfirm",
+        "git-town"
+      ],
+      "install_notes": "pacman: sudo pacman -S git-town\nbrew: brew install git-town\nDebian/Ubuntu: yayınladığı git-town_linux_intel_64.deb dosyasını indirip sudo apt-get install git-town_linux_intel_64.deb\nRedHat: rpm -i git-town_linux_intel_64.rpm\nKomutlar git-town olarak çalışır; git town komutu da aynı ikiliyi çağırır.\nResmî: https://www.git-town.com/install.html\n"
     },
     {
       "id": "gitleaks",
@@ -6904,6 +6952,48 @@
       "install_notes": "apt: sudo apt install nsnake\npacman: sudo pacman -S nsnake\nResmî: https://github.com/alexdantas/nSnake\n"
     },
     {
+      "id": "nuclei",
+      "name": "Nuclei",
+      "description": "Şablonlarla çalışan, yapılandırılabilir güvenlik açığı tarayıcısı.",
+      "category": "security",
+      "source": "https://github.com/projectdiscovery/nuclei",
+      "license": "MIT",
+      "executable": "nuclei",
+      "install_method": "download_archive",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "B",
+      "version": "3.11.1",
+      "install_notes": "Yayın arşivi upstream nuclei_3.11.1_checksums.txt dosyasındaki SHA-256 değerleriyle doğrulanır.\nŞablonları güncelleyin: nuclei -update-templates (şablon deposu: https://github.com/projectdiscovery/nuclei-templates)\nResmî: https://docs.projectdiscovery.io/tools/nuclei\n",
+      "artifacts": [
+        {
+          "arch": "x86_64",
+          "download_url": "https://github.com/projectdiscovery/nuclei/releases/download/v3.11.1/nuclei_3.11.1_linux_amd64.zip",
+          "checksum": "ea63d4ae232808cd7c6bc00d0142428e231fab59dae01042246097d195835ab6",
+          "checksum_type": "sha256",
+          "asset_pattern": "nuclei_{version}_linux_amd64.zip",
+          "checksum_asset_pattern": "nuclei_{version}_checksums.txt"
+        },
+        {
+          "arch": "aarch64",
+          "download_url": "https://github.com/projectdiscovery/nuclei/releases/download/v3.11.1/nuclei_3.11.1_linux_arm64.zip",
+          "checksum": "8044e3d9768ba0a744b2872c1a87e813006f013da97ca9f50f7661a4203bec07",
+          "checksum_type": "sha256",
+          "asset_pattern": "nuclei_{version}_linux_arm64.zip",
+          "checksum_asset_pattern": "nuclei_{version}_checksums.txt"
+        }
+      ],
+      "release": {
+        "repo": "projectdiscovery/nuclei",
+        "tag_prefix": "v",
+        "asset_pattern": "nuclei_{version}_linux_amd64.zip",
+        "checksum_asset_pattern": "nuclei_{version}_checksums.txt"
+      }
+    },
+    {
       "id": "nudoku",
       "name": "nudoku",
       "description": "ncurses tabanlı Sudoku oyunu.",
@@ -6998,6 +7088,23 @@
         "offlineimap"
       ],
       "install_notes": "pacman: sudo pacman -S offlineimap\nResmî: https://github.com/OfflineIMAP/offlineimap3\n"
+    },
+    {
+      "id": "oh-my-pi",
+      "name": "oh-my-pi",
+      "description": "Birden çok model sağlayıcısıyla çalışan terminal kodlama ajanı; proje dosyalarını inceleme ve düzenleme araçları sunar.",
+      "category": "ai",
+      "source": "https://github.com/can1357/oh-my-pi",
+      "license": "MIT",
+      "executable": "omp",
+      "install_method": "manual",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "none",
+      "trust_class": "D",
+      "install_notes": "Upstream önerisi (Bun >= 1.4.4): bun install -g @oh-my-pi/pi-coding-agent\nHomebrew: brew install can1357/tap/omp\nKurulum betiği (ön derleme ikilisini SHA-256 ile doğrular): curl -fsSL https://omp.sh/install | sh\nNix: nix profile add github:can1357/oh-my-pi\nNot: Nova uzak curl|sh betiğini otomatik çalıştırmaz; npm paketi (@oh-my-pi/pi-coding-agent) çalışmak için Bun çalışma zamanı gerektirir.\nResmî: https://github.com/can1357/oh-my-pi\n"
     },
     {
       "id": "oha",
@@ -7397,6 +7504,29 @@
         "perf"
       ],
       "install_notes": "pacman: sudo pacman -S perf\napt: sudo apt install linux-tools-generic\n"
+    },
+    {
+      "id": "pg-activity",
+      "name": "pg_activity",
+      "description": "PostgreSQL oturumlarını, sorgu etkinliğini ve bekleyen işlemleri canlı gösteren terminal aracı.",
+      "category": "database",
+      "source": "https://github.com/dalibo/pg_activity",
+      "license": "PostgreSQL",
+      "executable": "pg_activity",
+      "install_method": "pipx",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "C",
+      "risk_note": "Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.\n",
+      "install_command": [
+        "pipx",
+        "install",
+        "pg_activity[psycopg]"
+      ],
+      "install_notes": "pipx: pipx install \"pg_activity[psycopg]\"\napt: sudo apt install pg-activity\npsycopg extra'sı PostgreSQL sürücüsünü birlikte kurar; ek olarak PostgreSQL sunucusu çalışıyor olmalıdır.\nSistem bilgisi için postgres kullanıcısıyla çalıştırın: sudo -u postgres pg_activity -U postgres\nResmî: https://github.com/dalibo/pg_activity\n"
     },
     {
       "id": "pgcli",
@@ -8620,6 +8750,29 @@
       "install_notes": "cargo: cargo install sd\nbrew: brew install sd\nResmî: https://github.com/chmln/sd#installation\n"
     },
     {
+      "id": "semgrep",
+      "name": "Semgrep",
+      "description": "Kaynak kodu güvenlik ve kalite kurallarına göre yerel olarak tarayan statik analiz aracı.",
+      "category": "security",
+      "source": "https://github.com/semgrep/semgrep",
+      "license": "LGPL-2.1-or-later",
+      "executable": "semgrep",
+      "install_method": "pipx",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "C",
+      "risk_note": "Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.\n",
+      "install_command": [
+        "pipx",
+        "install",
+        "semgrep"
+      ],
+      "install_notes": "pipx: pipx install semgrep\nuv: uv tool install semgrep\nbrew: brew install semgrep\nPython 3.10 ve üzeri gerekir. Kurulumdan sonra semgrep login ile hesap girişi isteğe bağlıdır; tarama semgrep --config auto ile yapılır.\nResmî: https://semgrep.dev/docs/\n"
+    },
+    {
       "id": "sen",
       "name": "sen",
       "description": "Docker engine için terminal kullanıcı arayüzü.",
@@ -9291,6 +9444,30 @@
       "install_notes": "pacman: sudo pacman -S sysdig\nTUI: csysdig\nResmî: https://github.com/draios/sysdig\n"
     },
     {
+      "id": "systemctl-tui",
+      "name": "systemctl-tui",
+      "description": "systemd servislerini, zamanlayıcılarını ve günlüklerini terminal arayüzünde yönetmeye yarayan araç.",
+      "category": "system",
+      "source": "https://github.com/rgwood/systemctl-tui",
+      "license": "MIT",
+      "executable": "systemctl-tui",
+      "install_method": "pacman",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "elevated",
+      "trust_class": "A",
+      "install_command": [
+        "sudo",
+        "pacman",
+        "-S",
+        "--noconfirm",
+        "systemctl-tui"
+      ],
+      "install_notes": "pacman: sudo pacman -S systemctl-tui\ncargo: cargo install systemctl-tui\nGitHub yayınları x64 ve ARM64 ikilileri sunar.\nYalnızca systemd üzerinde çalışır; WSL kullanıcıları systemd etkin olmalıdır.\nServis/zamanlayıcı başlatma, durdurma ve enable/disable işlemleri için sudo yetkisi gerekir.\nUzak sunucu yönetimi: systemctl-tui --host user@hostname (SSH üzerinden, uzak tarafta kurulum gerekmez).\nResmî: https://github.com/rgwood/systemctl-tui\n"
+    },
+    {
       "id": "sysz",
       "name": "sysz",
       "description": "systemctl için fzf tabanlı TUI.",
@@ -9330,6 +9507,30 @@
         "tabiew"
       ],
       "install_notes": "pacman: sudo pacman -S tabiew\nÇalıştırılabilir: tw\nResmî: https://github.com/shshemi/tabiew\n"
+    },
+    {
+      "id": "tailscale",
+      "name": "Tailscale",
+      "description": "Tailscale ağındaki cihazları yönetmek ve bağlantıları tanılamak için komut satırı aracı.",
+      "category": "networking",
+      "source": "https://tailscale.com/",
+      "license": "BSD-3-Clause",
+      "executable": "tailscale",
+      "install_method": "pacman",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "elevated",
+      "trust_class": "A",
+      "install_command": [
+        "sudo",
+        "pacman",
+        "-S",
+        "--noconfirm",
+        "tailscale"
+      ],
+      "install_notes": "pacman: sudo pacman -S tailscale\nServis: tailscaled systemd servisi (tailscaled.service) arka planda çalışır; systemctl status tailscaled ile izlenir.\nYönetici izni: tailscale up, tailscale set ve tailscale down komutları sudo gerektirir.\nİlk bağlantı: sudo tailscale up komutu kimlik doğrulama URL'sini yazdırır; tarayıcıda açıp tailnet'e giriş yapın ve cihazın admin konsolundaki Machines sayfasında göründüğünü doğrulayın.\nDurum: tailscale status ve tailscale ip komutlarıyla kontrol edilir.\ntun çekirdek modülü gerekir; eksikse sudo modprobe tun ile yükleyin.\nDebian/Ubuntu ve RHEL: https://pkgs.tailscale.com/stable/#linux (resmî betik: curl -fsSL https://tailscale.com/install.sh | sh)\nResmî: https://tailscale.com/docs/install/linux\n"
     },
     {
       "id": "task",
@@ -10743,6 +10944,30 @@
       "install_notes": "pacman: sudo pacman -S whois\napt: sudo apt install whois\nbrew: brew install whois\n"
     },
     {
+      "id": "wireguard-tools",
+      "name": "WireGuard tools",
+      "description": "WireGuard tünellerini yönetmek için `wg` ve `wg-quick` komutlarını sağlayan araçlar.",
+      "category": "networking",
+      "source": "https://www.wireguard.com/",
+      "license": "GPL-2.0-only",
+      "executable": "wg",
+      "install_method": "pacman",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "elevated",
+      "trust_class": "A",
+      "install_command": [
+        "sudo",
+        "pacman",
+        "-S",
+        "--noconfirm",
+        "wireguard-tools"
+      ],
+      "install_notes": "pacman: sudo pacman -S wireguard-tools\napt: sudo apt install wireguard-tools\ndnf: sudo dnf install wireguard-tools\nKomutlar: wg (tünel yapılandırma ve anahtar üretimi) ve wg-quick (bash tabanlı hızlı kurulum).\nSistem izinleri: wg-quick arayüz oluşturma ve yönlendirme için root (CAP_NET_ADMIN) gerektirir; up/down komutları sudo ile çalıştırılmalıdır.\nwireguard çekirdek modülü gerekir; yoksa wireguard-go kullanıcı alanı uygulamasına düşer.\nResmî: https://www.wireguard.com/\n"
+    },
+    {
       "id": "wireshark-cli",
       "name": "tshark",
       "description": "Wireshark CLI (tshark).",
@@ -11120,5 +11345,5 @@
       "install_notes": "cargo: cargo install zoxide --locked\nbrew: brew install zoxide\napt: sudo apt install zoxide\npacman: sudo pacman -S zoxide\nResmî: https://github.com/ajeetdsouza/zoxide#installation\n"
     }
   ],
-  "git_sha": "a5996db496aebeb41b869b5e4619db0c69c97f25"
+  "git_sha": "89bb17b5cbe684507ff634cb103bc8303d321441"
 }

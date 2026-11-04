@@ -1,0 +1,39 @@
+id = "nuclei"
+name = "Nuclei"
+description = "Şablonlarla çalışan, yapılandırılabilir güvenlik açığı tarayıcısı."
+category = "security"
+source = "https://github.com/projectdiscovery/nuclei"
+license = "MIT"
+executable = "nuclei"
+install_method = "download_archive"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "B"
+version = "3.11.1"
+install_notes = """
+Yayın arşivi upstream nuclei_3.11.1_checksums.txt dosyasındaki SHA-256 değerleriyle doğrulanır.
+Şablonları güncelleyin: nuclei -update-templates (şablon deposu: https://github.com/projectdiscovery/nuclei-templates)
+Resmî: https://docs.projectdiscovery.io/tools/nuclei
+"""
+
+[[artifacts]]
+arch = "x86_64"
+download_url = "https://github.com/projectdiscovery/nuclei/releases/download/v3.11.1/nuclei_3.11.1_linux_amd64.zip"
+checksum = "ea63d4ae232808cd7c6bc00d0142428e231fab59dae01042246097d195835ab6"
+checksum_type = "sha256"
+asset_pattern = "nuclei_{version}_linux_amd64.zip"
+checksum_asset_pattern = "nuclei_{version}_checksums.txt"
+
+[[artifacts]]
+arch = "aarch64"
+download_url = "https://github.com/projectdiscovery/nuclei/releases/download/v3.11.1/nuclei_3.11.1_linux_arm64.zip"
+checksum = "8044e3d9768ba0a744b2872c1a87e813006f013da97ca9f50f7661a4203bec07"
+checksum_type = "sha256"
+asset_pattern = "nuclei_{version}_linux_arm64.zip"
+checksum_asset_pattern = "nuclei_{version}_checksums.txt"
+
+[release]
+repo = "projectdiscovery/nuclei"
+tag_prefix = "v"
+asset_pattern = "nuclei_{version}_linux_amd64.zip"
+checksum_asset_pattern = "nuclei_{version}_checksums.txt"

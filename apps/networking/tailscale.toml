@@ -1,0 +1,22 @@
+id = "tailscale"
+name = "Tailscale"
+description = "Tailscale ağındaki cihazları yönetmek ve bağlantıları tanılamak için komut satırı aracı."
+category = "networking"
+source = "https://tailscale.com/"
+license = "BSD-3-Clause"
+executable = "tailscale"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "tailscale"]
+install_notes = """
+pacman: sudo pacman -S tailscale
+Servis: tailscaled systemd servisi (tailscaled.service) arka planda çalışır; systemctl status tailscaled ile izlenir.
+Yönetici izni: tailscale up, tailscale set ve tailscale down komutları sudo gerektirir.
+İlk bağlantı: sudo tailscale up komutu kimlik doğrulama URL'sini yazdırır; tarayıcıda açıp tailnet'e giriş yapın ve cihazın admin konsolundaki Machines sayfasında göründüğünü doğrulayın.
+Durum: tailscale status ve tailscale ip komutlarıyla kontrol edilir.
+tun çekirdek modülü gerekir; eksikse sudo modprobe tun ile yükleyin.
+Debian/Ubuntu ve RHEL: https://pkgs.tailscale.com/stable/#linux (resmî betik: curl -fsSL https://tailscale.com/install.sh | sh)
+Resmî: https://tailscale.com/docs/install/linux
+"""

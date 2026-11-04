@@ -1,0 +1,22 @@
+id = "pg-activity"
+name = "pg_activity"
+description = "PostgreSQL oturumlarını, sorgu etkinliğini ve bekleyen işlemleri canlı gösteren terminal aracı."
+category = "database"
+source = "https://github.com/dalibo/pg_activity"
+license = "PostgreSQL"
+executable = "pg_activity"
+install_method = "pipx"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["pipx", "install", "pg_activity[psycopg]"]
+install_notes = """
+pipx: pipx install "pg_activity[psycopg]"
+apt: sudo apt install pg-activity
+psycopg extra'sı PostgreSQL sürücüsünü birlikte kurar; ek olarak PostgreSQL sunucusu çalışıyor olmalıdır.
+Sistem bilgisi için postgres kullanıcısıyla çalıştırın: sudo -u postgres pg_activity -U postgres
+Resmî: https://github.com/dalibo/pg_activity
+"""
