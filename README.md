@@ -6,7 +6,7 @@ Signed, PR-reviewed application catalog for
 Contributors add apps here; Nova fetches **signed** release artifacts only and
 falls back to the last trusted catalog if verification fails.
 
-**480 apps** across 18 categories · Trust A 363 · B 7 · C 87 · D 23
+**519 apps** across 18 categories · Trust A 401 · B 7 · C 88 · D 23
 
 > Catalog entries below are generated from `apps/**/*.toml` (name, short
 > description, upstream link). Install methods and trust classes live in those
@@ -16,24 +16,24 @@ falls back to the last trusted catalog if verification fails.
 
 | Category | Apps | Focus |
 |----------|-----:|-------|
-| [AI](#ai) | 24 | Terminal LLM clients, coding agents, and AI CLIs. |
-| [Git](#git) | 18 | Git TUIs, diff tools, and VCS helpers. |
-| [Dosya ve Arama](#files) | 39 | Finders, fuzzy selectors, file managers, and search. |
-| [Geliştirme](#development) | 59 | HTTP clients, JSON tools, language CLIs, and developer utilities. |
-| [Editörler](#editors) | 20 | Terminal editors and modal text editing tools. |
-| [Sistem](#system) | 31 | Process monitors, disk tools, and host observability. |
-| [Paneller](#panels) | 19 | Dashboards and system overview panels. |
-| [Ağ](#networking) | 28 | DNS, bandwidth, traceroute, and network diagnostics. |
-| [Konteyner](#containers) | 32 | Docker, Kubernetes, and container inspection tools. |
-| [Veritabanı](#database) | 17 | Database CLIs, TUI clients, and query helpers. |
-| [Güvenlik](#security) | 22 | Crypto, secrets, scanners, and signing tooling. |
-| [Medya](#media) | 16 | Audio, video, and image terminal tools. |
-| [Mesajlaşma](#messaging) | 19 | IRC, Matrix, and chat terminal clients. |
-| [Verimlilik](#productivity) | 30 | Terminal multiplexers, notes, backup, and workflow helpers. |
+| [AI](#ai) | 25 | Terminal LLM clients, coding agents, and AI CLIs. |
+| [Git](#git) | 20 | Git TUIs, diff tools, and VCS helpers. |
+| [Dosya ve Arama](#files) | 41 | Finders, fuzzy selectors, file managers, and search. |
+| [Geliştirme](#development) | 67 | HTTP clients, JSON tools, language CLIs, and developer utilities. |
+| [Editörler](#editors) | 22 | Terminal editors and modal text editing tools. |
+| [Sistem](#system) | 32 | Process monitors, disk tools, and host observability. |
+| [Paneller](#panels) | 21 | Dashboards and system overview panels. |
+| [Ağ](#networking) | 32 | DNS, bandwidth, traceroute, and network diagnostics. |
+| [Konteyner](#containers) | 37 | Docker, Kubernetes, and container inspection tools. |
+| [Veritabanı](#database) | 19 | Database CLIs, TUI clients, and query helpers. |
+| [Güvenlik](#security) | 25 | Crypto, secrets, scanners, and signing tooling. |
+| [Medya](#media) | 18 | Audio, video, and image terminal tools. |
+| [Mesajlaşma](#messaging) | 21 | IRC, Matrix, and chat terminal clients. |
+| [Verimlilik](#productivity) | 31 | Terminal multiplexers, notes, backup, and workflow helpers. |
 | [Oyunlar](#games) | 26 | Terminal games and playful diversions. |
 | [Ekran Koruyucular](#screensavers) | 11 | ASCII / terminal screensaver animations. |
 | [Web](#web) | 12 | Text-mode browsers and web fetch helpers. |
-| [Günlük](#daily) | 57 | Everyday utilities and general-purpose CLIs. |
+| [Günlük](#daily) | 59 | Everyday utilities and general-purpose CLIs. |
 
 ## Trust classes
 
@@ -80,6 +80,7 @@ Terminal LLM clients, coding agents, and AI CLIs.
 | [ShellGPT](https://github.com/TheR1D/shell_gpt) | ChatGPT destekli kabuk asistanı (sgpt). | C | `pipx` |
 | [tgpt](https://github.com/aandrew-me/tgpt) | ChatGPT benzeri terminal AI istemcisi. | A | `pacman` |
 | [tts](https://github.com/coqui-ai/TTS) | Coqui TTS komut satırı ses sentezi. | C | `pipx` |
+| [VT Code](https://github.com/vinhnx/vtcode) | Yerel öncelikli terminal AI kodlama ajanı (CLI). | A | `brew` |
 
 <a id="git"></a>
 
@@ -89,15 +90,16 @@ Git TUIs, diff tools, and VCS helpers.
 
 | App | Description | Trust | Install |
 |-----|-------------|:-----:|---------|
-| [delta](https://github.com/dandavison/delta) | Git diff'lerini renkli ve okunaklı gösterir; genellikle git yapılandırmasına bağlanır.
- | A | `apt` |
+| [delta](https://github.com/dandavison/delta) | Git diff'lerini renkli ve okunaklı gösterir; genellikle git yapılandırmasına bağlanır. | A | `apt` |
 | [difftastic](https://difftastic.wilfred.me.uk/) | Sözdizimi bilen yapısal diff aracı (difft). | A | `pacman` |
+| [ggc](https://github.com/bmf-san/ggc) | Geleneksel komutlar ve TUI sunan modern Git CLI. | A | `brew` |
 | [gh-dash](https://github.com/dlvhdr/gh-dash) | GitHub PR ve issue'ları için zengin terminal panosu. | D | `manual` |
 | [Git Town](https://github.com/git-town/git-town) | Git Town, özellik dallarının oluşturma, senkron, PR önerme, birleştirme ve temizleme adımlarını otomatikleştiren Git komut setidir. Git Flow, GitHub/GitLab Flow ve trunk-based iş akışlarıyla uyumludur; mono-repo ve yığılmış (stacked) değişiklikleri destekler. hack/sync/propose/ship ile çakışma sonrası continue/undo sunar. Nova depo yaşam döngüsü yönetmez; Git Town dal iş akışını hızlandırır. | A | `pacman` |
 | [git-absorb](https://github.com/tummychow/git-absorb) | Otomatik fixup commit emici. | A | `pacman` |
 | [git-cliff](https://github.com/orhun/git-cliff) | Changelog üretici. | A | `pacman` |
 | [git-lfs](https://git-lfs.com/) | Git Large File Storage. | A | `pacman` |
 | [GitHub CLI](https://cli.github.com/) | GitHub için resmi komut satırı aracı (PR, issue, Actions). | A | `apt` |
+| [gitoxide](https://github.com/Byron/gitoxide) | Rust ile yazılmış hızlı Git uygulaması (gix). | A | `pacman` |
 | [gitu](https://github.com/altsem/gitu) | Magit esinli TUI Git istemcisi. | A | `pacman` |
 | [gitui](https://github.com/extrawurst/gitui) | Rust ile yazılmış hızlı Git terminal arayüzü. | A | `apt` |
 | [glab](https://gitlab.com/gitlab-org/cli) | GitLab resmi CLI. | A | `pacman` |
@@ -125,12 +127,13 @@ Finders, fuzzy selectors, file managers, and search.
 | [far2l](https://github.com/elfmz/far2l) | Far Manager Linux portu. | A | `pacman` |
 | [fd](https://github.com/sharkdp/fd) | Kullanıcı dostu, hızlı dosya bulucu; find alternatifi. | A | `apt` |
 | [fdupes](https://github.com/adrianlopezroche/fdupes) | Yinelenen dosya bulucu. | A | `pacman` |
+| [felix](https://github.com/kyoheiu/felix) | Vim tuş bağlamalı TUI dosya yöneticisi. | A | `pacman` |
 | [fff](https://github.com/dylanaraps/fff) | Basit ve hızlı dosya yöneticisi. | A | `pacman` |
-| [fzf](https://github.com/junegunn/fzf) | Bulanık arama aracı; tek başına çalışır, Ctrl+T/Ctrl+R/Alt+C kısayolları için kabuk entegrasyonu gerekir.
- | B | `download_archive` |
+| [fzf](https://github.com/junegunn/fzf) | Bulanık arama aracı; tek başına çalışır, Ctrl+T/Ctrl+R/Alt+C kısayolları için kabuk entegrasyonu gerekir. | B | `download_archive` |
 | [fzy](https://github.com/jhawthorn/fzy) | Hızlı bulanık bulucu. | A | `pacman` |
 | [gdu](https://github.com/dundee/gdu) | Hızlı disk kullanım analizcisi (ncdu benzeri). | A | `brew` |
 | [goful](https://github.com/anmitsu/goful) | Go ile yazılmış TUI dosya yöneticisi. | D | `manual` |
+| [gtrash](https://github.com/umlx5h/gtrash) | rm alternatifli özellikli çöp kutusu CLI yöneticisi. | A | `brew` |
 | [hunter](https://github.com/rabite0/hunter) | Rust ile yazılmış hızlı dosya yöneticisi. | C | `cargo` |
 | [igrep](https://github.com/konradsz/igrep) | Etkileşimli grep / arama TUI'si. | A | `pacman` |
 | [jless](https://github.com/PaulJuliusMartinez/jless) | JSON için etkileşimli komut satırı sayfalayıcı. | A | `pacman` |
@@ -193,6 +196,7 @@ HTTP clients, JSON tools, language CLIs, and developer utilities.
 | [hyperfine](https://github.com/sharkdp/hyperfine) | Komut satırı kıyaslama aracı. | A | `apt` |
 | [jqp](https://github.com/noahgorstein/jqp) | jq ifadelerini denemek için TUI oyun alanı. | A | `brew` |
 | [just](https://github.com/casey/just) | Komut çalıştırıcı; Makefile'a modern alternatif. | A | `apt` |
+| [kaskade](https://github.com/sauljabin/kaskade) | Apache Kafka için metin kullanıcı arayüzü. | A | `brew` |
 | [lldb](https://lldb.llvm.org/) | LLVM hata ayıklayıcı. | A | `pacman` |
 | [loc](https://github.com/cgag/loc) | Hızlı satır sayacı (Rust). | C | `cargo` |
 | [ltrace](https://www.ltrace.org/) | Kütüphane çağrısı izleyici. | A | `pacman` |
@@ -207,17 +211,23 @@ HTTP clients, JSON tools, language CLIs, and developer utilities.
 | [perf](https://perf.wiki.kernel.org/) | Linux performans sayaçları. | A | `pacman` |
 | [posting](https://github.com/darrenburns/posting) | Terminalde yaşayan güçlü HTTP istemcisi. | C | `pipx` |
 | [pre-commit](https://pre-commit.com/) | Git kanca yöneticisi. | A | `pacman` |
+| [presenterm](https://github.com/mfontanini/presenterm) | Markdown sunumlarını terminalde gösteren araç. | A | `pacman` |
 | [prettier](https://prettier.io/) | Kod biçimlendirici. | C | `npm` |
 | [pudb](https://github.com/inducer/pudb) | Tam ekran konsol tabanlı Python hata ayıklayıcı. | A | `pacman` |
 | [pyright](https://github.com/microsoft/pyright) | Microsoft Python dil sunucusu CLI. | C | `npm` |
+| [resterm](https://github.com/unkn0wn-root/resterm) | HTTP, GraphQL, gRPC ve WebSocket için terminal API istemcisi. | A | `brew` |
 | [ruff](https://github.com/astral-sh/ruff) | Çok hızlı Python linter ve biçimlendirici. | C | `pipx` |
+| [runme](https://github.com/stateful/runme) | Markdown runbook ve README içindeki komutları çalıştırır. | A | `brew` |
 | [rust-analyzer](https://rust-analyzer.github.io/) | Rust dil sunucusu. | A | `pacman` |
+| [scc](https://github.com/boyter/scc) | Hızlı kod satırı / karmaşıklık sayacı (Sloc Cloc and Code). | A | `brew` |
 | [sccache](https://github.com/mozilla/sccache) | Paylaşımlı derleme önbelleği (Rust/C++). | A | `pacman` |
 | [scooter](https://github.com/thomasschafer/scooter) | Etkileşimli bul ve değiştir TUI'si. | A | `brew` |
+| [sequin](https://github.com/charmbracelet/sequin) | ANSI kaçış dizilerini okunabilir gösteren Charm aracı. | A | `brew` |
 | [ShellCheck](https://www.shellcheck.net/) | Kabuk betiği statik analiz aracı. | A | `apt` |
 | [shfmt](https://github.com/mvdan/sh) | Kabuk betik biçimlendirici. | A | `pacman` |
 | [slumber](https://github.com/LucasPickering/slumber) | Terminal tabanlı REST / HTTP istemcisi. | A | `pacman` |
 | [strace](https://strace.io/) | Sistem çağrısı izleyici. | A | `pacman` |
+| [tftui](https://github.com/idoavrah/terraform-tui) | Terraform plan/state için metin kullanıcı arayüzü. | C | `pipx` |
 | [tokei](https://github.com/XAMPPRocky/tokei) | Kod satırı ve dil istatistikleri sayacı. | C | `cargo` |
 | [tsc](https://www.typescriptlang.org/) | TypeScript derleyicisi. | A | `pacman` |
 | [uv](https://github.com/astral-sh/uv) | Astral'ın çok hızlı Python paket ve proje yöneticisi. | A | `brew` |
@@ -225,6 +235,7 @@ HTTP clients, JSON tools, language CLIs, and developer utilities.
 | [watchexec](https://github.com/watchexec/watchexec) | Dosya değişikliklerinde komut çalıştıran izleyici. | C | `cargo` |
 | [xh](https://github.com/ducaale/xh) | Rust ile yazılmış hızlı HTTPie dostu HTTP istemcisi. | C | `cargo` |
 | [yapf](https://github.com/google/yapf) | Python biçimlendirici. | C | `pipx` |
+| [yozefu](https://github.com/MAIF/yozefu) | Kafka kümelerindeki veriyi keşfetmek için TUI. | A | `brew` |
 
 <a id="editors"></a>
 
@@ -236,6 +247,7 @@ Terminal editors and modal text editing tools.
 |-----|-------------|:-----:|---------|
 | [amp](https://github.com/jmacdonald/amp) | Tam özellikli terminal metin editörü. | C | `cargo` |
 | [dhex](https://www.dettus.net/dhex/) | Ncurses hex editörü. | A | `pacman` |
+| [durdraw](https://github.com/cmang/durdraw) | ASCII/ANSI sanat çizimi için çok yönlü metin düzenleyici. | A | `brew` |
 | [edi](https://www.enlightenment.org/) | Enlightenment tabanlı metin editörü (CLI odak). | A | `pacman` |
 | [Emacs](https://www.gnu.org/software/emacs/) | Genişletilebilir metin editörü ve uygulama ortamı. | A | `apt` |
 | [Frogmouth](https://github.com/Textualize/frogmouth) | Terminal Markdown tarayıcı/okuyucu. | C | `pipx` |
@@ -246,6 +258,7 @@ Terminal editors and modal text editing tools.
 | [Kakoune](https://kakoune.org/) | Seçim-öncelikli modal kod editörü. | A | `apt` |
 | [md-tui](https://github.com/henriklovhaug/md-tui) | Terminalde Markdown işleyici / görüntüleyici. | A | `pacman` |
 | [micro](https://micro-editor.github.io/) | Sezgisel, modern terminal metin editörü. | A | `apt` |
+| [Microsoft Edit](https://github.com/microsoft/edit) | Microsoft Edit (msedit) basit terminal metin düzenleyicisi. | A | `pacman` |
 | [nano](https://www.nano-editor.org/) | Basit ve yaygın terminal editörü. | A | `pacman` |
 | [ne](https://ne.di.unimi.it/) | Nice Editor — kullanıcı dostu metin editörü. | A | `pacman` |
 | [Neovim](https://neovim.io/) | Vim'in genişletilebilir modern çatalı. | A | `apt` |
@@ -281,6 +294,7 @@ Process monitors, disk tools, and host observability.
 | [macmon](https://github.com/vladkens/macmon) | [macOS] Apple Silicon için sudosuz gerçek zamanlı performans monitörü. | A | `brew` |
 | [ncpamixer](https://github.com/fulhax/ncpamixer) | ncurses PulseAudio karıştırıcı. | A | `pacman` |
 | [neofetch](https://github.com/dylanaraps/neofetch) | Sistem bilgisi ASCII logo ile (bakımda). | A | `pacman` |
+| [nerdlog](https://github.com/dimonomid/nerdlog) | Zaman çizelgeli, uzak öncelikli çoklu host TUI log görüntüleyici. | A | `brew` |
 | [nmon](https://nmon.sourceforge.io/) | Linux performans ve kaynak izleme aracı. | A | `pacman` |
 | [nvtop](https://github.com/Syllo/nvtop) | AMD, Intel ve NVIDIA GPU süreç monitörü. | A | `apt` |
 | [paleofetch](https://github.com/ssleert/paleofetch) | C ile yazılmış hızlı neofetch. | D | `manual` |
@@ -316,9 +330,11 @@ Dashboards and system overview panels.
 | [iftop](https://www.ex-parrot.com/pdw/iftop/) | Ağ bant genişliği izleyici. | A | `pacman` |
 | [iotop](https://github.com/Tomas-M/iotop) | I/O kullanım izleyici. | A | `pacman` |
 | [nethogs](https://github.com/raboof/nethogs) | Süreç bazlı ağ kullanımı. | A | `pacman` |
+| [otel-tui](https://github.com/ymtdzzz/otel-tui) | OpenTelemetry verisi için terminal görüntüleyici. | A | `brew` |
 | [Planor](https://github.com/mrusme/planor) | Bulut kaynak panosu (AWS vb.). | D | `manual` |
 | [process-compose](https://github.com/f1bonacc1/process-compose) | Süreç orkestrasyon TUI (docker-compose benzeri). | D | `manual` |
 | [s-tui](https://github.com/amanusk/s-tui) | CPU sıcaklık/gerilim stres terminal UI. | C | `pipx` |
+| [ticker](https://github.com/achannarasappa/ticker) | Hisse senedi, kripto ve türev fiyatlarını terminalde izler. | A | `brew` |
 | [tiptop](https://github.com/nschloe/tiptop) | Modern kaynak izleyici. | C | `pipx` |
 | [viddy](https://github.com/sachaos/viddy) | Modern watch, tarihçe ve diff ile. | A | `pacman` |
 | [ytop](https://github.com/cjbassi/ytop) | Rust TUI sistem izleyici (gotop esinli). | C | `cargo` |
@@ -331,11 +347,12 @@ DNS, bandwidth, traceroute, and network diagnostics.
 
 | App | Description | Trust | Install |
 |-----|-------------|:-----:|---------|
+| [AdGuardian](https://github.com/lissy93/AdGuardian-Term) | AdGuard Home için gerçek zamanlı trafik izleme TUI (resmi olmayan). | C | `cargo` |
 | [aria2](https://aria2.github.io/) | Çok protokolü destekleyen indirme yardımcısı. | A | `apt` |
-| [bandwhich](https://github.com/imsnif/bandwhich) | Ağ bant genişliğini süreç ve bağlantı bazında gösterir. Yerel arayüzleri izlemek için ek izinler gerekebilir.
- | C | `cargo` |
+| [bandwhich](https://github.com/imsnif/bandwhich) | Ağ bant genişliğini süreç ve bağlantı bazında gösterir. Yerel arayüzleri izlemek için ek izinler gerekebilir. | C | `cargo` |
 | [croc](https://github.com/schollz/croc) | Bilgisayarlar arası kolay ve güvenli dosya transferi. | A | `pacman` |
 | [curl](https://curl.se/) | Veri transfer ve HTTP istek aracı. | A | `apt` |
+| [curlie](https://github.com/rs/curlie) | curl gücü, HTTPie kullanım kolaylığı. | A | `pacman` |
 | [dig](https://www.isc.org/bind/) | DNS sorgu aracı (bind). | A | `pacman` |
 | [dog](https://github.com/ogham/dog) | Kullanıcı dostu DNS istemcisi; dig alternatifi. | C | `cargo` |
 | [doggo](https://github.com/mr-karan/doggo) | İnsan dostu komut satırı DNS istemcisi. | A | `pacman` |
@@ -357,9 +374,11 @@ DNS, bandwidth, traceroute, and network diagnostics.
 | [tcpdump](https://www.tcpdump.org/) | Paket yakalama. | A | `pacman` |
 | [termshark](https://github.com/gcla/termshark) | Wireshark/tshark için terminal arayüzü. | A | `brew` |
 | [trippy](https://github.com/fujiapple852/trippy) | mtr benzeri modern ağ tanılama aracı (trip). | C | `cargo` |
+| [updo](https://github.com/Owloops/updo) | Uyarı destekli uptime izleme CLI aracı. | A | `brew` |
 | [wget](https://www.gnu.org/software/wget/) | Dosya indirme aracı. | A | `apt` |
 | [whois](https://github.com/rfc1036/whois) | WHOIS sorgu aracı. | A | `pacman` |
 | [WireGuard tools](https://www.wireguard.com/) | wireguard-tools, modern VPN tüneli WireGuard için kullanıcı alanı araçlarını sağlar: wg ile anahtar üretimi ve arayüz yapılandırması, wg-quick ile hızlı up/down. Kernel veya wireguard-go üzerinden çalışır; SSH benzeri genel anahtar değişimiyle kurulur, IPsec/OpenVPN’e göre daha sade ve performanslıdır. Nova ağ tüneli kurmaz; bu paket WireGuard arayüzlerini yönetir (root/CAP_NET_ADMIN). | A | `pacman` |
+| [wishlist](https://github.com/charmbracelet/wishlist) | Birden fazla SSH ucu için tek giriş noktası (Charm). | A | `pacman` |
 
 <a id="containers"></a>
 
@@ -372,12 +391,15 @@ Docker, Kubernetes, and container inspection tools.
 | [buildah](https://buildah.io/) | OCI imaj oluşturma aracı. | A | `pacman` |
 | [cdebug](https://github.com/iximiuz/cdebug) | Çalışan konteynerlere debug kabuğu. | D | `manual` |
 | [ctop](https://github.com/bcicen/ctop) | Konteynerler için top benzeri metrik arayüzü. | A | `brew` |
+| [distrobox](https://github.com/89luca89/distrobox) | Herhangi bir Linux dağıtımını terminalde kullanmayı sağlar. | A | `pacman` |
 | [dive](https://github.com/wagoodman/dive) | Konteyner imaj katmanlarını keşfeder. | A | `brew` |
 | [docker](https://www.docker.com/) | Docker Engine CLI istemcisi. | A | `pacman` |
 | [docker-compose](https://docs.docker.com/compose/) | Docker Compose V2 eklentisi (compose). | A | `pacman` |
 | [dockly](https://github.com/lirantal/dockly) | Docker konteyner ve servis yönetimi için immersive TUI. | A | `brew` |
 | [dry](https://github.com/moncho/dry) | Docker ve Docker Swarm için terminal yöneticisi. | D | `manual` |
+| [dtop](https://github.com/amir20/dtop) | Birden fazla host üzerinde Docker izleme terminal panosu. | A | `brew` |
 | [ducker](https://github.com/robertpsoane/ducker) | k9s tarzı Docker yönetim TUI'si. | A | `pacman` |
+| [e1s](https://github.com/keidarcy/e1s) | AWS ECS yönetimi için k9s esinli TUI. | A | `brew` |
 | [hadolint](https://github.com/hadolint/hadolint) | Dockerfile linter. | A | `pacman` |
 | [Helm](https://helm.sh/) | Kubernetes paket yöneticisi. | A | `brew` |
 | [helmfile](https://github.com/helmfile/helmfile) | Helm release bildirimsel dağıtım. | A | `pacman` |
@@ -392,6 +414,7 @@ Docker, Kubernetes, and container inspection tools.
 | [kustomize](https://kustomize.io/) | Kubernetes YAML özelleştirme. | A | `pacman` |
 | [lazycontainer](https://github.com/andreybleme/lazycontainer) | [macOS] Apple Containers yönetimi için TUI. | A | `brew` |
 | [lazydocker](https://github.com/jesseduffield/lazydocker) | Docker konteynerleri, imajları ve günlükleri için terminal arayüzü. | B | `download_archive` |
+| [lfk](https://github.com/janosmiko/lfk) | Kubernetes kaynaklarını gezmek için klavye odaklı TUI. | A | `brew` |
 | [minikube](https://minikube.sigs.k8s.io/) | Yerel Kubernetes kümesi. | A | `pacman` |
 | [nerdctl](https://github.com/containerd/nerdctl) | containerd için Docker uyumlu CLI. | A | `pacman` |
 | [Oxker](https://github.com/mrjackwills/oxker) | Docker konteyner yönetimi için hafif TUI. | C | `cargo` |
@@ -401,6 +424,7 @@ Docker, Kubernetes, and container inspection tools.
 | [sen](https://github.com/TomasTomecek/sen) | Docker engine için terminal kullanıcı arayüzü. | C | `pipx` |
 | [skopeo](https://github.com/containers/skopeo) | Konteyner imajı inceleme/taşıma. | A | `pacman` |
 | [stern](https://github.com/stern/stern) | Çoklu pod log kuyruğu. | A | `pacman` |
+| [wander](https://github.com/robinovitch61/wander) | HashiCorp Nomad için terminal TUI. | A | `brew` |
 
 <a id="database"></a>
 
@@ -410,8 +434,10 @@ Database CLIs, TUI clients, and query helpers.
 
 | App | Description | Trust | Install |
 |-----|-------------|:-----:|---------|
+| [chdig](https://github.com/azat/chdig) | ClickHouse için TUI keşif aracı. | A | `brew` |
 | [datasette](https://datasette.io/) | SQLite’ı web/API olarak yayınla. | C | `pipx` |
 | [dblab](https://github.com/danvergara/dblab) | Komut satırı meraklıları için veritabanı istemcisi TUI. | A | `brew` |
+| [dolphie](https://github.com/charles-001/dolphie) | MySQL/MariaDB için gerçek zamanlı analitik TUI. | A | `brew` |
 | [gobang](https://github.com/TaKO8Ki/gobang) | Çok platformlu TUI veritabanı yönetim aracı. | C | `cargo` |
 | [Harlequin](https://github.com/tconbeer/harlequin) | Terminal için SQL IDE. | C | `pipx` |
 | [iredis](https://github.com/laixintao/iredis) | Otomatik tamamlamalı Redis terminal istemcisi. | C | `pipx` |
@@ -441,6 +467,7 @@ Crypto, secrets, scanners, and signing tooling.
 | [cosign](https://github.com/sigstore/cosign) | Sigstore ile konteyner ve artefakt imzalama / doğrulama. | A | `pacman` |
 | [cotp](https://github.com/replydev/cotp) | Şifreli komut satırı TOTP/HOTP kimlik doğrulayıcı. | A | `pacman` |
 | [gitleaks](https://github.com/gitleaks/gitleaks) | Git depolarında sızdırılmış sır ve anahtar tarayıcısı. | A | `pacman` |
+| [gopass](https://github.com/gopasspw/gopass) | Ekipler için Unix parola yöneticisi (pass uyumlu). | A | `pacman` |
 | [gpg-tui](https://github.com/orhun/gpg-tui) | GnuPG için terminal kullanıcı arayüzü. | C | `cargo` |
 | [grype](https://github.com/anchore/grype) | Konteyner imajı ve dosya sistemi güvenlik açığı tarayıcısı (Anchore). | A | `pacman` |
 | [hashcat](https://hashcat.net/hashcat/) | Gelişmiş parola kurtarma. | A | `pacman` |
@@ -451,6 +478,8 @@ Crypto, secrets, scanners, and signing tooling.
 | [Nuclei](https://github.com/projectdiscovery/nuclei) | ProjectDiscovery’nin YAML şablonlarıyla çalışan yüksek performanslı güvenlik açığı tarayıcısı. Topluluk şablonlarıyla gerçekçi adımlarla doğrulama yaparak yanlış pozitifleri azaltmayı hedefler; TCP/DNS/HTTP/SSL ve daha fazla protokol, paralel tarama ve CI/CD entegrasyonu destekler. Nova tarayıcı değildir; Nuclei hedeflerde şablon tabanlı güvenlik taraması çalıştırır (yalnızca yetkili sistemlerde kullanın). | B | `download_archive` |
 | [osv-scanner](https://github.com/google/osv-scanner) | OSV veritabanı ile bağımlılık güvenlik açığı tarayıcısı. | A | `pacman` |
 | [pass](https://www.passwordstore.org/) | Unix parola yöneticisi (the standard unix password manager). | A | `apt` |
+| [prs](https://github.com/timvisee/prs) | GPG ve git senkronlu parola yöneticisi CLI. | A | `brew` |
+| [rbw](https://github.com/doy/rbw) | Resmi olmayan Bitwarden komut satırı istemcisi. | A | `pacman` |
 | [Semgrep](https://github.com/semgrep/semgrep) | Semgrep, kodda hata ve güvenlik sorunlarını arayan hızlı açık kaynak statik analiz (SAST) aracıdır: 30+ dil, semantik arama (grep gibi ama AST duyarlı), IDE/pre-commit/CI kullanımı. Kurallar yazdığınız koda benzer; varsayılan olarak kod yüklenmez. Community Edition dosya/fonksiyon sınırlıdır. Nova kod tarayıcısı değildir; Semgrep depoda güvenlik ve kalite kurallarını uygular. | C | `pipx` |
 | [sops](https://github.com/getsops/sops) | Mozilla/CNCF sırları şifreleme aracı (YAML/JSON/ENV). | A | `brew` |
 | [sqlmap](https://sqlmap.org/) | SQL enjeksiyon test aracı. | A | `pacman` |
@@ -471,6 +500,7 @@ Audio, video, and image terminal tools.
 | [cava](https://github.com/karlstav/cava) | Konsol tabanlı ses görselleştirici. | A | `apt` |
 | [cmus](https://cmus.github.io/) | Hafif ncurses müzik çalar. | A | `apt` |
 | [ffmpeg](https://ffmpeg.org/) | Ses/video dönüştürme ve işleme araç seti. | A | `apt` |
+| [freeze](https://github.com/charmbracelet/freeze) | Kod ve terminal çıktısından görüntü üreten Charm aracı. | A | `brew` |
 | [jp2a](https://github.com/cslarsen/jp2a) | JPEG görsellerini ASCII sanata dönüştürür. | A | `pacman` |
 | [mpc](https://www.musicpd.org/clients/mpc/) | MPD için minimalist komut satırı istemcisi. | A | `pacman` |
 | [mpsyt](https://github.com/mps-youtube/mps-youtube) | YouTube müzik CLI (bakımda). | C | `pipx` |
@@ -480,6 +510,7 @@ Audio, video, and image terminal tools.
 | [playerctl](https://github.com/altdesktop/playerctl) | MPRIS medya oynatıcı denetleyicisi (Spotify, VLC, …). | A | `pacman` |
 | [spt](https://github.com/Rigellute/spotify-tui) | Spotify TUI istemcisi. | A | `pacman` |
 | [termusic](https://github.com/tramhao/termusic) | Rust terminal müzik çalar. | C | `cargo` |
+| [timg](https://github.com/hzeller/timg) | Terminal görüntü ve video görüntüleyici. | A | `brew` |
 | [viu](https://github.com/atanunq/viu) | Basit terminal görüntü görüntüleyici. | A | `pacman` |
 | [yt-dlp](https://github.com/yt-dlp/yt-dlp) | YouTube ve diğer sitelerden video/ses indirme aracı. | A | `apt` |
 | [ytfzf](https://github.com/pystardust/ytfzf) | YouTube arama/oynatma (fzf). | A | `pacman` |
@@ -496,12 +527,14 @@ IRC, Matrix, and chat terminal clients.
 | [discordo](https://github.com/ayn2op/discordo) | Hafif Discord TUI. | A | `pacman` |
 | [gomuks](https://github.com/tulir/gomuks) | Matrix için terminal istemcisi. | D | `manual` |
 | [himalaya](https://github.com/pimalaya/himalaya) | E-posta için CLI; MUA ile birlikte kullanılabilir. | C | `cargo` |
+| [iamb](https://github.com/ulyssa/iamb) | Vim kullanıcıları için Matrix istemcisi. | A | `brew` |
 | [irssi](https://irssi.org/) | Modüler IRC istemcisi. | A | `apt` |
 | [isync](https://isync.sourceforge.io/) | IMAP ve Maildir posta kutusu senkronizasyonu (mbsync). | A | `pacman` |
 | [mutt](https://www.mutt.org/) | Küçük ama güçlü metin tabanlı e-posta istemcisi. | A | `pacman` |
 | [NeoMutt](https://neomutt.org/) | Mutt'un gelişmiş e-posta istemcisi çatalı. | A | `apt` |
 | [notmuch](https://notmuchmail.org/) | Hızlı, etiket tabanlı e-posta indeksleyici ve arayüz. | A | `pacman` |
 | [offlineimap](https://github.com/OfflineIMAP/offlineimap3) | İki depo arasında e-posta senkronizasyonu. | A | `pacman` |
+| [pop](https://github.com/charmbracelet/pop) | Terminalden e-posta gönderen Charm aracı. | A | `brew` |
 | [profanity](https://profanity-im.github.io/) | Konsol XMPP istemcisi. | A | `pacman` |
 | [senpai](https://git.sr.ht/~delthas/senpai) | Modern IRC istemcisi. | A | `pacman` |
 | [signal-cli](https://github.com/AsamK/signal-cli) | Signal için resmi olmayan komut satırı istemcisi. | D | `manual` |
@@ -541,13 +574,14 @@ Terminal multiplexers, notes, backup, and workflow helpers.
 | [screen](https://www.gnu.org/software/screen/) | GNU Screen — klasik terminal çoğullayıcı. | A | `pacman` |
 | [slides](https://github.com/maaslalani/slides) | Markdown ile terminal sunumları. | A | `brew` |
 | [Starship](https://starship.rs/) | Hızlı, özelleştirilebilir kabuk istemi. | A | `brew` |
-| [taskwarrior-tui](https://github.com/kdheepak/taskwarrior-tui) | Taskwarrior için terminal panosu. | C | `cargo` |
+| [taskwarrior-tui](https://github.com/kdheepak/taskwarrior-tui) | Taskwarrior için terminal kullanıcı arayüzü. | A | `pacman` |
 | [thefuck](https://github.com/nvbn/thefuck) | Yanlış komutu düzeltme sihirbazı. | A | `pacman` |
 | [tldr-tealdeer](https://github.com/tealdeer-rs/tealdeer) | Hızlı tldr istemcisi (tealdeer). | A | `pacman` |
 | [tmux](https://github.com/tmux/tmux) | Terminal çoğullayıcı; oturum, pencere ve panel yönetimi. | A | `apt` |
 | [todoman](https://github.com/pimutils/todoman) | Standartlara dayalı basit CLI görev yöneticisi. | A | `pacman` |
 | [vdirsyncer](https://github.com/pimutils/vdirsyncer) | CalDAV ve CardDAV senkronizasyon aracı. | A | `pacman` |
 | [wtfutil](https://wtfutil.com/) | Kişisel bilgi panosu; widget'larla terminal dashboard. | A | `brew` |
+| [yadm](https://github.com/yadm-dev/yadm) | Yet Another Dotfiles Manager. | A | `pacman` |
 | [zellij](https://zellij.dev/) | Kullanıcı dostu terminal çalışma alanı / çoğullayıcı. | C | `cargo` |
 | [zoxide](https://github.com/ajeetdsouza/zoxide) | Akıllı cd; sık kullanılan dizinlere hızlı atlar. | A | `apt` |
 
@@ -648,6 +682,7 @@ Everyday utilities and general-purpose CLIs.
 | [erdtree](https://github.com/solidiquis/erdtree) | Modern tree + disk kullanımı. | A | `pacman` |
 | [exiftool](https://exiftool.org/) | Meta veri okuma/yazma. | A | `pacman` |
 | [figlet](https://www.figlet.org/) | ASCII banner üretici. | A | `pacman` |
+| [GNU Parallel](https://www.gnu.org/software/parallel/) | İşleri paralel çalıştıran kabuk aracı. | A | `pacman` |
 | [hledger](https://hledger.org/) | Hafif muhasebe (Haskell ledger). | A | `pacman` |
 | [ImageMagick](https://imagemagick.org/) | Görüntü dönüştürme (magick/convert). | A | `pacman` |
 | [img2txt](https://caca.zoy.org/) | Görüntüyü ASCII'ye çevir (libcaca). | A | `pacman` |
@@ -672,6 +707,7 @@ Everyday utilities and general-purpose CLIs.
 | [rsync](https://rsync.samba.org/) | Hızlı dosya senkronizasyon ve yedekleme aracı. | A | `apt` |
 | [sc-im](https://github.com/andmarti1424/sc-im) | Terminal elektronik tablo (sc iyileştirmesi). | A | `pacman` |
 | [sd](https://github.com/chmln/sd) | Sezgisel find & replace; sed alternatifi. | C | `cargo` |
+| [skate](https://github.com/charmbracelet/skate) | Kişisel anahtar-değer deposu (Charm). | A | `pacman` |
 | [sox](https://sourceforge.net/projects/sox/) | Ses işleme İsviçre çakısı. | A | `pacman` |
 | [tabiew](https://github.com/shshemi/tabiew) | CSV dosyalarını görüntülemek ve sorgulamak için hafif TUI. | A | `pacman` |
 | [taskwarrior](https://taskwarrior.org/) | Güçlü görev yöneticisi (task). | A | `pacman` |

@@ -1,0 +1,19 @@
+id = "ggc"
+name = "ggc"
+description = "Geleneksel komutlar ve TUI sunan modern Git CLI."
+category = "git"
+source = "https://github.com/bmf-san/ggc"
+license = "MIT"
+executable = "ggc"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "ggc"]
+install_notes = """
+brew: brew install ggc
+Resmî: https://github.com/bmf-san/ggc
+"""
+
+[release]
+repo = "bmf-san/ggc"

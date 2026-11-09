@@ -1,0 +1,19 @@
+id = "pop"
+name = "pop"
+description = "Terminalden e-posta gönderen Charm aracı."
+category = "messaging"
+source = "https://github.com/charmbracelet/pop"
+license = "MIT"
+executable = "pop"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "pop"]
+install_notes = """
+brew: brew install pop
+Resmî: https://github.com/charmbracelet/pop
+"""
+
+[release]
+repo = "charmbracelet/pop"

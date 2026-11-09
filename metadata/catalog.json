@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-04T21:41:41Z",
+  "generated_at": "2026-11-09T20:47:13Z",
   "apps": [
     {
       "id": "2048",
@@ -119,6 +119,32 @@
         "actionlint"
       ],
       "install_notes": "pacman: sudo pacman -S actionlint\ngo: go install github.com/rhysd/actionlint/cmd/actionlint@latest\nbrew: brew install actionlint\nResmî: https://github.com/rhysd/actionlint\n"
+    },
+    {
+      "id": "adguardian",
+      "name": "AdGuardian",
+      "description": "AdGuard Home için gerçek zamanlı trafik izleme TUI (resmi olmayan).",
+      "category": "networking",
+      "source": "https://github.com/lissy93/AdGuardian-Term",
+      "license": "MIT",
+      "executable": "adguardian",
+      "install_method": "cargo",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "C",
+      "risk_note": "Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.\n",
+      "install_command": [
+        "cargo",
+        "install",
+        "adguardian"
+      ],
+      "install_notes": "cargo: cargo install adguardian\nResmî: https://github.com/lissy93/AdGuardian-Term\n",
+      "release": {
+        "repo": "lissy93/AdGuardian-Term"
+      }
     },
     {
       "id": "aerc",
@@ -1473,6 +1499,31 @@
       "install_notes": "pacman: sudo pacman -S chawan\nResmî: https://git.sr.ht/~bptato/chawan\n"
     },
     {
+      "id": "chdig",
+      "name": "chdig",
+      "description": "ClickHouse için TUI keşif aracı.",
+      "category": "database",
+      "source": "https://github.com/azat/chdig",
+      "license": "MIT",
+      "executable": "chdig",
+      "install_method": "brew",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "A",
+      "install_command": [
+        "brew",
+        "install",
+        "chdig"
+      ],
+      "install_notes": "brew: brew install chdig\nResmî: https://github.com/azat/chdig\n",
+      "release": {
+        "repo": "azat/chdig"
+      }
+    },
+    {
       "id": "cheat",
       "name": "cheat",
       "description": "Etkileşimli cheatsheet.",
@@ -2042,6 +2093,33 @@
       "install_notes": "apt: sudo apt install curl\nbrew: brew install curl\npacman: sudo pacman -S curl\nResmî: https://curl.se/docs/install.html\n"
     },
     {
+      "id": "curlie",
+      "name": "curlie",
+      "description": "curl gücü, HTTPie kullanım kolaylığı.",
+      "category": "networking",
+      "source": "https://github.com/rs/curlie",
+      "license": "MIT",
+      "executable": "curlie",
+      "install_method": "pacman",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "elevated",
+      "trust_class": "A",
+      "install_command": [
+        "sudo",
+        "pacman",
+        "-S",
+        "--noconfirm",
+        "curlie"
+      ],
+      "install_notes": "pacman: sudo pacman -S curlie\nbrew: brew install curlie\nResmî: https://github.com/rs/curlie\n",
+      "release": {
+        "repo": "rs/curlie"
+      }
+    },
+    {
       "id": "datasette",
       "name": "datasette",
       "description": "SQLite’ı web/API olarak yayınla.",
@@ -2329,6 +2407,33 @@
       "install_notes": "pacman: sudo pacman -S diskonaut\ncargo: cargo install diskonaut\nResmî: https://github.com/imsnif/diskonaut\n"
     },
     {
+      "id": "distrobox",
+      "name": "distrobox",
+      "description": "Herhangi bir Linux dağıtımını terminalde kullanmayı sağlar.",
+      "category": "containers",
+      "source": "https://github.com/89luca89/distrobox",
+      "license": "GPL-3.0-only",
+      "executable": "distrobox",
+      "install_method": "pacman",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "elevated",
+      "trust_class": "A",
+      "install_command": [
+        "sudo",
+        "pacman",
+        "-S",
+        "--noconfirm",
+        "distrobox"
+      ],
+      "install_notes": "pacman: sudo pacman -S distrobox\nbrew: brew install distrobox\nResmî: https://distrobox.it/\n",
+      "release": {
+        "repo": "89luca89/distrobox"
+      }
+    },
+    {
       "id": "dive",
       "name": "dive",
       "description": "Konteyner imaj katmanlarını keşfeder.",
@@ -2470,6 +2575,31 @@
       "install_notes": "pacman: sudo pacman -S doggo\nbrew: brew install doggo\ngo: go install github.com/mr-karan/doggo/cmd/doggo@latest\nResmî: https://github.com/mr-karan/doggo\n"
     },
     {
+      "id": "dolphie",
+      "name": "dolphie",
+      "description": "MySQL/MariaDB için gerçek zamanlı analitik TUI.",
+      "category": "database",
+      "source": "https://github.com/charles-001/dolphie",
+      "license": "GPL-3.0-or-later",
+      "executable": "dolphie",
+      "install_method": "brew",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "A",
+      "install_command": [
+        "brew",
+        "install",
+        "dolphie"
+      ],
+      "install_notes": "brew: brew install dolphie\nuv: uv tool install dolphie\nResmî: https://github.com/charles-001/dolphie\n",
+      "release": {
+        "repo": "charles-001/dolphie"
+      }
+    },
+    {
       "id": "dry",
       "name": "dry",
       "description": "Docker ve Docker Swarm için terminal yöneticisi.",
@@ -2485,6 +2615,31 @@
       "privilege": "none",
       "trust_class": "D",
       "install_notes": "go: go install github.com/moncho/dry@latest\nResmî: https://github.com/moncho/dry#installation\n"
+    },
+    {
+      "id": "dtop",
+      "name": "dtop",
+      "description": "Birden fazla host üzerinde Docker izleme terminal panosu.",
+      "category": "containers",
+      "source": "https://github.com/amir20/dtop",
+      "license": "MIT",
+      "executable": "dtop",
+      "install_method": "brew",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "A",
+      "install_command": [
+        "brew",
+        "install",
+        "dtop"
+      ],
+      "install_notes": "brew: brew install dtop\nResmî: https://github.com/amir20/dtop\n",
+      "release": {
+        "repo": "amir20/dtop"
+      }
     },
     {
       "id": "dua-cli",
@@ -2576,6 +2731,31 @@
       }
     },
     {
+      "id": "durdraw",
+      "name": "durdraw",
+      "description": "ASCII/ANSI sanat çizimi için çok yönlü metin düzenleyici.",
+      "category": "editors",
+      "source": "https://github.com/cmang/durdraw",
+      "license": "BSD-3-Clause",
+      "executable": "durdraw",
+      "install_method": "brew",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "A",
+      "install_command": [
+        "brew",
+        "install",
+        "durdraw"
+      ],
+      "install_notes": "brew: brew install durdraw\nResmî: https://github.com/cmang/durdraw\n",
+      "release": {
+        "repo": "cmang/durdraw"
+      }
+    },
+    {
       "id": "dust",
       "name": "dust",
       "description": "Disk kullanımını ağaç olarak gösteren du alternatifi.",
@@ -2597,6 +2777,31 @@
         "du-dust"
       ],
       "install_notes": "cargo: cargo install du-dust\nbrew: brew install dust\nResmî: https://github.com/bootandy/dust#installation\n"
+    },
+    {
+      "id": "e1s",
+      "name": "e1s",
+      "description": "AWS ECS yönetimi için k9s esinli TUI.",
+      "category": "containers",
+      "source": "https://github.com/keidarcy/e1s",
+      "license": "MIT",
+      "executable": "e1s",
+      "install_method": "brew",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "A",
+      "install_command": [
+        "brew",
+        "install",
+        "e1s"
+      ],
+      "install_notes": "brew: brew install e1s\nResmî: https://github.com/keidarcy/e1s\n",
+      "release": {
+        "repo": "keidarcy/e1s"
+      }
     },
     {
       "id": "edi",
@@ -2996,6 +3201,33 @@
       "install_notes": "pacman: sudo pacman -S fdupes\napt: sudo apt install fdupes\nResmî: https://github.com/adrianlopezroche/fdupes\n"
     },
     {
+      "id": "felix",
+      "name": "felix",
+      "description": "Vim tuş bağlamalı TUI dosya yöneticisi.",
+      "category": "files",
+      "source": "https://github.com/kyoheiu/felix",
+      "license": "MIT",
+      "executable": "felix",
+      "install_method": "pacman",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "elevated",
+      "trust_class": "A",
+      "install_command": [
+        "sudo",
+        "pacman",
+        "-S",
+        "--noconfirm",
+        "felix-rs"
+      ],
+      "install_notes": "pacman: sudo pacman -S felix-rs\ncargo: cargo install felix\nResmî: https://github.com/kyoheiu/felix\n",
+      "release": {
+        "repo": "kyoheiu/felix"
+      }
+    },
+    {
       "id": "fff",
       "name": "fff",
       "description": "Basit ve hızlı dosya yöneticisi.",
@@ -3114,6 +3346,31 @@
         "fortune-mod"
       ],
       "install_notes": "pacman: sudo pacman -S fortune-mod\napt: sudo apt install fortune-mod\nResmî: fortune-mod paketi\n"
+    },
+    {
+      "id": "freeze",
+      "name": "freeze",
+      "description": "Kod ve terminal çıktısından görüntü üreten Charm aracı.",
+      "category": "media",
+      "source": "https://github.com/charmbracelet/freeze",
+      "license": "MIT",
+      "executable": "freeze",
+      "install_method": "brew",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "A",
+      "install_command": [
+        "brew",
+        "install",
+        "charmbracelet/tap/freeze"
+      ],
+      "install_notes": "brew: brew install charmbracelet/tap/freeze\nResmî: https://github.com/charmbracelet/freeze\n",
+      "release": {
+        "repo": "charmbracelet/freeze"
+      }
     },
     {
       "id": "frogmouth",
@@ -3298,6 +3555,31 @@
       "install_notes": "npm: npm install -g @google/gemini-cli\nResmî: https://github.com/google-gemini/gemini-cli\n"
     },
     {
+      "id": "ggc",
+      "name": "ggc",
+      "description": "Geleneksel komutlar ve TUI sunan modern Git CLI.",
+      "category": "git",
+      "source": "https://github.com/bmf-san/ggc",
+      "license": "MIT",
+      "executable": "ggc",
+      "install_method": "brew",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "A",
+      "install_command": [
+        "brew",
+        "install",
+        "ggc"
+      ],
+      "install_notes": "brew: brew install ggc\nResmî: https://github.com/bmf-san/ggc\n",
+      "release": {
+        "repo": "bmf-san/ggc"
+      }
+    },
+    {
       "id": "gh",
       "name": "GitHub CLI",
       "description": "GitHub için resmi komut satırı aracı (PR, issue, Actions).",
@@ -3457,6 +3739,33 @@
         "gitleaks"
       ],
       "install_notes": "pacman: sudo pacman -S gitleaks\nbrew: brew install gitleaks\nResmî: https://github.com/gitleaks/gitleaks\n"
+    },
+    {
+      "id": "gitoxide",
+      "name": "gitoxide",
+      "description": "Rust ile yazılmış hızlı Git uygulaması (gix).",
+      "category": "git",
+      "source": "https://github.com/Byron/gitoxide",
+      "license": "Apache-2.0",
+      "executable": "gix",
+      "install_method": "pacman",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "elevated",
+      "trust_class": "A",
+      "install_command": [
+        "sudo",
+        "pacman",
+        "-S",
+        "--noconfirm",
+        "gitoxide"
+      ],
+      "install_notes": "pacman: sudo pacman -S gitoxide\nbrew: brew install gitoxide\nÇalıştırılabilir: gix\nResmî: https://github.com/Byron/gitoxide\n",
+      "release": {
+        "repo": "Byron/gitoxide"
+      }
     },
     {
       "id": "gitu",
@@ -3724,6 +4033,33 @@
       "install_notes": "Resmî kurulum: https://block.github.io/goose/docs/getting-started/installation/"
     },
     {
+      "id": "gopass",
+      "name": "gopass",
+      "description": "Ekipler için Unix parola yöneticisi (pass uyumlu).",
+      "category": "security",
+      "source": "https://github.com/gopasspw/gopass",
+      "license": "MIT",
+      "executable": "gopass",
+      "install_method": "pacman",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "elevated",
+      "trust_class": "A",
+      "install_command": [
+        "sudo",
+        "pacman",
+        "-S",
+        "--noconfirm",
+        "gopass"
+      ],
+      "install_notes": "pacman: sudo pacman -S gopass\nbrew: brew install gopass\nResmî: https://github.com/gopasspw/gopass\n",
+      "release": {
+        "repo": "gopasspw/gopass"
+      }
+    },
+    {
       "id": "gopls",
       "name": "gopls",
       "description": "Go dil sunucusu.",
@@ -3864,6 +4200,31 @@
         "grype"
       ],
       "install_notes": "pacman: sudo pacman -S grype / AUR\nbrew: brew install grype\nResmî: https://github.com/anchore/grype\n"
+    },
+    {
+      "id": "gtrash",
+      "name": "gtrash",
+      "description": "rm alternatifli özellikli çöp kutusu CLI yöneticisi.",
+      "category": "files",
+      "source": "https://github.com/umlx5h/gtrash",
+      "license": "MIT",
+      "executable": "gtrash",
+      "install_method": "brew",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "A",
+      "install_command": [
+        "brew",
+        "install",
+        "gtrash"
+      ],
+      "install_notes": "brew: brew install gtrash\nResmî: https://github.com/umlx5h/gtrash\n",
+      "release": {
+        "repo": "umlx5h/gtrash"
+      }
     },
     {
       "id": "gum",
@@ -4311,6 +4672,31 @@
         "hyperfine"
       ],
       "install_notes": "cargo: cargo install hyperfine\nbrew: brew install hyperfine\napt: sudo apt install hyperfine\npacman: sudo pacman -S hyperfine\nResmî: https://github.com/sharkdp/hyperfine#installation\n"
+    },
+    {
+      "id": "iamb",
+      "name": "iamb",
+      "description": "Vim kullanıcıları için Matrix istemcisi.",
+      "category": "messaging",
+      "source": "https://github.com/ulyssa/iamb",
+      "license": "Apache-2.0",
+      "executable": "iamb",
+      "install_method": "brew",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "A",
+      "install_command": [
+        "brew",
+        "install",
+        "iamb"
+      ],
+      "install_notes": "brew: brew install iamb\nResmî: https://github.com/ulyssa/iamb\n",
+      "release": {
+        "repo": "ulyssa/iamb"
+      }
     },
     {
       "id": "iftop",
@@ -4859,6 +5245,31 @@
       "install_notes": "apt: sudo apt install kakoune\nbrew: brew install kakoune\npacman: sudo pacman -S kakoune\nResmî: https://kakoune.org/\n"
     },
     {
+      "id": "kaskade",
+      "name": "kaskade",
+      "description": "Apache Kafka için metin kullanıcı arayüzü.",
+      "category": "development",
+      "source": "https://github.com/sauljabin/kaskade",
+      "license": "MIT",
+      "executable": "kaskade",
+      "install_method": "brew",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "A",
+      "install_command": [
+        "brew",
+        "install",
+        "kaskade"
+      ],
+      "install_notes": "brew: brew install kaskade\npipx: pipx install kaskade\nResmî: https://github.com/sauljabin/kaskade\n",
+      "release": {
+        "repo": "sauljabin/kaskade"
+      }
+    },
+    {
       "id": "kdash",
       "name": "kdash",
       "description": "Kubernetes için basit ve hızlı pano.",
@@ -5333,6 +5744,31 @@
       "privilege": "none",
       "trust_class": "D",
       "install_notes": "Resmî: https://github.com/cirala/lfimg\nlf kurulu olmalıdır.\n"
+    },
+    {
+      "id": "lfk",
+      "name": "lfk",
+      "description": "Kubernetes kaynaklarını gezmek için klavye odaklı TUI.",
+      "category": "containers",
+      "source": "https://github.com/janosmiko/lfk",
+      "license": "Apache-2.0",
+      "executable": "lfk",
+      "install_method": "brew",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "A",
+      "install_command": [
+        "brew",
+        "install",
+        "lfk"
+      ],
+      "install_notes": "brew: brew install lfk\nResmî: https://github.com/janosmiko/lfk\n",
+      "release": {
+        "repo": "janosmiko/lfk"
+      }
     },
     {
       "id": "links",
@@ -6187,6 +6623,33 @@
       "install_notes": "apt: sudo apt install mpv\nbrew: brew install mpv\npacman: sudo pacman -S mpv\nResmî: https://mpv.io/installation/\n"
     },
     {
+      "id": "msedit",
+      "name": "Microsoft Edit",
+      "description": "Microsoft Edit (msedit) basit terminal metin düzenleyicisi.",
+      "category": "editors",
+      "source": "https://github.com/microsoft/edit",
+      "license": "MIT",
+      "executable": "msedit",
+      "install_method": "pacman",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "elevated",
+      "trust_class": "A",
+      "install_command": [
+        "sudo",
+        "pacman",
+        "-S",
+        "--noconfirm",
+        "msedit"
+      ],
+      "install_notes": "pacman: sudo pacman -S msedit\nbrew: brew install msedit\nResmî: https://github.com/microsoft/edit\n",
+      "release": {
+        "repo": "microsoft/edit"
+      }
+    },
+    {
       "id": "mtr",
       "name": "mtr",
       "description": "ping ve traceroute'u birleştiren ağ tanılama aracı. Hedef adresi vermek gerekir.",
@@ -6615,6 +7078,31 @@
         "nerdctl"
       ],
       "install_notes": "pacman: sudo pacman -S nerdctl\nResmî: https://github.com/containerd/nerdctl\n"
+    },
+    {
+      "id": "nerdlog",
+      "name": "nerdlog",
+      "description": "Zaman çizelgeli, uzak öncelikli çoklu host TUI log görüntüleyici.",
+      "category": "system",
+      "source": "https://github.com/dimonomid/nerdlog",
+      "license": "BSD-2-Clause",
+      "executable": "nerdlog",
+      "install_method": "brew",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "A",
+      "install_command": [
+        "brew",
+        "install",
+        "nerdlog"
+      ],
+      "install_notes": "brew: brew install nerdlog\nResmî: https://github.com/dimonomid/nerdlog\n",
+      "release": {
+        "repo": "dimonomid/nerdlog"
+      }
     },
     {
       "id": "netcat",
@@ -7104,7 +7592,10 @@
       ],
       "privilege": "none",
       "trust_class": "D",
-      "install_notes": "Upstream önerisi (Bun >= 1.4.4): bun install -g @oh-my-pi/pi-coding-agent\nHomebrew: brew install can1357/tap/omp\nKurulum betiği (ön derleme ikilisini SHA-256 ile doğrular): curl -fsSL https://omp.sh/install | sh\nNix: nix profile add github:can1357/oh-my-pi\nNot: Nova uzak curl|sh betiğini otomatik çalıştırmaz; npm paketi (@oh-my-pi/pi-coding-agent) çalışmak için Bun çalışma zamanı gerektirir.\nResmî: https://github.com/can1357/oh-my-pi\n"
+      "install_notes": "Resmî kurulumlar (upstream README):\nBun (önerilen, Bun >= 1.4.4): bun install -g @oh-my-pi/pi-coding-agent\nHomebrew: brew install can1357/tap/omp\nKurulum betiği (ön derleme ikilisini SHA-256 ile doğrular): curl -fsSL https://omp.sh/install | sh\nNix: nix profile add github:can1357/oh-my-pi\nmise: mise use -g github:can1357/oh-my-pi\nNot: Nova uzak curl|sh / Bun yollarını otomatik çalıştırmaz; otomatik kurulum için desteklenen yöntemler arasında yer almaz (trust D).\nResmî: https://github.com/can1357/oh-my-pi\n",
+      "release": {
+        "repo": "can1357/oh-my-pi"
+      }
     },
     {
       "id": "oha",
@@ -7322,6 +7813,31 @@
       "install_notes": "pacman: sudo pacman -S osv-scanner\nbrew: brew install osv-scanner\ngo: go install github.com/google/osv-scanner/cmd/osv-scanner@latest\nResmî: https://google.github.io/osv-scanner/\n"
     },
     {
+      "id": "otel-tui",
+      "name": "otel-tui",
+      "description": "OpenTelemetry verisi için terminal görüntüleyici.",
+      "category": "panels",
+      "source": "https://github.com/ymtdzzz/otel-tui",
+      "license": "Apache-2.0",
+      "executable": "otel-tui",
+      "install_method": "brew",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "A",
+      "install_command": [
+        "brew",
+        "install",
+        "otel-tui"
+      ],
+      "install_notes": "brew: brew install otel-tui\nResmî: https://github.com/ymtdzzz/otel-tui\n",
+      "release": {
+        "repo": "ymtdzzz/otel-tui"
+      }
+    },
+    {
       "id": "ouch",
       "name": "ouch",
       "description": "Arşiv sıkıştırma / açma için kullanıcı dostu CLI.",
@@ -7432,6 +7948,30 @@
         "pandoc"
       ],
       "install_notes": "apt: sudo apt install pandoc\nbrew: brew install pandoc\npacman: sudo pacman -S pandoc\nResmî: https://pandoc.org/installing.html\n"
+    },
+    {
+      "id": "parallel",
+      "name": "GNU Parallel",
+      "description": "İşleri paralel çalıştıran kabuk aracı.",
+      "category": "daily",
+      "source": "https://www.gnu.org/software/parallel/",
+      "license": "GPL-3.0-only",
+      "executable": "parallel",
+      "install_method": "pacman",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "elevated",
+      "trust_class": "A",
+      "install_command": [
+        "sudo",
+        "pacman",
+        "-S",
+        "--noconfirm",
+        "parallel"
+      ],
+      "install_notes": "pacman: sudo pacman -S parallel\nbrew: brew install parallel\nResmî: https://www.gnu.org/software/parallel/\n"
     },
     {
       "id": "pass",
@@ -7680,6 +8220,31 @@
       "install_notes": "brew: brew install podman-tui\nResmî: https://github.com/containers/podman-tui#installation\n"
     },
     {
+      "id": "pop",
+      "name": "pop",
+      "description": "Terminalden e-posta gönderen Charm aracı.",
+      "category": "messaging",
+      "source": "https://github.com/charmbracelet/pop",
+      "license": "MIT",
+      "executable": "pop",
+      "install_method": "brew",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "A",
+      "install_command": [
+        "brew",
+        "install",
+        "pop"
+      ],
+      "install_notes": "brew: brew install pop\nResmî: https://github.com/charmbracelet/pop\n",
+      "release": {
+        "repo": "charmbracelet/pop"
+      }
+    },
+    {
       "id": "poppler",
       "name": "pdftotext",
       "description": "PDF araçları (poppler).",
@@ -7773,6 +8338,33 @@
         "pre-commit"
       ],
       "install_notes": "pacman: sudo pacman -S pre-commit\npipx: pipx install pre-commit\nbrew: brew install pre-commit\n"
+    },
+    {
+      "id": "presenterm",
+      "name": "presenterm",
+      "description": "Markdown sunumlarını terminalde gösteren araç.",
+      "category": "development",
+      "source": "https://github.com/mfontanini/presenterm",
+      "license": "BSD-2-Clause",
+      "executable": "presenterm",
+      "install_method": "pacman",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "elevated",
+      "trust_class": "A",
+      "install_command": [
+        "sudo",
+        "pacman",
+        "-S",
+        "--noconfirm",
+        "presenterm"
+      ],
+      "install_notes": "pacman: sudo pacman -S presenterm\nbrew: brew install presenterm\nResmî: https://github.com/mfontanini/presenterm\n",
+      "release": {
+        "repo": "mfontanini/presenterm"
+      }
     },
     {
       "id": "prettier",
@@ -7885,6 +8477,31 @@
         "progress"
       ],
       "install_notes": "pacman: sudo pacman -S progress\napt: sudo apt install progress\nbrew: brew install progress\n"
+    },
+    {
+      "id": "prs",
+      "name": "prs",
+      "description": "GPG ve git senkronlu parola yöneticisi CLI.",
+      "category": "security",
+      "source": "https://github.com/timvisee/prs",
+      "license": "GPL-3.0-only",
+      "executable": "prs",
+      "install_method": "brew",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "A",
+      "install_command": [
+        "brew",
+        "install",
+        "prs"
+      ],
+      "install_notes": "brew: brew install prs\nResmî: https://timvisee.com/projects/prs/\n",
+      "release": {
+        "repo": "timvisee/prs"
+      }
     },
     {
       "id": "psmux",
@@ -8193,6 +8810,33 @@
       "install_notes": "pipx: pipx install ranger-fm\napt: sudo apt install ranger\nbrew: brew install ranger\npacman: sudo pacman -S ranger\nResmî: https://ranger.github.io/\n"
     },
     {
+      "id": "rbw",
+      "name": "rbw",
+      "description": "Resmi olmayan Bitwarden komut satırı istemcisi.",
+      "category": "security",
+      "source": "https://github.com/doy/rbw",
+      "license": "MIT",
+      "executable": "rbw",
+      "install_method": "pacman",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "elevated",
+      "trust_class": "A",
+      "install_command": [
+        "sudo",
+        "pacman",
+        "-S",
+        "--noconfirm",
+        "rbw"
+      ],
+      "install_notes": "pacman: sudo pacman -S rbw\nbrew: brew install rbw\nResmî: https://github.com/doy/rbw\n",
+      "release": {
+        "repo": "doy/rbw"
+      }
+    },
+    {
       "id": "rclone",
       "name": "rclone",
       "description": "Bulut depolama için rsync benzeri senkronizasyon.",
@@ -8328,6 +8972,31 @@
         "repgrep"
       ],
       "install_notes": "pacman: sudo pacman -S repgrep\nÇalıştırılabilir: rgr\nResmî: https://github.com/acheronfail/repgrep\n"
+    },
+    {
+      "id": "resterm",
+      "name": "resterm",
+      "description": "HTTP, GraphQL, gRPC ve WebSocket için terminal API istemcisi.",
+      "category": "development",
+      "source": "https://github.com/unkn0wn-root/resterm",
+      "license": "Apache-2.0",
+      "executable": "resterm",
+      "install_method": "brew",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "A",
+      "install_command": [
+        "brew",
+        "install",
+        "resterm"
+      ],
+      "install_notes": "brew: brew install resterm\nResmî: https://github.com/unkn0wn-root/resterm\n",
+      "release": {
+        "repo": "unkn0wn-root/resterm"
+      }
     },
     {
       "id": "restic",
@@ -8489,6 +9158,31 @@
       "install_notes": "pipx: pipx install ruff\nuv: uv tool install ruff\nbrew: brew install ruff\nResmî: https://docs.astral.sh/ruff/installation/\n"
     },
     {
+      "id": "runme",
+      "name": "runme",
+      "description": "Markdown runbook ve README içindeki komutları çalıştırır.",
+      "category": "development",
+      "source": "https://github.com/stateful/runme",
+      "license": "Apache-2.0",
+      "executable": "runme",
+      "install_method": "brew",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "A",
+      "install_command": [
+        "brew",
+        "install",
+        "runme"
+      ],
+      "install_notes": "brew: brew install runme\nResmî: https://runme.dev/\n",
+      "release": {
+        "repo": "stateful/runme"
+      }
+    },
+    {
       "id": "rust-analyzer",
       "name": "rust-analyzer",
       "description": "Rust dil sunucusu.",
@@ -8629,6 +9323,31 @@
         "sc-im"
       ],
       "install_notes": "pacman: sudo pacman -S sc-im\nResmî: https://github.com/andmarti1424/sc-im\n"
+    },
+    {
+      "id": "scc",
+      "name": "scc",
+      "description": "Hızlı kod satırı / karmaşıklık sayacı (Sloc Cloc and Code).",
+      "category": "development",
+      "source": "https://github.com/boyter/scc",
+      "license": "MIT OR Unlicense",
+      "executable": "scc",
+      "install_method": "brew",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "A",
+      "install_command": [
+        "brew",
+        "install",
+        "scc"
+      ],
+      "install_notes": "brew: brew install scc\ngo: go install github.com/boyter/scc/v4@latest\nResmî: https://github.com/boyter/scc\n",
+      "release": {
+        "repo": "boyter/scc"
+      }
     },
     {
       "id": "sccache",
@@ -8820,6 +9539,31 @@
       "install_notes": "pacman: sudo pacman -S senpai\nResmî: https://git.sr.ht/~delthas/senpai\n"
     },
     {
+      "id": "sequin",
+      "name": "sequin",
+      "description": "ANSI kaçış dizilerini okunabilir gösteren Charm aracı.",
+      "category": "development",
+      "source": "https://github.com/charmbracelet/sequin",
+      "license": "MIT",
+      "executable": "sequin",
+      "install_method": "brew",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "A",
+      "install_command": [
+        "brew",
+        "install",
+        "sequin"
+      ],
+      "install_notes": "brew: brew install sequin\nResmî: https://github.com/charmbracelet/sequin\n",
+      "release": {
+        "repo": "charmbracelet/sequin"
+      }
+    },
+    {
       "id": "serie",
       "name": "serie",
       "description": "Zengin git commit grafiği gösteren terminal aracı.",
@@ -8930,6 +9674,33 @@
       "privilege": "none",
       "trust_class": "D",
       "install_notes": "Resmî kurulum: https://github.com/AsamK/signal-cli#installation"
+    },
+    {
+      "id": "skate",
+      "name": "skate",
+      "description": "Kişisel anahtar-değer deposu (Charm).",
+      "category": "daily",
+      "source": "https://github.com/charmbracelet/skate",
+      "license": "MIT",
+      "executable": "skate",
+      "install_method": "pacman",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "elevated",
+      "trust_class": "A",
+      "install_command": [
+        "sudo",
+        "pacman",
+        "-S",
+        "--noconfirm",
+        "skate"
+      ],
+      "install_notes": "pacman: sudo pacman -S skate\nbrew: brew install skate\nResmî: https://github.com/charmbracelet/skate\n",
+      "release": {
+        "repo": "charmbracelet/skate"
+      }
     },
     {
       "id": "skim",
@@ -9559,25 +10330,29 @@
     {
       "id": "taskwarrior-tui",
       "name": "taskwarrior-tui",
-      "description": "Taskwarrior için terminal panosu.",
+      "description": "Taskwarrior için terminal kullanıcı arayüzü.",
       "category": "productivity",
       "source": "https://github.com/kdheepak/taskwarrior-tui",
       "license": "MIT",
       "executable": "taskwarrior-tui",
-      "install_method": "cargo",
+      "install_method": "pacman",
       "supported_platforms": [
         "linux-x64",
         "linux-aarch64"
       ],
-      "privilege": "user",
-      "trust_class": "C",
-      "risk_note": "Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.\n",
+      "privilege": "elevated",
+      "trust_class": "A",
       "install_command": [
-        "cargo",
-        "install",
+        "sudo",
+        "pacman",
+        "-S",
+        "--noconfirm",
         "taskwarrior-tui"
       ],
-      "install_notes": "cargo: cargo install taskwarrior-tui\nbrew: brew install taskwarrior-tui\nResmî: https://kdheepak.com/taskwarrior-tui/\n"
+      "install_notes": "pacman: sudo pacman -S taskwarrior-tui\nbrew: brew install taskwarrior-tui\nResmî: https://github.com/kdheepak/taskwarrior-tui\n",
+      "release": {
+        "repo": "kdheepak/taskwarrior-tui"
+      }
     },
     {
       "id": "tcpdump",
@@ -9792,6 +10567,32 @@
       "install_notes": "cargo: cargo install termusic\nResmî: https://github.com/tramhao/termusic\n"
     },
     {
+      "id": "tftui",
+      "name": "tftui",
+      "description": "Terraform plan/state için metin kullanıcı arayüzü.",
+      "category": "development",
+      "source": "https://github.com/idoavrah/terraform-tui",
+      "license": "Apache-2.0",
+      "executable": "tftui",
+      "install_method": "pipx",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "C",
+      "risk_note": "Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.\n",
+      "install_command": [
+        "pipx",
+        "install",
+        "tftui"
+      ],
+      "install_notes": "pipx: pipx install tftui\nuv: uv tool install tftui\nbrew: brew install idoavrah/homebrew/tftui\nResmî: https://github.com/idoavrah/terraform-tui\n",
+      "release": {
+        "repo": "idoavrah/terraform-tui"
+      }
+    },
+    {
       "id": "tgpt",
       "name": "tgpt",
       "description": "ChatGPT benzeri terminal AI istemcisi.",
@@ -9838,6 +10639,31 @@
         "thefuck"
       ],
       "install_notes": "pacman: sudo pacman -S thefuck\npipx: pipx install thefuck\nResmî: https://github.com/nvbn/thefuck\n"
+    },
+    {
+      "id": "ticker",
+      "name": "ticker",
+      "description": "Hisse senedi, kripto ve türev fiyatlarını terminalde izler.",
+      "category": "panels",
+      "source": "https://github.com/achannarasappa/ticker",
+      "license": "GPL-3.0",
+      "executable": "ticker",
+      "install_method": "brew",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "A",
+      "install_command": [
+        "brew",
+        "install",
+        "achannarasappa/tap/ticker"
+      ],
+      "install_notes": "brew: brew install achannarasappa/tap/ticker\nResmî: https://github.com/achannarasappa/ticker\n",
+      "release": {
+        "repo": "achannarasappa/ticker"
+      }
     },
     {
       "id": "tickrs",
@@ -9933,6 +10759,31 @@
         "timew"
       ],
       "install_notes": "pacman: sudo pacman -S timew\napt: sudo apt install timewarrior\nResmî: https://timewarrior.net/\n"
+    },
+    {
+      "id": "timg",
+      "name": "timg",
+      "description": "Terminal görüntü ve video görüntüleyici.",
+      "category": "media",
+      "source": "https://github.com/hzeller/timg",
+      "license": "GPL-2.0-only",
+      "executable": "timg",
+      "install_method": "brew",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "A",
+      "install_command": [
+        "brew",
+        "install",
+        "timg"
+      ],
+      "install_notes": "brew: brew install timg\napt: sudo apt install timg\nResmî: https://github.com/hzeller/timg\n",
+      "release": {
+        "repo": "hzeller/timg"
+      }
     },
     {
       "id": "tiny",
@@ -10472,6 +11323,31 @@
       "install_notes": "apt: sudo apt install unzip\nbrew: brew install unzip\nResmî paket yöneticinizden unzip paketini kurun.\npacman: sudo pacman -S unzip\n"
     },
     {
+      "id": "updo",
+      "name": "updo",
+      "description": "Uyarı destekli uptime izleme CLI aracı.",
+      "category": "networking",
+      "source": "https://github.com/Owloops/updo",
+      "license": "MIT",
+      "executable": "updo",
+      "install_method": "brew",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "A",
+      "install_command": [
+        "brew",
+        "install",
+        "owloops/tap/updo"
+      ],
+      "install_notes": "brew: brew install owloops/tap/updo\nResmî: https://github.com/Owloops/updo\n",
+      "release": {
+        "repo": "Owloops/updo"
+      }
+    },
+    {
       "id": "urlscan",
       "name": "urlscan",
       "description": "Mutt ve terminal için URL seçici.",
@@ -10754,6 +11630,31 @@
       "install_notes": "pacman: sudo pacman -S viu\nResmî: https://github.com/atanunq/viu\n"
     },
     {
+      "id": "vtcode",
+      "name": "VT Code",
+      "description": "Yerel öncelikli terminal AI kodlama ajanı (CLI).",
+      "category": "ai",
+      "source": "https://github.com/vinhnx/vtcode",
+      "license": "MIT OR Apache-2.0",
+      "executable": "vtcode",
+      "install_method": "brew",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "A",
+      "install_command": [
+        "brew",
+        "install",
+        "vtcode"
+      ],
+      "install_notes": "brew: brew install vtcode\ncargo: cargo install vtcode\nResmî: https://github.com/vinhnx/vtcode\n",
+      "release": {
+        "repo": "vinhnx/vtcode"
+      }
+    },
+    {
       "id": "vz",
       "name": "visiData",
       "description": "Tablo verisi keşif TUI (vd).",
@@ -10800,6 +11701,31 @@
         "w3m"
       ],
       "install_notes": "apt: sudo apt install w3m\nbrew: brew install w3m\npacman: sudo pacman -S w3m\nResmî: https://w3m.sourceforge.net/\n"
+    },
+    {
+      "id": "wander",
+      "name": "wander",
+      "description": "HashiCorp Nomad için terminal TUI.",
+      "category": "containers",
+      "source": "https://github.com/robinovitch61/wander",
+      "license": "MIT",
+      "executable": "wander",
+      "install_method": "brew",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "A",
+      "install_command": [
+        "brew",
+        "install",
+        "robinovitch61/tap/wander"
+      ],
+      "install_notes": "brew: brew install robinovitch61/tap/wander\nResmî: https://github.com/robinovitch61/wander\n",
+      "release": {
+        "repo": "robinovitch61/wander"
+      }
     },
     {
       "id": "watchexec",
@@ -10992,6 +11918,33 @@
       "install_notes": "pacman: sudo pacman -S wireshark-cli\napt: sudo apt install tshark\nResmî: https://www.wireshark.org/\n"
     },
     {
+      "id": "wishlist",
+      "name": "wishlist",
+      "description": "Birden fazla SSH ucu için tek giriş noktası (Charm).",
+      "category": "networking",
+      "source": "https://github.com/charmbracelet/wishlist",
+      "license": "MIT",
+      "executable": "wishlist",
+      "install_method": "pacman",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "elevated",
+      "trust_class": "A",
+      "install_command": [
+        "sudo",
+        "pacman",
+        "-S",
+        "--noconfirm",
+        "wishlist"
+      ],
+      "install_notes": "pacman: sudo pacman -S wishlist\nbrew: brew install wishlist\nResmî: https://github.com/charmbracelet/wishlist\n",
+      "release": {
+        "repo": "charmbracelet/wishlist"
+      }
+    },
+    {
       "id": "wordgrinder",
       "name": "wordgrinder",
       "description": "Terminal kelime işlemci.",
@@ -11108,6 +12061,33 @@
       "install_notes": "cargo: cargo install xsv\nbrew: brew install xsv\nResmî: https://github.com/BurntSushi/xsv\n"
     },
     {
+      "id": "yadm",
+      "name": "yadm",
+      "description": "Yet Another Dotfiles Manager.",
+      "category": "productivity",
+      "source": "https://github.com/yadm-dev/yadm",
+      "license": "GPL-3.0",
+      "executable": "yadm",
+      "install_method": "pacman",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "elevated",
+      "trust_class": "A",
+      "install_command": [
+        "sudo",
+        "pacman",
+        "-S",
+        "--noconfirm",
+        "yadm"
+      ],
+      "install_notes": "pacman: sudo pacman -S yadm\nbrew: brew install yadm\nResmî: https://github.com/yadm-dev/yadm\n",
+      "release": {
+        "repo": "yadm-dev/yadm"
+      }
+    },
+    {
       "id": "yapf",
       "name": "yapf",
       "description": "Python biçimlendirici.",
@@ -11154,6 +12134,31 @@
         "yazi-cli"
       ],
       "install_notes": "cargo: cargo install --locked yazi-fm yazi-cli\nbrew: brew install yazi\nResmî: https://yazi-rs.github.io/docs/installation\n"
+    },
+    {
+      "id": "yozefu",
+      "name": "yozefu",
+      "description": "Kafka kümelerindeki veriyi keşfetmek için TUI.",
+      "category": "development",
+      "source": "https://github.com/MAIF/yozefu",
+      "license": "Apache-2.0",
+      "executable": "yozefu",
+      "install_method": "brew",
+      "supported_platforms": [
+        "linux-x64",
+        "linux-aarch64"
+      ],
+      "privilege": "user",
+      "trust_class": "A",
+      "install_command": [
+        "brew",
+        "install",
+        "yozefu"
+      ],
+      "install_notes": "brew: brew install yozefu\nResmî: https://github.com/MAIF/yozefu\n",
+      "release": {
+        "repo": "MAIF/yozefu"
+      }
     },
     {
       "id": "yq",
@@ -11345,5 +12350,5 @@
       "install_notes": "cargo: cargo install zoxide --locked\nbrew: brew install zoxide\napt: sudo apt install zoxide\npacman: sudo pacman -S zoxide\nResmî: https://github.com/ajeetdsouza/zoxide#installation\n"
     }
   ],
-  "git_sha": "2aa45d206a36f35ab96f695fb40e1f080fcbedb8"
+  "git_sha": "6cf82fec0d85aa23dde69c9f703a1655f743c343"
 }

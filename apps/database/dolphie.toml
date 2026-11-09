@@ -1,0 +1,20 @@
+id = "dolphie"
+name = "dolphie"
+description = "MySQL/MariaDB için gerçek zamanlı analitik TUI."
+category = "database"
+source = "https://github.com/charles-001/dolphie"
+license = "GPL-3.0-or-later"
+executable = "dolphie"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "dolphie"]
+install_notes = """
+brew: brew install dolphie
+uv: uv tool install dolphie
+Resmî: https://github.com/charles-001/dolphie
+"""
+
+[release]
+repo = "charles-001/dolphie"

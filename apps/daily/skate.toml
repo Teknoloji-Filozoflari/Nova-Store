@@ -1,0 +1,20 @@
+id = "skate"
+name = "skate"
+description = "Kişisel anahtar-değer deposu (Charm)."
+category = "daily"
+source = "https://github.com/charmbracelet/skate"
+license = "MIT"
+executable = "skate"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "skate"]
+install_notes = """
+pacman: sudo pacman -S skate
+brew: brew install skate
+Resmî: https://github.com/charmbracelet/skate
+"""
+
+[release]
+repo = "charmbracelet/skate"

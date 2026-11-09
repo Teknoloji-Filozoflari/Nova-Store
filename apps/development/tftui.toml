@@ -1,0 +1,24 @@
+id = "tftui"
+name = "tftui"
+description = "Terraform plan/state için metin kullanıcı arayüzü."
+category = "development"
+source = "https://github.com/idoavrah/terraform-tui"
+license = "Apache-2.0"
+executable = "tftui"
+install_method = "pipx"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["pipx", "install", "tftui"]
+install_notes = """
+pipx: pipx install tftui
+uv: uv tool install tftui
+brew: brew install idoavrah/homebrew/tftui
+Resmî: https://github.com/idoavrah/terraform-tui
+"""
+
+[release]
+repo = "idoavrah/terraform-tui"

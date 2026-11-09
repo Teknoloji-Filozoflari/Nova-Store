@@ -1,0 +1,20 @@
+id = "rbw"
+name = "rbw"
+description = "Resmi olmayan Bitwarden komut satırı istemcisi."
+category = "security"
+source = "https://github.com/doy/rbw"
+license = "MIT"
+executable = "rbw"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "rbw"]
+install_notes = """
+pacman: sudo pacman -S rbw
+brew: brew install rbw
+Resmî: https://github.com/doy/rbw
+"""
+
+[release]
+repo = "doy/rbw"

@@ -1,0 +1,19 @@
+id = "chdig"
+name = "chdig"
+description = "ClickHouse için TUI keşif aracı."
+category = "database"
+source = "https://github.com/azat/chdig"
+license = "MIT"
+executable = "chdig"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "chdig"]
+install_notes = """
+brew: brew install chdig
+Resmî: https://github.com/azat/chdig
+"""
+
+[release]
+repo = "azat/chdig"

@@ -1,0 +1,20 @@
+id = "curlie"
+name = "curlie"
+description = "curl gücü, HTTPie kullanım kolaylığı."
+category = "networking"
+source = "https://github.com/rs/curlie"
+license = "MIT"
+executable = "curlie"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "curlie"]
+install_notes = """
+pacman: sudo pacman -S curlie
+brew: brew install curlie
+Resmî: https://github.com/rs/curlie
+"""
+
+[release]
+repo = "rs/curlie"

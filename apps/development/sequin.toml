@@ -1,0 +1,19 @@
+id = "sequin"
+name = "sequin"
+description = "ANSI kaçış dizilerini okunabilir gösteren Charm aracı."
+category = "development"
+source = "https://github.com/charmbracelet/sequin"
+license = "MIT"
+executable = "sequin"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "sequin"]
+install_notes = """
+brew: brew install sequin
+Resmî: https://github.com/charmbracelet/sequin
+"""
+
+[release]
+repo = "charmbracelet/sequin"

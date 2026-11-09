@@ -1,0 +1,22 @@
+id = "adguardian"
+name = "AdGuardian"
+description = "AdGuard Home için gerçek zamanlı trafik izleme TUI (resmi olmayan)."
+category = "networking"
+source = "https://github.com/lissy93/AdGuardian-Term"
+license = "MIT"
+executable = "adguardian"
+install_method = "cargo"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "C"
+risk_note = """
+Registry install (cargo/npm/pypi/uv): package contents are not pinned by Nova-Store signatures; review upstream before install.
+"""
+install_command = ["cargo", "install", "adguardian"]
+install_notes = """
+cargo: cargo install adguardian
+Resmî: https://github.com/lissy93/AdGuardian-Term
+"""
+
+[release]
+repo = "lissy93/AdGuardian-Term"

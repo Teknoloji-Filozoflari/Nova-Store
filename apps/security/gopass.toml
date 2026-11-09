@@ -1,0 +1,20 @@
+id = "gopass"
+name = "gopass"
+description = "Ekipler için Unix parola yöneticisi (pass uyumlu)."
+category = "security"
+source = "https://github.com/gopasspw/gopass"
+license = "MIT"
+executable = "gopass"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "gopass"]
+install_notes = """
+pacman: sudo pacman -S gopass
+brew: brew install gopass
+Resmî: https://github.com/gopasspw/gopass
+"""
+
+[release]
+repo = "gopasspw/gopass"

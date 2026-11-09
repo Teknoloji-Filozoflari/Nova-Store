@@ -1,0 +1,19 @@
+id = "updo"
+name = "updo"
+description = "Uyarı destekli uptime izleme CLI aracı."
+category = "networking"
+source = "https://github.com/Owloops/updo"
+license = "MIT"
+executable = "updo"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "owloops/tap/updo"]
+install_notes = """
+brew: brew install owloops/tap/updo
+Resmî: https://github.com/Owloops/updo
+"""
+
+[release]
+repo = "Owloops/updo"

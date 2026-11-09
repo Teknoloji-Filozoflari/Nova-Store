@@ -1,0 +1,17 @@
+id = "parallel"
+name = "GNU Parallel"
+description = "İşleri paralel çalıştıran kabuk aracı."
+category = "daily"
+source = "https://www.gnu.org/software/parallel/"
+license = "GPL-3.0-only"
+executable = "parallel"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "parallel"]
+install_notes = """
+pacman: sudo pacman -S parallel
+brew: brew install parallel
+Resmî: https://www.gnu.org/software/parallel/
+"""

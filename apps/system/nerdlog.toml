@@ -1,0 +1,19 @@
+id = "nerdlog"
+name = "nerdlog"
+description = "Zaman çizelgeli, uzak öncelikli çoklu host TUI log görüntüleyici."
+category = "system"
+source = "https://github.com/dimonomid/nerdlog"
+license = "BSD-2-Clause"
+executable = "nerdlog"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "nerdlog"]
+install_notes = """
+brew: brew install nerdlog
+Resmî: https://github.com/dimonomid/nerdlog
+"""
+
+[release]
+repo = "dimonomid/nerdlog"

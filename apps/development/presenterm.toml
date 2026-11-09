@@ -1,0 +1,20 @@
+id = "presenterm"
+name = "presenterm"
+description = "Markdown sunumlarını terminalde gösteren araç."
+category = "development"
+source = "https://github.com/mfontanini/presenterm"
+license = "BSD-2-Clause"
+executable = "presenterm"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "presenterm"]
+install_notes = """
+pacman: sudo pacman -S presenterm
+brew: brew install presenterm
+Resmî: https://github.com/mfontanini/presenterm
+"""
+
+[release]
+repo = "mfontanini/presenterm"

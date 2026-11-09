@@ -1,0 +1,19 @@
+id = "e1s"
+name = "e1s"
+description = "AWS ECS yönetimi için k9s esinli TUI."
+category = "containers"
+source = "https://github.com/keidarcy/e1s"
+license = "MIT"
+executable = "e1s"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "e1s"]
+install_notes = """
+brew: brew install e1s
+Resmî: https://github.com/keidarcy/e1s
+"""
+
+[release]
+repo = "keidarcy/e1s"

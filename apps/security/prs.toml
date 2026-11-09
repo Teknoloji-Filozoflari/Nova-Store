@@ -1,0 +1,19 @@
+id = "prs"
+name = "prs"
+description = "GPG ve git senkronlu parola yöneticisi CLI."
+category = "security"
+source = "https://github.com/timvisee/prs"
+license = "GPL-3.0-only"
+executable = "prs"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "prs"]
+install_notes = """
+brew: brew install prs
+Resmî: https://timvisee.com/projects/prs/
+"""
+
+[release]
+repo = "timvisee/prs"

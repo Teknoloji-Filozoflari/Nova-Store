@@ -1,0 +1,20 @@
+id = "wishlist"
+name = "wishlist"
+description = "Birden fazla SSH ucu için tek giriş noktası (Charm)."
+category = "networking"
+source = "https://github.com/charmbracelet/wishlist"
+license = "MIT"
+executable = "wishlist"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "wishlist"]
+install_notes = """
+pacman: sudo pacman -S wishlist
+brew: brew install wishlist
+Resmî: https://github.com/charmbracelet/wishlist
+"""
+
+[release]
+repo = "charmbracelet/wishlist"
