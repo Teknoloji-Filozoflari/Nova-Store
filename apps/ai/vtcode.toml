@@ -1,0 +1,20 @@
+id = "vtcode"
+name = "VT Code"
+description = "Yerel öncelikli terminal AI kodlama ajanı (CLI)."
+category = "ai"
+source = "https://github.com/vinhnx/vtcode"
+license = "MIT OR Apache-2.0"
+executable = "vtcode"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "vtcode"]
+install_notes = """
+brew: brew install vtcode
+cargo: cargo install vtcode
+Resmî: https://github.com/vinhnx/vtcode
+"""
+
+[release]
+repo = "vinhnx/vtcode"

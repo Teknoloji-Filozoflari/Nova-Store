@@ -1,0 +1,19 @@
+id = "runme"
+name = "runme"
+description = "Markdown runbook ve README içindeki komutları çalıştırır."
+category = "development"
+source = "https://github.com/stateful/runme"
+license = "Apache-2.0"
+executable = "runme"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "runme"]
+install_notes = """
+brew: brew install runme
+Resmî: https://runme.dev/
+"""
+
+[release]
+repo = "stateful/runme"

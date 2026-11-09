@@ -1,0 +1,19 @@
+id = "otel-tui"
+name = "otel-tui"
+description = "OpenTelemetry verisi için terminal görüntüleyici."
+category = "panels"
+source = "https://github.com/ymtdzzz/otel-tui"
+license = "Apache-2.0"
+executable = "otel-tui"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "otel-tui"]
+install_notes = """
+brew: brew install otel-tui
+Resmî: https://github.com/ymtdzzz/otel-tui
+"""
+
+[release]
+repo = "ymtdzzz/otel-tui"

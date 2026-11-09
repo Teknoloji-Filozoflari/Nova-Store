@@ -1,0 +1,20 @@
+id = "kaskade"
+name = "kaskade"
+description = "Apache Kafka için metin kullanıcı arayüzü."
+category = "development"
+source = "https://github.com/sauljabin/kaskade"
+license = "MIT"
+executable = "kaskade"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "kaskade"]
+install_notes = """
+brew: brew install kaskade
+pipx: pipx install kaskade
+Resmî: https://github.com/sauljabin/kaskade
+"""
+
+[release]
+repo = "sauljabin/kaskade"

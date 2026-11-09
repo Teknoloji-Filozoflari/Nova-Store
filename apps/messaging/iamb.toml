@@ -1,0 +1,19 @@
+id = "iamb"
+name = "iamb"
+description = "Vim kullanıcıları için Matrix istemcisi."
+category = "messaging"
+source = "https://github.com/ulyssa/iamb"
+license = "Apache-2.0"
+executable = "iamb"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "iamb"]
+install_notes = """
+brew: brew install iamb
+Resmî: https://github.com/ulyssa/iamb
+"""
+
+[release]
+repo = "ulyssa/iamb"

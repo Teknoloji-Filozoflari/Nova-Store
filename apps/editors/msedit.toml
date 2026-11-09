@@ -1,0 +1,20 @@
+id = "msedit"
+name = "Microsoft Edit"
+description = "Microsoft Edit (msedit) basit terminal metin düzenleyicisi."
+category = "editors"
+source = "https://github.com/microsoft/edit"
+license = "MIT"
+executable = "msedit"
+install_method = "pacman"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "elevated"
+trust_class = "A"
+install_command = ["sudo", "pacman", "-S", "--noconfirm", "msedit"]
+install_notes = """
+pacman: sudo pacman -S msedit
+brew: brew install msedit
+Resmî: https://github.com/microsoft/edit
+"""
+
+[release]
+repo = "microsoft/edit"

@@ -1,0 +1,20 @@
+id = "scc"
+name = "scc"
+description = "Hızlı kod satırı / karmaşıklık sayacı (Sloc Cloc and Code)."
+category = "development"
+source = "https://github.com/boyter/scc"
+license = "MIT OR Unlicense"
+executable = "scc"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "scc"]
+install_notes = """
+brew: brew install scc
+go: go install github.com/boyter/scc/v4@latest
+Resmî: https://github.com/boyter/scc
+"""
+
+[release]
+repo = "boyter/scc"

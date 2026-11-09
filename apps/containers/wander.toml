@@ -1,0 +1,19 @@
+id = "wander"
+name = "wander"
+description = "HashiCorp Nomad için terminal TUI."
+category = "containers"
+source = "https://github.com/robinovitch61/wander"
+license = "MIT"
+executable = "wander"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "robinovitch61/tap/wander"]
+install_notes = """
+brew: brew install robinovitch61/tap/wander
+Resmî: https://github.com/robinovitch61/wander
+"""
+
+[release]
+repo = "robinovitch61/wander"

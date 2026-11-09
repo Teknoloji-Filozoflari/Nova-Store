@@ -1,0 +1,19 @@
+id = "lfk"
+name = "lfk"
+description = "Kubernetes kaynaklarını gezmek için klavye odaklı TUI."
+category = "containers"
+source = "https://github.com/janosmiko/lfk"
+license = "Apache-2.0"
+executable = "lfk"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "lfk"]
+install_notes = """
+brew: brew install lfk
+Resmî: https://github.com/janosmiko/lfk
+"""
+
+[release]
+repo = "janosmiko/lfk"

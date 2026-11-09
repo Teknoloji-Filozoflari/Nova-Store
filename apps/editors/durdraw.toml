@@ -1,0 +1,19 @@
+id = "durdraw"
+name = "durdraw"
+description = "ASCII/ANSI sanat çizimi için çok yönlü metin düzenleyici."
+category = "editors"
+source = "https://github.com/cmang/durdraw"
+license = "BSD-3-Clause"
+executable = "durdraw"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "durdraw"]
+install_notes = """
+brew: brew install durdraw
+Resmî: https://github.com/cmang/durdraw
+"""
+
+[release]
+repo = "cmang/durdraw"

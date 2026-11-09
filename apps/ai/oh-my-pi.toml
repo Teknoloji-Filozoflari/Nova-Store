@@ -10,10 +10,15 @@ supported_platforms = ["linux-x64", "linux-aarch64"]
 privilege = "none"
 trust_class = "D"
 install_notes = """
-Upstream önerisi (Bun >= 1.4.4): bun install -g @oh-my-pi/pi-coding-agent
+Resmî kurulumlar (upstream README):
+Bun (önerilen, Bun >= 1.4.4): bun install -g @oh-my-pi/pi-coding-agent
 Homebrew: brew install can1357/tap/omp
 Kurulum betiği (ön derleme ikilisini SHA-256 ile doğrular): curl -fsSL https://omp.sh/install | sh
 Nix: nix profile add github:can1357/oh-my-pi
-Not: Nova uzak curl|sh betiğini otomatik çalıştırmaz; npm paketi (@oh-my-pi/pi-coding-agent) çalışmak için Bun çalışma zamanı gerektirir.
+mise: mise use -g github:can1357/oh-my-pi
+Not: Nova uzak curl|sh / Bun yollarını otomatik çalıştırmaz; otomatik kurulum için desteklenen yöntemler arasında yer almaz (trust D).
 Resmî: https://github.com/can1357/oh-my-pi
 """
+
+[release]
+repo = "can1357/oh-my-pi"

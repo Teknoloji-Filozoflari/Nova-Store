@@ -1,0 +1,19 @@
+id = "resterm"
+name = "resterm"
+description = "HTTP, GraphQL, gRPC ve WebSocket için terminal API istemcisi."
+category = "development"
+source = "https://github.com/unkn0wn-root/resterm"
+license = "Apache-2.0"
+executable = "resterm"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "resterm"]
+install_notes = """
+brew: brew install resterm
+Resmî: https://github.com/unkn0wn-root/resterm
+"""
+
+[release]
+repo = "unkn0wn-root/resterm"

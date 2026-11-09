@@ -1,0 +1,19 @@
+id = "gtrash"
+name = "gtrash"
+description = "rm alternatifli özellikli çöp kutusu CLI yöneticisi."
+category = "files"
+source = "https://github.com/umlx5h/gtrash"
+license = "MIT"
+executable = "gtrash"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "gtrash"]
+install_notes = """
+brew: brew install gtrash
+Resmî: https://github.com/umlx5h/gtrash
+"""
+
+[release]
+repo = "umlx5h/gtrash"

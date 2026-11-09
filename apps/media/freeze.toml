@@ -1,0 +1,19 @@
+id = "freeze"
+name = "freeze"
+description = "Kod ve terminal çıktısından görüntü üreten Charm aracı."
+category = "media"
+source = "https://github.com/charmbracelet/freeze"
+license = "MIT"
+executable = "freeze"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "charmbracelet/tap/freeze"]
+install_notes = """
+brew: brew install charmbracelet/tap/freeze
+Resmî: https://github.com/charmbracelet/freeze
+"""
+
+[release]
+repo = "charmbracelet/freeze"

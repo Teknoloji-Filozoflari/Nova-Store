@@ -1,0 +1,19 @@
+id = "yozefu"
+name = "yozefu"
+description = "Kafka kümelerindeki veriyi keşfetmek için TUI."
+category = "development"
+source = "https://github.com/MAIF/yozefu"
+license = "Apache-2.0"
+executable = "yozefu"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "yozefu"]
+install_notes = """
+brew: brew install yozefu
+Resmî: https://github.com/MAIF/yozefu
+"""
+
+[release]
+repo = "MAIF/yozefu"

@@ -1,0 +1,20 @@
+id = "timg"
+name = "timg"
+description = "Terminal görüntü ve video görüntüleyici."
+category = "media"
+source = "https://github.com/hzeller/timg"
+license = "GPL-2.0-only"
+executable = "timg"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "timg"]
+install_notes = """
+brew: brew install timg
+apt: sudo apt install timg
+Resmî: https://github.com/hzeller/timg
+"""
+
+[release]
+repo = "hzeller/timg"

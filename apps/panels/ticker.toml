@@ -1,0 +1,19 @@
+id = "ticker"
+name = "ticker"
+description = "Hisse senedi, kripto ve türev fiyatlarını terminalde izler."
+category = "panels"
+source = "https://github.com/achannarasappa/ticker"
+license = "GPL-3.0"
+executable = "ticker"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "achannarasappa/tap/ticker"]
+install_notes = """
+brew: brew install achannarasappa/tap/ticker
+Resmî: https://github.com/achannarasappa/ticker
+"""
+
+[release]
+repo = "achannarasappa/ticker"

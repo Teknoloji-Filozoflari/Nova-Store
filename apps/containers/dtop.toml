@@ -1,0 +1,19 @@
+id = "dtop"
+name = "dtop"
+description = "Birden fazla host üzerinde Docker izleme terminal panosu."
+category = "containers"
+source = "https://github.com/amir20/dtop"
+license = "MIT"
+executable = "dtop"
+install_method = "brew"
+supported_platforms = ["linux-x64", "linux-aarch64"]
+privilege = "user"
+trust_class = "A"
+install_command = ["brew", "install", "dtop"]
+install_notes = """
+brew: brew install dtop
+Resmî: https://github.com/amir20/dtop
+"""
+
+[release]
+repo = "amir20/dtop"
