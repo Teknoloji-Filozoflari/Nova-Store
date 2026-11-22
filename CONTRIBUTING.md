@@ -61,8 +61,10 @@ Arch hosts: prefer `pacman` when the package exists in official repos.
 
 ## Signed releases
 
-Maintainers publish signed `catalog.json` on tags `catalog-v*`. Contributors do
-not need signing keys. See [docs/catalog-signing.md](docs/catalog-signing.md).
+Maintainers publish signed **`store-catalog.toml`** (+ `.minisig`) on tags
+`catalog-v*` for Nova's Releases client. Contributors do not need signing
+keys. See [docs/catalog-signing.md](docs/catalog-signing.md) and
+[docs/nova-consumption.md](docs/nova-consumption.md).
 
 ## License of contributions
 

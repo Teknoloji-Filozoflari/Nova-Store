@@ -92,12 +92,17 @@ def main() -> int:
     if sha:
         catalog["git_sha"] = sha
 
-    args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(
+    out = args.output if args.output.is_absolute() else ROOT / args.output
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(
         json.dumps(catalog, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8",
     )
-    print(f"wrote {args.output.relative_to(ROOT)} ({len(apps)} apps)")
+    try:
+        rel = out.resolve().relative_to(ROOT)
+    except ValueError:
+        rel = out
+    print(f"wrote {rel} ({len(apps)} apps)")
     return 0
 
 

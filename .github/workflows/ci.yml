@@ -25,18 +25,26 @@ jobs:
       - name: Schema + unique id + SPDX + source + method + OS/arch + privilege
         run: python3 scripts/validate_catalog.py
 
-      - name: Build aggregate catalog.json
-        run: python3 scripts/build_catalog.py
+      - name: Build aggregate catalog.json + store-catalog.toml
+        run: |
+          python3 scripts/build_catalog.py
+          mkdir -p dist
+          python3 scripts/build_store_catalog_toml.py -o dist/store-catalog.toml
 
       - name: Ensure catalog build is deterministic enough to parse
         run: |
           python3 - <<'PY'
           import json
+          import tomllib
           from pathlib import Path
           cat = json.loads(Path("metadata/catalog.json").read_text())
           assert cat["schema_version"] == 1
           assert cat["apps"], "catalog must contain apps"
           ids = [a["id"] for a in cat["apps"]]
           assert len(ids) == len(set(ids))
-          print(f"catalog ok: {len(ids)} apps")
+          store = tomllib.loads(Path("dist/store-catalog.toml").read_text(encoding="utf-8"))
+          store_ids = [a["id"] for a in store["apps"]]
+          assert len(store_ids) == len(set(store_ids))
+          assert len(store_ids) == len(ids), "JSON and TOML aggregates must have same app count"
+          print(f"catalog ok: {len(ids)} apps (json + store-catalog.toml)")
           PY
