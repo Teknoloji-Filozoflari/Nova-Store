@@ -1,11 +1,18 @@
 {
   "release_tag_prefix": "catalog-v",
-  "artifact": "catalog.json",
+  "nova_client_assets": {
+    "catalog": "store-catalog.toml",
+    "signature": "store-catalog.toml.minisig",
+    "latest_download_base": "https://github.com/Teknoloji-Filozoflari/Nova-Store/releases/latest/download"
+  },
+  "artifact": "store-catalog.toml",
+  "aggregate_json": "catalog.json",
   "signatures": {
     "minisign": {
-      "asset": "catalog.json.minisig",
+      "asset": "store-catalog.toml.minisig",
       "public_key_path": "keys/minisign.pub",
-      "secret_name": "MINISIGN_SECRET_KEY"
+      "secret_name": "MINISIGN_SECRET_KEY",
+      "nova_pinned_pubkey": "RWTq0P6AM5pR0HlqD09S6QW1Yf0X5sIWRah5Q1UQDMJFBxzzI/GuCNpg"
     },
     "cosign": {
       "asset": "catalog.json.sig",
@@ -14,5 +21,5 @@
     }
   },
   "default_method": "minisign",
-  "nova_policy": "Verify signature before apply; on failure keep last trusted catalog."
+  "nova_policy": "Verify store-catalog.toml.minisig with pinned pubkey before apply; on failure keep last trusted / embedded catalog."
 }

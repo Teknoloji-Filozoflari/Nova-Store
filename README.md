@@ -12,6 +12,33 @@ falls back to the last trusted catalog if verification fails.
 > description, upstream link). Install methods and trust classes live in those
 > TOML files — this README is a browsable index, not a second source of truth.
 
+## How Nova consumes the signed Release
+
+Nova’s Magaza remote client (`src/store/remote.rs`) downloads from
+`releases/latest`:
+
+| Asset | Role |
+|-------|------|
+| `store-catalog.toml` | Aggregated catalog in Nova `[[apps]]` shape |
+| `store-catalog.toml.minisig` | minisign signature (pinned pubkey in Nova) |
+
+On verify failure / 404, Nova keeps the last trusted disk copy or the
+embedded `assets/store` snapshot (`KeptTrusted`). Override URLs with
+`NOVA_STORE_CATALOG_URL` / `NOVA_STORE_CATALOG_SIG_URL`.
+
+**Maintainers — first signed cut after merge:**
+
+1. Set Actions secret `MINISIGN_SECRET_KEY` to the secret key matching
+   [`keys/minisign.pub`](keys/minisign.pub) (same base64 pin as Nova).
+2. Optional dry-run: Actions → **Publish signed catalog** → Run workflow
+   (`dry_run=true` by default) — builds unsigned artifacts, no Release.
+3. Tag and push: `git tag -a catalog-v0.1.0 -m "catalog v0.1.0" && git push origin catalog-v0.1.0`
+4. Confirm Release assets are exactly `store-catalog.toml` +
+   `store-catalog.toml.minisig` (plus optional `catalog.json`).
+
+Details: [docs/catalog-signing.md](docs/catalog-signing.md) ·
+[docs/nova-consumption.md](docs/nova-consumption.md)
+
 ## Table of contents
 
 | Category | Apps | Focus |
